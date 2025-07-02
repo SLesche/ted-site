@@ -8,30 +8,16 @@
   {
     "listing": "/people.html",
     "items": [
-      "/people/staff/girard_jeffrey.html",
-      "/people/staff/welch_brett.html"
+      "/people/staff/lesche_sven.html"
     ]
   },
   {
     "listing": "/publications.html",
     "items": [
       "/publications/articles/adaryukov2024.html",
-      "/publications/proceedings/girard2023a.html",
-      "/publications/proceedings/vail2022.html",
-      "/publications/proceedings/wolfert2021.html",
-      "/publications/proceedings/lin2020a.html",
-      "/publications/proceedings/lin2020b.html",
-      "/publications/proceedings/mcduff2019.html",
-      "/publications/proceedings/girard2019a.html",
-      "/publications/proceedings/valstar2017.html",
-      "/publications/proceedings/girard2017c.html",
-      "/publications/proceedings/girard2017b.html",
-      "/publications/proceedings/zhang2016.html",
-      "/publications/proceedings/valstar2015.html",
-      "/publications/proceedings/girard2015d.html",
-      "/publications/proceedings/jeni2013.html",
-      "/publications/proceedings/girard2013.html",
-      "/publications/proceedings/girard2011.html"
+      "/publications/articles/bena2019attention.html",
+      "/publications/proceedings/girard2011.html",
+      "/publications/articles/template2025.html"
     ]
   }
 ]
