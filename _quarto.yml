@@ -20,13 +20,13 @@ website:
         text: People
       - href: publications.qmd
         text: Publications
-      - href: resources.qmd
-        text: Resources
+      # - href: resources.qmd
+      #   text: Resources
       - href: contact.qmd
         text: Contact
   page-footer: "Copyright 2025 &copy; Sven Lesche"
   google-analytics: ""
-  site-url: https://github.com/SLesche/ted-site
+  site-url: https://slesche.github.io/ted-site/
   repo-url: https://github.com/SLesche/ted-site
 
 format:

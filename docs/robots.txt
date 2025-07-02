@@ -1,1 +1,1 @@
-Sitemap: https://trutheffectdatabase.org/sitemap.xml
+Sitemap: https://slesche.github.io/ted-site/sitemap.xml
