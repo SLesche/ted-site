@@ -26,7 +26,7 @@ website:
         text: Contact
   page-footer: "Copyright 2025 &copy; Sven Lesche"
   google-analytics: ""
-  site-url: https://trutheffectdatabase.org
+  site-url: https://github.com/SLesche/ted-site
   repo-url: https://github.com/SLesche/ted-site
 
 format:
