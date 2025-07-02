@@ -1,12 +1,12 @@
 ---
-pagetitle: "AffCom Lab"
-title: "Affective Communication & Computing Lab"
+pagetitle: "TED"
+title: "Truth Effect Database"
 # page-layout: full
 toc: false
 ---
 
 ::: {.lead}
-  We are an [interdisciplinary]{.fw-bolder} research group based within the [Department of Psychology](https://psych.ku.edu){.text-primary .text-decoration-none .fw-bolder} at the [University of Kansas](https://ku.edu){.text-primary .text-decoration-none .fw-bolder}. We develop, validate, and apply [computational methods]{.fw-bolder} to advance the study of [emotion]{.fw-bolder}, [interpersonal communication]{.fw-bolder}, and [mental health]{.fw-bolder}.
+  Something something truth effect. Links to get started
 :::
 
 ![](./img/showcase.svg){.hero}

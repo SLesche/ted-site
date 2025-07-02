@@ -1,5 +1,5 @@
 ---
-pagetitle: "Publications | AffCom Lab"
+pagetitle: "Publications | TED"
 toc: false
 listing:
   - id: articles

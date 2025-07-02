@@ -6,28 +6,28 @@ execute:
     freeze: auto
 
 website:
-  title: "AffCom Lab"
+  title: "Truth Effect Database (TED)"
   navbar:
     background: primary
     right:
-      - href: news.qmd
-        text: News
+      - href: contribute.qmd
+        text: Contribute
+      - href: get-started.qmd
+        text: Get Started
+      # - href: news.qmd
+      #   text: News
       - href: people.qmd
         text: People
-      - href: research.qmd
-        text: Research
       - href: publications.qmd
         text: Publications
       - href: resources.qmd
         text: Resources
-      - href: opportunities.qmd
-        text: Opportunities
       - href: contact.qmd
         text: Contact
-  page-footer: "Copyright 2025 &copy; Jeffrey Girard"
-  google-analytics: "G-K5TXS64QLN"
-  site-url: https://affcom.ku.edu
-  repo-url: https://github.com/jmgirard/affcomlab
+  page-footer: "Copyright 2025 &copy; Sven Lesche"
+  google-analytics: ""
+  site-url: https://trutheffectdatabase.org
+  repo-url: https://github.com/SLesche/ted-site
 
 format:
   html:
