@@ -7,60 +7,116 @@
     "text": "Home\n    Resources\n  \n\nSomething about R package usw here"
   },
   {
-    "objectID": "publications/proceedings/girard2011.html",
-    "href": "publications/proceedings/girard2011.html",
-    "title": "Criteria and metrics for thresholded AU detection",
-    "section": "",
-    "text": "Jeni, L. A., Girard, J. M., Cohn, J. F., & De la Torre, F. (2013). Continuous AU intensity estimation using localized, sparse facial feature space. Proceedings of the 10th IEEE International Conference on Automated Face & Gesture Recognition (FG), 1–7."
-  },
-  {
-    "objectID": "publications/proceedings/girard2011.html#citation-apa-7",
-    "href": "publications/proceedings/girard2011.html#citation-apa-7",
-    "title": "Criteria and metrics for thresholded AU detection",
-    "section": "",
-    "text": "Jeni, L. A., Girard, J. M., Cohn, J. F., & De la Torre, F. (2013). Continuous AU intensity estimation using localized, sparse facial feature space. Proceedings of the 10th IEEE International Conference on Automated Face & Gesture Recognition (FG), 1–7."
-  },
-  {
-    "objectID": "publications/proceedings/girard2011.html#abstract",
-    "href": "publications/proceedings/girard2011.html#abstract",
-    "title": "Criteria and metrics for thresholded AU detection",
-    "section": "Abstract",
-    "text": "Abstract\nImplementing a computerized facial expression analysis system for automatic coding requires that a threshold for the system’s classifier outputs be selected. However, there are many potential ways to select a threshold. How do different criteria and metrics compare? Manually FACS coded video of 45 clinical interviews (Spectrum dataset) were processed using person-specific active appearance models (AAM). Support vector machine (SVM) classifiers were trained using an independent dataset (RU-FACS). Spectrum sessions were randomly assigned to training (n=32) and testing sets (n=13). Six different threshold selection criteria were compared for automatic AU coding. Three major findings emerged: 1) Thresholds that attempt to balance the confusion matrix (using kappa, \\(F_1\\), or MCC) performed significantly better on all metrics than thresholds that select arbitrary error or accuracy rates (such as TPR, FPR, or EER). 2) AU detection scores for kappa, \\(F_1\\), and MCC were highly intercorrelated; accuracy was uncorrelated with the others. And 3) Kappa, MCC, and \\(F_1\\) were all positively correlated with base rate. They increased with increases in AU base rates. Accuracy, by contrast, showed the opposite pattern. It was strongly negatively correlated with base rate. These findings suggest that better automatic coding can be obtained by using threshold-selection criteria that balance the confusion matrix and benefit from increased AU base rates in the training data."
-  },
-  {
-    "objectID": "publications/proceedings/girard2011.html#author-note",
-    "href": "publications/proceedings/girard2011.html#author-note",
-    "title": "Criteria and metrics for thresholded AU detection",
-    "section": "Author Note",
-    "text": "Author Note\n\nWhen I wrote this paper back in 2011, I was just learning about performance evaluation. This was a first, and rather naive attempt at understanding the connection between agreement, prevalence, and threshold selection. Readers interested in more sophisticated approaches to these issues are encouraged to look up Guangchao Charles Feng, who has done nice work in this area.\nr tufte::quote_footer('--- Jeffrey Girard, 2018-06-14')"
-  },
-  {
-    "objectID": "publications/articles/bena2019attention.html",
-    "href": "publications/articles/bena2019attention.html",
-    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
-    "section": "",
-    "text": "Béna, J., Carreras, O., Terrier, P. (2019). Attention division and the truth effect: A case of moderation by source credibility manipulation. Unpublished."
-  },
-  {
-    "objectID": "publications/articles/bena2019attention.html#citation-apa-7",
-    "href": "publications/articles/bena2019attention.html#citation-apa-7",
-    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
-    "section": "",
-    "text": "Béna, J., Carreras, O., Terrier, P. (2019). Attention division and the truth effect: A case of moderation by source credibility manipulation. Unpublished."
-  },
-  {
-    "objectID": "publications/articles/bena2019attention.html#abstract",
-    "href": "publications/articles/bena2019attention.html#abstract",
-    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
+    "objectID": "publications/articles/template2025.html#abstract",
+    "href": "publications/articles/template2025.html#abstract",
+    "title": "Truth Effect Database (TED)",
     "section": "Abstract",
     "text": "Abstract"
   },
   {
-    "objectID": "posts/acii2024/index.html",
-    "href": "posts/acii2024/index.html",
-    "title": "ACII 2024 Conference",
+    "objectID": "publications/articles/adaryukov2024.html",
+    "href": "publications/articles/adaryukov2024.html",
+    "title": "Worth the weight: An examination of unstructured and structured data in graduate admissions",
     "section": "",
-    "text": "I co-organized a full-day workshop at ACII 2024 on “Embracing Ambiguity and Subjectivity in Emotion Research” (EASE). Please visit the workshop website for more information. I also gave an invited talk, described below.\n\nGirard, J. M. (2024). Theoretical foundations of ambiguity and subjectivity. Invited talk presented at the Embracing Ambiguity and Subjectivity in Emotion Research Workshop, AAAC International Conference on Affective Computing and Intelligent Interaction (ACII), Glasgow, UK.\n\n\nSlides\n\n\n\nRecording"
+    "text": "Adaryukov, J., Biernat, M., Girard, J. M., Villicana, A. J., & Pleskac, T. J. (in press). Worth the weight: An examination of unstructured and structured data in graduate admissions. Decision."
+  },
+  {
+    "objectID": "publications/articles/adaryukov2024.html#citation-apa-7",
+    "href": "publications/articles/adaryukov2024.html#citation-apa-7",
+    "title": "Worth the weight: An examination of unstructured and structured data in graduate admissions",
+    "section": "",
+    "text": "Adaryukov, J., Biernat, M., Girard, J. M., Villicana, A. J., & Pleskac, T. J. (in press). Worth the weight: An examination of unstructured and structured data in graduate admissions. Decision."
+  },
+  {
+    "objectID": "publications/articles/adaryukov2024.html#abstract",
+    "href": "publications/articles/adaryukov2024.html#abstract",
+    "title": "Worth the weight: An examination of unstructured and structured data in graduate admissions",
+    "section": "Abstract",
+    "text": "Abstract\nIn graduate admissions, as in many multiattribute decisions, evaluators must judge candidates from a flood of information, including recommendation letters, personal statements, grades, and standardized test scores. Some of this information is structured, while some is unstructured. Yet most studies of multiattribute decisions focus on decisions made from structured information. This study evaluated how structured and unstructured information is used within graduate admissions decisions. We examined a uniquely comprehensive dataset of N = 2, 231 graduate applications to the University of Kansas, containing full application packages, demographics, and final admissions decisions for each applicant. To make sense of our documents, we applied structural topic modeling (STM), a topic model that allows topic content and prevalence to covary based on other metadata (e.g., department of study). STM allowed us to examine what information the letters and statements contain, and the relationships between variables like gender and race and the textual information. We found that most topics in the unstructured data related to specific fields of study. The STMs did not uncover strong differences among applicants regarding race and gender though the recommendation letters and personal statements for international applicants did show some different topic profiles than domestic applicants. We also found that admissions decision-makers behaved as if they prioritized structured numeric metrics, using unstructured information to check for disqualifications, if at all. However, we found that topics were less reliable than admissions documents, meaning that additional ways of using them cannot be completely ruled out. The implications of our findings on graduate admissions decisions are discussed."
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "Truth Effect Database (TED)",
+    "section": "",
+    "text": "Home\n    People"
+  },
+  {
+    "objectID": "people.html#research-staff",
+    "href": "people.html#research-staff",
+    "title": "Truth Effect Database (TED)",
+    "section": "Research Staff",
+    "text": "Research Staff\n\n\n\n\n\n\n\n\n\n\nSven Lesche\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "Truth Effect Database (TED)",
+    "section": "",
+    "text": "Home\n    News\n  \n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nACII 2024 Conference\n\n\n\n\n\n\n\nannouncement\n\n\nconference\n\n\n\n\nAffective Computing and Intelligent Interaction\n\n\n\n\n\n\nSep 15, 2024\n\n\nJeffrey Girard\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Truth Effect Database",
+    "section": "",
+    "text": "Something something truth effect. Links to get started"
+  },
+  {
+    "objectID": "get-started.html",
+    "href": "get-started.html",
+    "title": "Truth Effect Database (TED)",
+    "section": "",
+    "text": "Something"
+  },
+  {
+    "objectID": "get-started.html#get-the-data",
+    "href": "get-started.html#get-the-data",
+    "title": "Truth Effect Database (TED)",
+    "section": "",
+    "text": "Something"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Truth Effect Database (TED)",
+    "section": "",
+    "text": "Home\n    Contact"
+  },
+  {
+    "objectID": "contact.html#email-us",
+    "href": "contact.html#email-us",
+    "title": "Truth Effect Database (TED)",
+    "section": "Email Us",
+    "text": "Email Us\nSven Lesche (email here)"
+  },
+  {
+    "objectID": "contribute.html",
+    "href": "contribute.html",
+    "title": "Truth Effect Database (TED)",
+    "section": "",
+    "text": "something thank you\nBig button with website (link)[https://slesche.github.io/truth-db/data-submission.html]."
+  },
+  {
+    "objectID": "contribute.html#contribute",
+    "href": "contribute.html#contribute",
+    "title": "Truth Effect Database (TED)",
+    "section": "",
+    "text": "something thank you\nBig button with website (link)[https://slesche.github.io/truth-db/data-submission.html]."
+  },
+  {
+    "objectID": "girard/index.html",
+    "href": "girard/index.html",
+    "title": "Girard Redirect",
+    "section": "",
+    "text": "Please follow this link."
+  },
+  {
+    "objectID": "mvac/index.html",
+    "href": "mvac/index.html",
+    "title": "MVAC Redirect",
+    "section": "",
+    "text": "Please follow this link."
   },
   {
     "objectID": "people/staff/lesche_sven.html",
@@ -98,122 +154,38 @@
     "text": "Education\n\nUniversity of Pittsburgh | Pittsburgh, PA, USA PhD in Psychology (Clinical) | 2013–2018\nUniversity of Pittsburgh | Pittsburgh, PA, USA MS in Psychology (Clinical) | 2010–2013\nUniversity of Washington | Seattle, WA, USA BA in Psychology & Philosophy (Honors) | 2005–2008"
   },
   {
-    "objectID": "mvac/index.html",
-    "href": "mvac/index.html",
-    "title": "MVAC Redirect",
+    "objectID": "posts/acii2024/index.html",
+    "href": "posts/acii2024/index.html",
+    "title": "ACII 2024 Conference",
     "section": "",
-    "text": "Please follow this link."
+    "text": "I co-organized a full-day workshop at ACII 2024 on “Embracing Ambiguity and Subjectivity in Emotion Research” (EASE). Please visit the workshop website for more information. I also gave an invited talk, described below.\n\nGirard, J. M. (2024). Theoretical foundations of ambiguity and subjectivity. Invited talk presented at the Embracing Ambiguity and Subjectivity in Emotion Research Workshop, AAAC International Conference on Affective Computing and Intelligent Interaction (ACII), Glasgow, UK.\n\n\nSlides\n\n\n\nRecording"
   },
   {
-    "objectID": "girard/index.html",
-    "href": "girard/index.html",
-    "title": "Girard Redirect",
+    "objectID": "publications/articles/bena2019attention.html",
+    "href": "publications/articles/bena2019attention.html",
+    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
     "section": "",
-    "text": "Please follow this link."
+    "text": "Béna, J., Carreras, O., Terrier, P. (2019). Attention division and the truth effect: A case of moderation by source credibility manipulation. Unpublished."
   },
   {
-    "objectID": "contribute.html",
-    "href": "contribute.html",
-    "title": "Truth Effect Database (TED)",
+    "objectID": "publications/articles/bena2019attention.html#citation-apa-7",
+    "href": "publications/articles/bena2019attention.html#citation-apa-7",
+    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
     "section": "",
-    "text": "something thank you\nBig button with website (link)[https://slesche.github.io/truth-db/data-submission.html]."
+    "text": "Béna, J., Carreras, O., Terrier, P. (2019). Attention division and the truth effect: A case of moderation by source credibility manipulation. Unpublished."
   },
   {
-    "objectID": "contribute.html#contribute",
-    "href": "contribute.html#contribute",
-    "title": "Truth Effect Database (TED)",
-    "section": "",
-    "text": "something thank you\nBig button with website (link)[https://slesche.github.io/truth-db/data-submission.html]."
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Truth Effect Database (TED)",
-    "section": "",
-    "text": "Home\n    Contact"
-  },
-  {
-    "objectID": "contact.html#email-us",
-    "href": "contact.html#email-us",
-    "title": "Truth Effect Database (TED)",
-    "section": "Email Us",
-    "text": "Email Us\nSven Lesche (email here)"
-  },
-  {
-    "objectID": "get-started.html",
-    "href": "get-started.html",
-    "title": "Truth Effect Database (TED)",
-    "section": "",
-    "text": "Something"
-  },
-  {
-    "objectID": "get-started.html#get-the-data",
-    "href": "get-started.html#get-the-data",
-    "title": "Truth Effect Database (TED)",
-    "section": "",
-    "text": "Something"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Truth Effect Database",
-    "section": "",
-    "text": "Something something truth effect. Links to get started"
-  },
-  {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "Truth Effect Database (TED)",
-    "section": "",
-    "text": "Home\n    News\n  \n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nACII 2024 Conference\n\n\n\n\n\n\n\nannouncement\n\n\nconference\n\n\n\n\nAffective Computing and Intelligent Interaction\n\n\n\n\n\n\nSep 15, 2024\n\n\nJeffrey Girard\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "Truth Effect Database (TED)",
-    "section": "",
-    "text": "Home\n    People"
-  },
-  {
-    "objectID": "people.html#research-staff",
-    "href": "people.html#research-staff",
-    "title": "Truth Effect Database (TED)",
-    "section": "Research Staff",
-    "text": "Research Staff\n\n\n\n\n\n\n\n\n\n\nSven Lesche\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "publications/articles/adaryukov2024.html",
-    "href": "publications/articles/adaryukov2024.html",
-    "title": "Worth the weight: An examination of unstructured and structured data in graduate admissions",
-    "section": "",
-    "text": "Adaryukov, J., Biernat, M., Girard, J. M., Villicana, A. J., & Pleskac, T. J. (in press). Worth the weight: An examination of unstructured and structured data in graduate admissions. Decision."
-  },
-  {
-    "objectID": "publications/articles/adaryukov2024.html#citation-apa-7",
-    "href": "publications/articles/adaryukov2024.html#citation-apa-7",
-    "title": "Worth the weight: An examination of unstructured and structured data in graduate admissions",
-    "section": "",
-    "text": "Adaryukov, J., Biernat, M., Girard, J. M., Villicana, A. J., & Pleskac, T. J. (in press). Worth the weight: An examination of unstructured and structured data in graduate admissions. Decision."
-  },
-  {
-    "objectID": "publications/articles/adaryukov2024.html#abstract",
-    "href": "publications/articles/adaryukov2024.html#abstract",
-    "title": "Worth the weight: An examination of unstructured and structured data in graduate admissions",
+    "objectID": "publications/articles/bena2019attention.html#abstract",
+    "href": "publications/articles/bena2019attention.html#abstract",
+    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
     "section": "Abstract",
-    "text": "Abstract\nIn graduate admissions, as in many multiattribute decisions, evaluators must judge candidates from a flood of information, including recommendation letters, personal statements, grades, and standardized test scores. Some of this information is structured, while some is unstructured. Yet most studies of multiattribute decisions focus on decisions made from structured information. This study evaluated how structured and unstructured information is used within graduate admissions decisions. We examined a uniquely comprehensive dataset of N = 2, 231 graduate applications to the University of Kansas, containing full application packages, demographics, and final admissions decisions for each applicant. To make sense of our documents, we applied structural topic modeling (STM), a topic model that allows topic content and prevalence to covary based on other metadata (e.g., department of study). STM allowed us to examine what information the letters and statements contain, and the relationships between variables like gender and race and the textual information. We found that most topics in the unstructured data related to specific fields of study. The STMs did not uncover strong differences among applicants regarding race and gender though the recommendation letters and personal statements for international applicants did show some different topic profiles than domestic applicants. We also found that admissions decision-makers behaved as if they prioritized structured numeric metrics, using unstructured information to check for disqualifications, if at all. However, we found that topics were less reliable than admissions documents, meaning that additional ways of using them cannot be completely ruled out. The implications of our findings on graduate admissions decisions are discussed."
-  },
-  {
-    "objectID": "publications/articles/template2025.html#abstract",
-    "href": "publications/articles/template2025.html#abstract",
-    "title": "Truth Effect Database (TED)",
-    "section": "Abstract",
-    "text": "Abstract"
+    "text": "Abstract\nSome Abstract"
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "Home\n    Publications\n  \n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n         \n          Publication\n        \n         \n          Year\n        \n     \n  \n    \n      \n      \n    \n\n\n  \n    Worth the weight: An examination of unstructured and structured data in graduate admissions\n    Adaryukov, Biernat, et al.\n    Decision\n    (2024)\n    \n      Details\n    \n    \n      DOI\n    \n    \n       Materials\n    \n  \n  \n    Attention division and the truth effect: A case of moderation by source credibility manipulation.\n    Bena et al.\n    \n    (2019)\n    \n      Details\n    \n    \n       Materials\n    \n  \n  \n    Criteria and metrics for thresholded AU detection\n    Girard & Cohn\n    ICCV\n    (2011)\n    \n      Details\n    \n    \n      DOI\n    \n  \n  \n    Citation (APA 7)\n    \n    \n    ()\n    \n      Details\n    \n  \n\n\nNo matching items"
+    "text": "Home\n    Publications\n  \n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n         \n          Publication\n        \n         \n          Year\n        \n     \n  \n    \n      \n      \n    \n\n\n  \n    Worth the weight: An examination of unstructured and structured data in graduate admissions\n    Adaryukov, Biernat, et al.\n    Decision\n    (2024)\n    \n      Details\n    \n    \n      DOI\n    \n    \n       Materials\n    \n  \n  \n    Attention division and the truth effect: A case of moderation by source credibility manipulation.\n    Bena et al.\n    \n    (2019)\n    \n      Details\n    \n    \n       Materials\n    \n  \n  \n    Citation (APA 7)\n    \n    \n    ()\n    \n      Details\n    \n  \n\n\nNo matching items"
   }
 ]

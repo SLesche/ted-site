@@ -1,14 +1,14 @@
 [
   {
-    "listing": "/news.html",
-    "items": [
-      "/posts/acii2024/index.html"
-    ]
-  },
-  {
     "listing": "/people.html",
     "items": [
       "/people/staff/lesche_sven.html"
+    ]
+  },
+  {
+    "listing": "/news.html",
+    "items": [
+      "/posts/acii2024/index.html"
     ]
   },
   {
@@ -16,7 +16,6 @@
     "items": [
       "/publications/articles/adaryukov2024.html",
       "/publications/articles/bena2019attention.html",
-      "/publications/proceedings/girard2011.html",
       "/publications/articles/template2025.html"
     ]
   }
