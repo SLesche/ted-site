@@ -16,8 +16,8 @@ website:
         text: Get Started
       # - href: news.qmd
       #   text: News
-      - href: people.qmd
-        text: People
+      # - href: people.qmd
+      #   text: People
       - href: publications.qmd
         text: Publications
       # - href: resources.qmd

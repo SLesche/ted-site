@@ -1,0 +1,21 @@
+---
+title: "Attention division and the truth effect: A case of moderation by source credibility manipulation."
+type: "article"
+author: "Bena et al."
+year: "2019"
+publication: ""
+doi: ""
+materials: "https://osf.io/vwth7/"
+toc: false
+categories:
+  - article
+  - unpublished
+---
+
+## Citation (APA 7)
+
+> Béna, J., Carreras, O., Terrier, P. (2019). Attention division and the truth effect: A case of moderation by source credibility manipulation. Unpublished.
+
+## Abstract
+
+

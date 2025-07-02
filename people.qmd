@@ -59,23 +59,4 @@ listing:
 ## Research Staff
 
 :::{#research-staff}
-
-Sven Lesche
-
-Annika Stump
-:::
-
-## Graduate Students
-
-:::{#graduate-students}
-:::
-
-## Research Assistants
-
-:::{#research-assistants}
-:::
-
-## Alumni
-
-:::{#alumni}
 :::
