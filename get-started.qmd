@@ -1,40 +1,113 @@
 ---
 pagetitle: "Get Started | TED"
-toc: false
+toc: true
 ---
 
-## Using TED for your own research
+## Using TED for Your Own Research
 
-### General
+The **Truth Effect Database (TED)** is an open resource built for researchers investigating the illusory truth effect.  
+We place no restrictions on usage — feel free to explore, analyze, and publish with it.
 
-Something about big collaboration, make sure to cite all studies that you used in your final analysis
+Please remember:  
+🔔 **All studies used in your final dataset must be cited individually.**
 
-Feel free to explore the data on your own
+A full overview of the available variables is available here:
 
-We make no restrictions on the use of the data
+::: {=html}
+<div class="text-center my-3">
+  <a href="#" class="btn btn-sm btn-outline-info">
+    <i class="bi bi-table"></i> Variable Overview
+  </a>
+</div>
+:::
 
-An overview of the variables can be found here (LINK)
+Have questions? [Get in touch with us](contact.qmd) — we're happy to help.
 
-Questions? Ask us?
+---
 
-### Extracting Data
+## How to Extract Data
 
-You have two ways of interacting with the database. In both cases, you need to download it from its parent repository
+TED is distributed as a single SQLite file. You can use any standard SQL tool or our custom R package for more user-friendly querying.
 
-Link to repo here
+### <i class="bi bi-download"></i> Download the Database
 
-This is an sqlite file, you can interact with it freely on your computer using either your own SQL, or using our custom R package `acdcquery` 
+The latest version of the database is available on GitHub:
 
-#### R package
+::: {=html}
+<div class="text-center my-3">
+  <a href="https://github.com/SLesche/truth-db" class="btn btn-sm btn-outline-info">
+    <i class="bi bi-github"></i> TED Database Repository
+  </a>
+</div>
+:::
 
-acdcquery
+---
 
-Download from CRAN
+### <i class="bi bi-terminal"></i> Option 1: Use SQL Directly
 
-Connect to the database
+Open and explore the `.sqlite` file using:
 
-Specify filter arguments
+- [DB Browser for SQLite](https://sqlitebrowser.org/)
+- Python (`sqlite3`, `pandas`)
+- R (`DBI`, `RSQLite`)
+- Any SQL client or CLI tool
 
-Query the database
+---
 
-More info can be found on the packages repository (LINK)
+### <i class="bi bi-r-circle"></i> Option 2: Use Our R Package `acdcquery`
+
+Use our R package [`acdcquery`](https://github.com/SLesche/acdc-query) to simplify filtering and querying.
+
+#### 🔧 Installation
+
+```r
+install.packages("acdcquery")  # from CRAN
+```
+
+#### 📂 Connect to the Database
+
+```r
+library(acdcquery)
+
+# Replace with your local path
+conn <- connect_to_db("path/to/ted.db")
+```
+
+#### 🔍 Filter and Query
+
+```r
+# Query all entries with a publication ID greater than 0
+library(dplyr)
+
+args <- list() %>% 
+  add_argument(conn, "publication_id", "greater", "0")
+
+full_data <- query_db(
+  conn,
+  args,
+  c("default", "study_id", "publication_id"),
+  "observation_table"
+)
+```
+
+More documentation and examples:
+
+::: {=html}
+
+<div class="text-center my-3">
+  <a href="https://github.com/SLesche/acdc-query" class="btn btn-sm btn-outline-info">
+    <i class="bi bi-github"></i> acdcquery GitHub Repository
+  </a>
+</div>
+:::
+
+---
+
+## Summary
+
+* ✅ Use TED data freely — no permission required
+* ✅ Query using SQL or the `acdcquery` R package
+* ✅ Always cite all studies used
+* ✅ [Contact us](contact.qmd) with questions or feedback
+
+We’re excited to see what you discover!

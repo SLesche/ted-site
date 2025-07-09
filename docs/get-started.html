@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -67,12 +102,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -116,7 +152,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#using-ted-for-your-own-research" id="toc-using-ted-for-your-own-research" class="nav-link active" data-scroll-target="#using-ted-for-your-own-research">Using TED for Your Own Research</a></li>
+  <li><a href="#how-to-extract-data" id="toc-how-to-extract-data" class="nav-link" data-scroll-target="#how-to-extract-data">How to Extract Data</a>
+  <ul class="collapse">
+  <li><a href="#download-the-database" id="toc-download-the-database" class="nav-link" data-scroll-target="#download-the-database"><i class="bi bi-download"></i> Download the Database</a></li>
+  <li><a href="#option-1-use-sql-directly" id="toc-option-1-use-sql-directly" class="nav-link" data-scroll-target="#option-1-use-sql-directly"><i class="bi bi-terminal"></i> Option 1: Use SQL Directly</a></li>
+  <li><a href="#option-2-use-our-r-package-acdcquery" id="toc-option-2-use-our-r-package-acdcquery" class="nav-link" data-scroll-target="#option-2-use-our-r-package-acdcquery"><i class="bi bi-r-circle"></i> Option 2: Use Our R Package <code>acdcquery</code></a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
@@ -124,32 +175,93 @@ ul.task-list li input[type="checkbox"] {
 
 
 <section id="using-ted-for-your-own-research" class="level2">
-<h2 class="anchored" data-anchor-id="using-ted-for-your-own-research">Using TED for your own research</h2>
-<section id="general" class="level3">
-<h3 class="anchored" data-anchor-id="general">General</h3>
-<p>Something about big collaboration, make sure to cite all studies that you used in your final analysis</p>
-<p>Feel free to explore the data on your own</p>
-<p>We make no restrictions on the use of the data</p>
-<p>An overview of the variables can be found here (LINK)</p>
-<p>Questions? Ask us?</p>
+<h2 class="anchored" data-anchor-id="using-ted-for-your-own-research">Using TED for Your Own Research</h2>
+<p>The <strong>Truth Effect Database (TED)</strong> is an open resource built for researchers investigating the illusory truth effect.<br>
+We place no restrictions on usage — feel free to explore, analyze, and publish with it.</p>
+<p>Please remember:<br>
+🔔 <strong>All studies used in your final dataset must be cited individually.</strong></p>
+<p>A full overview of the available variables is available here:</p>
+<div class="{=html}">
+<div class="text-center my-3">
+<p><a href="#" class="btn btn-sm btn-outline-info"> <i class="bi bi-table"></i> Variable Overview </a></p>
+</div>
+</div>
+<p>Have questions? <a href="./contact.html">Get in touch with us</a> — we’re happy to help.</p>
+<hr>
 </section>
-<section id="extracting-data" class="level3">
-<h3 class="anchored" data-anchor-id="extracting-data">Extracting Data</h3>
-<p>You have two ways of interacting with the database. In both cases, you need to download it from its parent repository</p>
-<p>Link to repo here</p>
-<p>This is an sqlite file, you can interact with it freely on your computer using either your own SQL, or using our custom R package <code>acdcquery</code></p>
-<section id="r-package" class="level4">
-<h4 class="anchored" data-anchor-id="r-package">R package</h4>
-<p>acdcquery</p>
-<p>Download from CRAN</p>
-<p>Connect to the database</p>
-<p>Specify filter arguments</p>
-<p>Query the database</p>
-<p>More info can be found on the packages repository (LINK)</p>
+<section id="how-to-extract-data" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-extract-data">How to Extract Data</h2>
+<p>TED is distributed as a single SQLite file. You can use any standard SQL tool or our custom R package for more user-friendly querying.</p>
+<section id="download-the-database" class="level3">
+<h3 class="anchored" data-anchor-id="download-the-database"><i class="bi bi-download"></i> Download the Database</h3>
+<p>The latest version of the database is available on GitHub:</p>
+<div class="{=html}">
+<div class="text-center my-3">
+<p><a href="https://github.com/SLesche/truth-db" class="btn btn-sm btn-outline-info"> <i class="bi bi-github"></i> TED Database Repository </a></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="option-1-use-sql-directly" class="level3">
+<h3 class="anchored" data-anchor-id="option-1-use-sql-directly"><i class="bi bi-terminal"></i> Option 1: Use SQL Directly</h3>
+<p>Open and explore the <code>.sqlite</code> file using:</p>
+<ul>
+<li><a href="https://sqlitebrowser.org/">DB Browser for SQLite</a></li>
+<li>Python (<code>sqlite3</code>, <code>pandas</code>)</li>
+<li>R (<code>DBI</code>, <code>RSQLite</code>)</li>
+<li>Any SQL client or CLI tool</li>
+</ul>
+<hr>
+</section>
+<section id="option-2-use-our-r-package-acdcquery" class="level3">
+<h3 class="anchored" data-anchor-id="option-2-use-our-r-package-acdcquery"><i class="bi bi-r-circle"></i> Option 2: Use Our R Package <code>acdcquery</code></h3>
+<p>Use our R package <a href="https://github.com/SLesche/acdc-query"><code>acdcquery</code></a> to simplify filtering and querying.</p>
+<section id="installation" class="level4">
+<h4 class="anchored" data-anchor-id="installation">🔧 Installation</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"acdcquery"</span>)  <span class="co"># from CRAN</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="connect-to-the-database" class="level4">
+<h4 class="anchored" data-anchor-id="connect-to-the-database">📂 Connect to the Database</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(acdcquery)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace with your local path</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>conn <span class="ot">&lt;-</span> <span class="fu">connect_to_db</span>(<span class="st">"path/to/ted.db"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="filter-and-query" class="level4">
+<h4 class="anchored" data-anchor-id="filter-and-query">🔍 Filter and Query</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Query all entries with a publication ID greater than 0</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>args <span class="ot">&lt;-</span> <span class="fu">list</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_argument</span>(conn, <span class="st">"publication_id"</span>, <span class="st">"greater"</span>, <span class="st">"0"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>full_data <span class="ot">&lt;-</span> <span class="fu">query_db</span>(</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  conn,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  args,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"default"</span>, <span class="st">"study_id"</span>, <span class="st">"publication_id"</span>),</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"observation_table"</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>More documentation and examples:</p>
+<div class="{=html}">
+<div class="text-center my-3">
+<p><a href="https://github.com/SLesche/acdc-query" class="btn btn-sm btn-outline-info"> <i class="bi bi-github"></i> acdcquery GitHub Repository </a></p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li>✅ Use TED data freely — no permission required</li>
+<li>✅ Query using SQL or the <code>acdcquery</code> R package</li>
+<li>✅ Always cite all studies used</li>
+<li>✅ <a href="./contact.html">Contact us</a> with questions or feedback</li>
+</ul>
+<p>We’re excited to see what you discover!</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

@@ -29,6 +29,8 @@ We greatly appreciate your support and commitment to transparent, cumulative, an
 
 ---
 
-### Ready to share your data?
-
-[Submit Your Data](https://slesche.github.io/truth-db/data-submission.html){.btn .btn-lg .btn-primary}
+<div class="text-center">
+  <a href="https://slesche.github.io/truth-db/data-submission.html" class="btn btn-lg btn-primary">
+    <i class="bi bi-upload"></i>  Submit Your Data
+  </a>
+</div>
