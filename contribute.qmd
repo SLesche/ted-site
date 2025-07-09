@@ -1,14 +1,34 @@
 ---
-pagetitle: "Contribute| TED"
+pagetitle: "Contribute | TED"
 toc: false
 ---
-
 ## Contribute
 
-something thank you
+Your research has the power to drive discovery, shape understanding, and support a global community of scientists. By contributing your data to TED, you’re not only supporting open science—you’re actively advancing research on the truth effect.
 
-Big button with website (link)[https://slesche.github.io/truth-db/data-submission.html].
+TED enables researchers to build on existing findings, design better studies, and deepen our understanding of how repetition influences belief.
 
-### R package
+### Why Contribute?
 
-### Download
+- **Advance truth effect research**: Your data helps refine theoretical models and supports more accurate, cumulative insights into the mechanisms behind belief formation.  
+- **Enable custom power analyses**: Contributed data allow researchers to estimate realistic effect sizes and design studies with appropriate statistical power.  
+- **Support data reuse**: Your study becomes part of a living database that others can build upon—facilitating meta-analyses, replications, and novel investigations.  
+- **Boost your research visibility**: Increase the impact of your work across disciplines and gain more recognition within the field.  
+- **Earn more citations**: Every project using the TED database is required to cite each individual study included.
+
+We greatly appreciate your support and commitment to transparent, cumulative, and FAIR science.
+
+---
+
+### How it works
+
+1. Click the button below to access the data submission form.  
+2. Complete the form with your study’s relevant information.  
+3. Once filled out, please send the completed file to us via email.  
+4. After review and approval, your data will be added to the TED database.
+
+---
+
+### Ready to share your data?
+
+[Submit Your Data](https://slesche.github.io/truth-db/data-submission.html){.btn .btn-lg .btn-primary}

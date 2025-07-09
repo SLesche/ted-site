@@ -46,63 +46,63 @@
     "href": "people.html#research-staff",
     "title": "Truth Effect Database (TED)",
     "section": "Research Staff",
-    "text": "Research Staff\n\n\n\n\n\n\n\n\n\n\nSven Lesche\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Research Staff\n\n\n\n\n\n\n\n\n\n\nSven Lesche\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "news.html",
     "href": "news.html",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "Home\n    News\n  \n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nACII 2024 Conference\n\n\n\n\n\n\n\nannouncement\n\n\nconference\n\n\n\n\nAffective Computing and Intelligent Interaction\n\n\n\n\n\n\nSep 15, 2024\n\n\nJeffrey Girard\n\n\n\n\n\n\nNo matching items"
+    "text": "Home\n    News\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nACII 2024 Conference\n\n\n\nannouncement\n\nconference\n\n\n\nAffective Computing and Intelligent Interaction\n\n\n\n\n\nSep 15, 2024\n\n\nJeffrey Girard\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Truth Effect Database",
     "section": "",
-    "text": "Something something truth effect. Links to get started"
+    "text": "Welcome to the Website for the Truth Effect Database (TED), a large, open-source database of over 20 studies on the illusory truth effect consisting of over 500.000 trials from 10.000 participants.\nOur missing is to make truth-effect data FAIR - Findable, Accessible, Interoperable, and Reusable. This database is focussed on consistent variable naming, efficient submission, and simple extraction.\nLooking to explore our dataset? -&gt; explore\nWant to contribute your own data? -&gt; Contribute\nWant to use the database for your own research -&gt; Get Started"
   },
   {
     "objectID": "get-started.html",
     "href": "get-started.html",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "Something"
+    "text": "Something about big collaboration, make sure to cite all studies that you used in your final analysis\nFeel free to explore the data on your own\nWe make no restrictions on the use of the data\nAn overview of the variables can be found here (LINK)\nQuestions? Ask us?\n\n\n\nYou have two ways of interacting with the database. In both cases, you need to download it from its parent repository\nLink to repo here\nThis is an sqlite file, you can interact with it freely on your computer using either your own SQL, or using our custom R package acdcquery\n\n\nacdcquery\nDownload from CRAN\nConnect to the database\nSpecify filter arguments\nQuery the database\nMore info can be found on the packages repository (LINK)"
   },
   {
-    "objectID": "get-started.html#get-the-data",
-    "href": "get-started.html#get-the-data",
+    "objectID": "get-started.html#using-ted-for-your-own-research",
+    "href": "get-started.html#using-ted-for-your-own-research",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "Something"
+    "text": "Something about big collaboration, make sure to cite all studies that you used in your final analysis\nFeel free to explore the data on your own\nWe make no restrictions on the use of the data\nAn overview of the variables can be found here (LINK)\nQuestions? Ask us?\n\n\n\nYou have two ways of interacting with the database. In both cases, you need to download it from its parent repository\nLink to repo here\nThis is an sqlite file, you can interact with it freely on your computer using either your own SQL, or using our custom R package acdcquery\n\n\nacdcquery\nDownload from CRAN\nConnect to the database\nSpecify filter arguments\nQuery the database\nMore info can be found on the packages repository (LINK)"
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "Home\n    Contact"
+    "text": "If you have any additional questions regarding data submission, extraction, or usage, do not hesitate to ask!\nYou can reach us via Email:\n\nSven Lesche (sven.lesche at psychologie dot uni-heidelberg dot de)\nAnnika Stump (annika.stump at psychologie dot uni-freiburg dot de)"
   },
   {
-    "objectID": "contact.html#email-us",
-    "href": "contact.html#email-us",
+    "objectID": "contact.html#questions",
+    "href": "contact.html#questions",
     "title": "Truth Effect Database (TED)",
-    "section": "Email Us",
-    "text": "Email Us\nSven Lesche (email here)"
+    "section": "",
+    "text": "If you have any additional questions regarding data submission, extraction, or usage, do not hesitate to ask!\nYou can reach us via Email:\n\nSven Lesche (sven.lesche at psychologie dot uni-heidelberg dot de)\nAnnika Stump (annika.stump at psychologie dot uni-freiburg dot de)"
   },
   {
     "objectID": "contribute.html",
     "href": "contribute.html",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "something thank you\nBig button with website (link)[https://slesche.github.io/truth-db/data-submission.html]."
+    "text": "Your research has the power to drive discovery, shape understanding, and support a global community of scientists. By contributing your data to TED, you’re not only supporting open science—you’re actively advancing research on the truth effect.\nTED enables researchers to build on existing findings, design better studies, and deepen our understanding of how repetition influences belief.\n\n\n\nAdvance truth effect research: Your data helps refine theoretical models and supports more accurate, cumulative insights into the mechanisms behind belief formation.\n\nEnable custom power analyses: Contributed data allow researchers to estimate realistic effect sizes and design studies with appropriate statistical power.\n\nSupport data reuse: Your study becomes part of a living database that others can build upon—facilitating meta-analyses, replications, and novel investigations.\n\nBoost your research visibility: Increase the impact of your work across disciplines and gain more recognition within the field.\n\nEarn more citations: Every project using the TED database is required to cite each individual study included.\n\nWe greatly appreciate your support and commitment to transparent, cumulative, and FAIR science.\n\n\n\n\n\nClick the button below to access the data submission form.\n\nComplete the form with your study’s relevant information.\n\nOnce filled out, please send the completed file to us via email.\n\nAfter review and approval, your data will be added to the TED database.\n\n\n\n\n\nSubmit Your Data"
   },
   {
     "objectID": "contribute.html#contribute",
     "href": "contribute.html#contribute",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "something thank you\nBig button with website (link)[https://slesche.github.io/truth-db/data-submission.html]."
+    "text": "Your research has the power to drive discovery, shape understanding, and support a global community of scientists. By contributing your data to TED, you’re not only supporting open science—you’re actively advancing research on the truth effect.\nTED enables researchers to build on existing findings, design better studies, and deepen our understanding of how repetition influences belief.\n\n\n\nAdvance truth effect research: Your data helps refine theoretical models and supports more accurate, cumulative insights into the mechanisms behind belief formation.\n\nEnable custom power analyses: Contributed data allow researchers to estimate realistic effect sizes and design studies with appropriate statistical power.\n\nSupport data reuse: Your study becomes part of a living database that others can build upon—facilitating meta-analyses, replications, and novel investigations.\n\nBoost your research visibility: Increase the impact of your work across disciplines and gain more recognition within the field.\n\nEarn more citations: Every project using the TED database is required to cite each individual study included.\n\nWe greatly appreciate your support and commitment to transparent, cumulative, and FAIR science.\n\n\n\n\n\nClick the button below to access the data submission form.\n\nComplete the form with your study’s relevant information.\n\nOnce filled out, please send the completed file to us via email.\n\nAfter review and approval, your data will be added to the TED database.\n\n\n\n\n\nSubmit Your Data"
   },
   {
     "objectID": "girard/index.html",
@@ -130,28 +130,28 @@
     "href": "people/staff/lesche_sven.html#biography",
     "title": "Sven Lesche",
     "section": "Biography",
-    "text": "Biography\nDr. Jeffrey Girard studies how emotions are expressed through verbal and nonverbal behavior, as well as how interpersonal communication is influenced by individual differences (e.g., personality and mental health) and social factors (e.g., culture and context). This work is deeply interdisciplinary and draws insights and tools from various areas of social science, computer science, statistics, and medicine.\nHe completed his doctoral training under the mentorship of Dr. Jeffrey Cohn (nonverbal behavior, machine learning, depression) and Dr. Aidan Wright (interpersonal functioning, statistics, personality). He then completed his predoctoral clinical internship at the University of Mississippi Medical Center (inpatient psychiatry, trauma treatment, neuropsychology) and a two-year postdoctoral research fellowship at Carnegie Mellon University under the mentorship of Dr. Louis-Philippe Morency (verbal behavior, machine learning, computer science).\nHe is now an Assistant Professor in the department of Psychology at the University of Kansas, where he directs the Affective Communication and Computing lab and the Brain, Behavior, and Quantitative Science (BBQ) program. He teaches undergraduate and graduate courses on psychological assessment, data science, and statistics within the department and is a co-founder of SMaRT Workshops, which offers numerous methodological training workshops to faculty and students. He is also the developer and maintainer of numerous open-source research software packages (see Resources)."
+    "text": "Biography"
   },
   {
     "objectID": "people/staff/lesche_sven.html#experience",
     "href": "people/staff/lesche_sven.html#experience",
     "title": "Sven Lesche",
     "section": "Experience",
-    "text": "Experience\n\nUniversity of Kansas | Lawrence, KS, USA Assistant Professor of Psychology | 2020–Current Wright Faculty Scholar | 2020–2025 Director of the BBQ Doctoral Program | 2022–Current  Co-Director of the Kansas Data Science Consortium | 2023-Current\nCarnegie Mellon University | Pittsburgh, PA, USA Postdoctoral Researcher, School of Computer Science | 2018–2020\nUniversity of Mississippi Medical Center | Jackson, MS, USA Clinical Intern, Department of Psychiatry | 2017–2018"
+    "text": "Experience"
   },
   {
     "objectID": "people/staff/lesche_sven.html#journal-editing",
     "href": "people/staff/lesche_sven.html#journal-editing",
     "title": "Sven Lesche",
     "section": "Journal Editing",
-    "text": "Journal Editing\n\nNPP Digital Psychiatry and Neuroscience  Consulting Editor | 2023–Current\nJournal of Psychopathology and Clinical Science  Consulting Editor | 2023–Current\nIEEE Transactions on Affective Computing  Associate Editor | 2022–Current\nCollabra Psychology  Associate Editor | 2021–Current\nClinical Psychological Science  Consulting Editor | 2021–Current\nPsychological Assessment  Consulting Editor | 2020–2022"
+    "text": "Journal Editing"
   },
   {
     "objectID": "people/staff/lesche_sven.html#education",
     "href": "people/staff/lesche_sven.html#education",
     "title": "Sven Lesche",
     "section": "Education",
-    "text": "Education\n\nUniversity of Pittsburgh | Pittsburgh, PA, USA PhD in Psychology (Clinical) | 2013–2018\nUniversity of Pittsburgh | Pittsburgh, PA, USA MS in Psychology (Clinical) | 2010–2013\nUniversity of Washington | Seattle, WA, USA BA in Psychology & Philosophy (Honors) | 2005–2008"
+    "text": "Education"
   },
   {
     "objectID": "posts/acii2024/index.html",
@@ -186,6 +186,6 @@
     "href": "publications.html",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "Home\n    Publications\n  \n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n         \n          Publication\n        \n         \n          Year\n        \n     \n  \n    \n      \n      \n    \n\n\n  \n    Worth the weight: An examination of unstructured and structured data in graduate admissions\n    Adaryukov, Biernat, et al.\n    Decision\n    (2024)\n    \n      Details\n    \n    \n      DOI\n    \n    \n       Materials\n    \n  \n  \n    Attention division and the truth effect: A case of moderation by source credibility manipulation.\n    Bena et al.\n    \n    (2019)\n    \n      Details\n    \n    \n       Materials\n    \n  \n  \n    Citation (APA 7)\n    \n    \n    ()\n    \n      Details\n    \n  \n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Worth the weight: An examination of unstructured and structured data in graduate admissions\n    Adaryukov, Biernat, et al.\n    Decision\n    (2024)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Attention division and the truth effect: A case of moderation by source credibility manipulation.\n    Bena et al.\n    \n    (2019)\n    \n      Details\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Citation (APA 7)\n    \n    \n    ()\n    \n      Details\n    \n    \n    \n    \n  \n\n\n\nNo matching items"
   }
 ]

@@ -3,10 +3,38 @@ pagetitle: "Get Started | TED"
 toc: false
 ---
 
-## Get the Data
+## Using TED for your own research
 
-Something
+### General
 
-### R package
+Something about big collaboration, make sure to cite all studies that you used in your final analysis
 
-### Download
+Feel free to explore the data on your own
+
+We make no restrictions on the use of the data
+
+An overview of the variables can be found here (LINK)
+
+Questions? Ask us?
+
+### Extracting Data
+
+You have two ways of interacting with the database. In both cases, you need to download it from its parent repository
+
+Link to repo here
+
+This is an sqlite file, you can interact with it freely on your computer using either your own SQL, or using our custom R package `acdcquery` 
+
+#### R package
+
+acdcquery
+
+Download from CRAN
+
+Connect to the database
+
+Specify filter arguments
+
+Query the database
+
+More info can be found on the packages repository (LINK)

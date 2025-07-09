@@ -6,7 +6,15 @@ toc: false
 ---
 
 ::: {.lead}
-  Something something truth effect. Links to get started
+  Welcome to the Website for the Truth Effect Database (TED), a large, open-source database of over 20 studies on the illusory truth effect consisting of over 500.000 trials from 10.000 participants.
+
+  Our missing is to make truth-effect data FAIR - Findable, Accessible, Interoperable, and Reusable. This database is focussed on consistent variable naming, efficient submission, and simple extraction.
+
+  Looking to explore our dataset? -> [explore](explore.qmd)
+
+  Want to contribute your own data? -> [Contribute](contribute.qmd)
+
+  Want to use the database for your own research ->  [Get Started](get-started.qmd)
 :::
 
 ![](./img/showcase.svg){.hero}

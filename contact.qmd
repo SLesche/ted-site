@@ -4,15 +4,11 @@ toc: false
 email-obfuscation: javascript
 ---
 
-```{=html}
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Contact</li>
-  </ol>
-</nav>
-```
+## Questions?
 
-## Email Us
+If you have any additional questions regarding data submission, extraction, or usage, do not hesitate to ask!
 
-Sven Lesche (email here)
+You can reach us via Email:
+
+- [Sven Lesche](mailto:sven.lesche@psychologie.uni-heidelberg.de)
+- [Annika Stump](mailto:annika.stump@psychologie.uni-freiburg.de)
