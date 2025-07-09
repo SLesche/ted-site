@@ -45,12 +45,10 @@ The database features consistent variable naming, streamlined data submission, a
 
 ### Want to work with TED?
 
-<div class="d-flex flex-wrap gap-3 my-4">
-  [<i class="bi bi-bar-chart-line"></i> Explore the Dataset](explore.qmd){.btn .btn-lg .btn-outline-primary}
+<div class="d-flex flex-wrap gap-3 my-4 justify-content-center">
+  [<i class="bi bi-gear"></i> Get Started](get-started.qmd){.btn .btn-lg .btn-outline-primary}
 
-  [<i class="bi bi-upload"></i> Contribute Data](contribute.qmd){.btn .btn-lg .btn-outline-success}
+  [<i class="bi bi-bar-chart-line"></i> Explore](explore.qmd){.btn .btn-lg .btn-outline-info}
 
-  [<i class="bi bi-gear"></i> Get Started](get-started.qmd){.btn .btn-lg .btn-outline-dark}
+  [<i class="bi bi-upload"></i> Contribute](contribute.qmd){.btn .btn-lg .btn-outline-success}
 </div>
-
-![](./img/showcase.svg){.hero}
