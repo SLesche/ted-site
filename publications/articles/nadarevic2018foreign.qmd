@@ -1,0 +1,20 @@
+---
+title: "Foreign language reduces the longevity of the repetition-based truth effect."
+type: "article"
+author: "Nadarevic et al."
+year: "2018"
+publication: "Acta psychologica"
+doi: "https://doi.org/10.1016/j.actpsy.2018.08.019"
+materials: "https://osf.io/cyrpx/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Nadarevic, L., Plier, S., Thielmann, I., & Darancó, S. (2018). Foreign language reduces the longevity of the repetition-based truth effect. Acta psychologica, 191, 149-159.
+
+## Abstract
+
+Recent evidence suggests that judgment biases may diminish when a problem is presented in a foreign language. This foreign-language effect has primarily been examined with emotional materials such as risky-choice problems and moral dilemmas. In two experiments, we investigated the effect of foreign-language processing on an emotionally neutral judgment bias: the repetition-based truth effect, the phenomenon that statement repetition enhances the perceived truth of statements. In Experiment 1, we found no evidence for the truth effect to be moderated by the language in which the statements were processed (native language: Hungarian; foreign language: English). In Experiment 2, in turn, we not only manipulated language (native language: German; foreign language: English), but also the retention interval between statement repetitions. Replicating the findings of Experiment 1, language did not moderate the truth effect for statements that were repeated within the same experimental session. However, after a two-week interval, the truth effect was significantly smaller in the foreign-language condition than in the native-language condition. Overall, our findings suggest a faster decay of semantic memory for foreign-language as compared to native-language statements.

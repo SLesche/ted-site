@@ -1,0 +1,18 @@
+---
+title: "An investigation of the truth effect and different personality traits."
+type: "article"
+author: "Nadarevic et al."
+year: "2012"
+publication: ""
+doi: ""
+materials: "https://osf.io/6wv4z/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Nadarevic L., Meckler D., & Schmidt, A. (2012). An investigation of the truth effect and different personality traits. Unpublished raw data. doi: 10.17605/OSF.IO/6WV4Z
+
+

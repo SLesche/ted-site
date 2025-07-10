@@ -1,0 +1,21 @@
+---
+title: "Truth-by-repetition across languages."
+type: "article"
+author: "De keersmaecker et al."
+year: "2024"
+publication: "Journal of Applied Research in Memory and Cognition."
+doi: "https://dx.doi.org/10.1037/mac0000175"
+materials: ""
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> De keersmaecker, J., Unkelbach, C., & Roets, A. (2024). Truth-by-repetition across languages.. Journal of Applied Research in Memory and Cognition. Advance online publication. https://dx.doi.org/10.1037/ mac0000175
+
+## Abstract
+
+People are more likely to believe information to be true if they have encountered it before. Research on this truth-by-repetition effect (TBRE) typically only considered one’s native language. In five experiments (N = 1,344), we examined the TBRE in multilingual contexts (Belgium, Spain, United States, Mexico). We found that the TBRE emerges in the nonnative language and is as strong as the TBRE in the native language. Furthermore, we found a “cross-language” TBRE: repetition increases the subjective truth even if the language changes between repetitions, and this cross-language effect is as strong as the effect within the same language, be it in a nonnative or the native language. Theoretically, these results support TBRE accounts based on a conceptual mechanism. Practically, the results highlight the pervasive potential of the TBRE in a globalized world where many people consume information in different languages.
+

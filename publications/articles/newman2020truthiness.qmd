@@ -1,0 +1,20 @@
+---
+title: "Truthiness, the illusory truth effect, and the role of need for cognition."
+type: "article"
+author: "Newman et al."
+year: "2020"
+publication: "Consciousness and Cognition"
+doi: "https://doi.org/10.1016/j.concog.2019.102866"
+materials: "https://doi.org/10.1016/j.concog.2019.102866"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Newman, E. J., Jalbert, M. C., Schwarz, N., & Ly, D. P. (2020). Truthiness, the illusory truth effect, and the role of need for cognition. Consciousness and Cognition, 78, 102866.
+
+## Abstract
+
+Ease of processing—cognitive fluency—is a central input in assessments of truth, but little is known about individual differences in susceptibility to fluency-based biases in truth assessment. Focusing on two paradigms—truthiness and the illusory truth effect—we consider the role of Need for Cognition (NFC), an individual difference variable capturing one’s preference for elaborative thought. Across five experiments, we replicated basic truthiness and illusory truth effects. We found very little evidence that NFC moderates truthiness. However, we found some evidence that (without an experimental warning), people high on NFC may be more susceptible to the illusory truth effect. This may reflect that elaborative thought increases the fluency with which encoded statements are processed after a delay (thus increasing the illusory truth effect). Future research may fruitfully test whether the influence of NFC and other individual difference measures depends on whether people are making immediate or delayed truth judgments.

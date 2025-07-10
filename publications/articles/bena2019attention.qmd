@@ -15,7 +15,3 @@ categories:
 ## Citation (APA 7)
 
 > Béna, J., Carreras, O., Terrier, P. (2019). Attention division and the truth effect: A case of moderation by source credibility manipulation. Unpublished.
-
-## Abstract
-
-Some Abstract

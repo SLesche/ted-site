@@ -1,0 +1,21 @@
+---
+title: "Can corrections spread misinformation to new audiences? Testing for the elusive familiarity backfire effect."
+type: "article"
+author: "Ecker et al."
+year: "2020"
+publication: ""
+doi: "https://doi.org/10.31234/osf.io/qrm69 "
+materials: "https://osf.io/69bq3/"
+toc: false
+categories:
+  - article
+  - preprint
+---
+
+## Citation (APA 7)
+
+> Ecker, U., Lewandowsky, S., & Chadwick, M. (2020). Can corrections spread misinformation to new audiences? Testing for the elusive familiarity backfire effect.
+
+## Abstract
+
+Misinformation often continues to influence inferential reasoning after clear and credible corrections are provided; this effect is known as the continued influence effect. It has been theorized that this effect is partly driven by misinformation familiarity. Some researchers have even argued that a correction should avoid repeating the misinformation, as the correction itself could serve to inadvertently enhance misinformation familiarity and may thus backfire, ironically strengthening the very misconception it aims to correct. While previous research has found little evidence of such familiarity backfire effects, there remains one situation where they may yet arise: when correcting entirely novel misinformation, where corrections could serve to spread misinformation to new audiences. The present paper presents three experiments (total N = 1,718) investigating the possibility of familiarity backfire within the context of correcting novel misinformation claims. While there was variation across experiments, overall there was substantial evidence against familiarity backfire. Corrections that repeated novel misinformation claims did not lead to stronger misconceptions compared to a control group never exposed to the false claims or corrections. This suggests that it is safe to repeat misinformation when correcting it, even when the audience might be unfamiliar with the misinformation.

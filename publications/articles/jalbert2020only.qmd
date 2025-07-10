@@ -1,0 +1,21 @@
+---
+title: "Only half of what i’ll tell you is true: Expecting to encounter falsehoods reduces illusory truth."
+type: "article"
+author: "Jalbert et al."
+year: "2020"
+publication: "Journal of Applied Research in Memory and Cognition"
+doi: "https://doi.org/10.1016/j.jarmac.2020.08.010"
+materials: "https://www.openicpsr.org/openicpsr/project/115141/version/V2/view"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Jalbert, M., Newman, E., & Schwarz, N. (2020). Only half of what i’ll tell you is true: Expecting to encounter falsehoods reduces illusory truth. Journal of Applied Research in Memory and Cognition, 9(4), 602-613.
+
+## Abstract
+
+Information is judged as more true when it has been seen or heard repeatedly than when it is new. This illusory truth effect has important consequences in the real world, where we are repeatedly exposed to information of unknown veracity. While false information in natural contexts rarely comes with a warning label, false information in truth effect experiments often does. Commonly used experimental procedures alert participants to potential falsehoods at exposure through instructional warnings. Three experiments show that the size of the truth effect is over twice as large when such warnings are avoided. The influence of pre-exposure warnings on the size of the truth effect persists even after a delay of three to six days. These findings demonstrate that common experimental procedures invite a systematic underestimation of illusory truth effects. They also highlight that simple warnings can curb the impact of repetition on judgments of truth.
+

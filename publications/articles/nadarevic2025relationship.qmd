@@ -1,0 +1,20 @@
+---
+title: "On the relationship between recognition judgments and truth judgments: Memory states moderate the recognition-based truth effect."
+type: "article"
+author: "Nadarevic & Erdfelder"
+year: "2025"
+publication: "Journal of Experimental Psychology: Learning, Memory, and Cognition."
+doi: "https://doi.org/10.1037/xlm0001460"
+materials: "https://osf.io/6xwsm/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Nadarevic, L., & Erdfelder, E. (2025). On the relationship between recognition judgments and truth judgments: Memory states moderate the recognition-based truth effect. Journal of Experimental Psychology: Learning, Memory, and Cognition.
+
+## Abstract
+
+Repeatedly seen or heard statements are typically judged to be more likely true than statements not encountered before, a phenomenon referred to as truth effect. Similarly, statements judged to be old typically receive higher truth judgments than statements judged to be new. However, it is unclear whether and how this recognition-based truth effect depends on the latent memory states underlying observed recognition judgments. In order to investigate this question, we used a model-based approach to compare truth judgments as a function of recognition judgments (“old” vs. “new”) and their underlying memory states (state of memory certainty vs. state of uncertainty). In three experiments, we observed a recognition-based truth effect and found this effect to be larger in the state of memory certainty than in the state of uncertainty. This result also replicated for subjective instead of modeled memory states. Moreover, we found effects of recognition judgments on judged truth to be stronger than effects of factual repetition in all three experiments. Taken together, our research highlights the role of episodic memory processes in the truth effect and provides a methodological tool that takes underlying memory states into account.

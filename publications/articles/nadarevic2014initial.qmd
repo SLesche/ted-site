@@ -1,0 +1,20 @@
+---
+title: "Initial judgment task and delay of the final validity-rating task moderate the truth effect."
+type: "article"
+author: "Nadarevic & Erdfelder"
+year: "2014"
+publication: "Consciousness and cognition"
+doi: "https://doi.org/10.1016/j.concog.2013.12.002"
+materials: "https://osf.io/eut35/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Nadarevic, L., & Erdfelder, E. (2014). Initial judgment task and delay of the final validity-rating task moderate the truth effect. Consciousness and cognition, 23, 74-84.
+
+## Abstract
+
+Repeatedly seen or heard statements are typically judged to be more valid than statements one has never encountered before. This phenomenon has been referred to as the truth effect. We conducted two experiments to assess the plasticity of the truth effect under different contextual conditions. Surprisingly, we did not find a truth effect in the typical judgment design when using a ten minutes interval between statement repetitions. However, we replicated the truth effect when changing the judgment task at initial statement exposure or when using an interval of one week rather than ten minutes. Because none of the current truth effect theories can fully account for these context effects, we conclude that the cognitive processes underlying truth judgments are more complex than has hitherto been assumed. To close the theoretical gap, we propose a revised fluency attribution hypothesis as a possible explanation of our findings.

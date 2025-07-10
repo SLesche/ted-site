@@ -1,0 +1,20 @@
+---
+title: "Unveiling the truth: Warnings reduce the repetition-based truth effect."
+type: "article"
+author: "Nadarevic & Aßfalg"
+year: "2017"
+publication: "Psychological Research"
+doi: "https://doi.org/10.1007/s00426-016-0777-y"
+materials: "https://osf.io/5pfa2/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Nadarevic, L., & Aßfalg, A. (2017). Unveiling the truth: Warnings reduce the repetition-based truth effect. Psychological Research, 81, 814-826.
+
+## Abstract
+
+Typically, people are more likely to consider a previously seen or heard statement as true compared to a novel statement. This repetition-based “truth effect” is thought to rely on fluency-truth attributions as the underlying cognitive mechanism. In two experiments, we tested the nature of the fluency-attribution mechanism by means of warning instructions, which informed participants about the truth effect and asked them to prevent it. In Experiment 1, we instructed warned participants to consider whether a statement had already been presented in the experiment to avoid the truth effect. However, warnings did not significantly reduce the truth effect. In Experiment 2, we introduced control questions and reminders to ensure that participants understood the warning instruction. This time, warning reduced, but did not eliminate the truth effect. Assuming that the truth effect relies on fluency-truth attributions, this finding suggests that warned participants could control their attributions but did not disregard fluency altogether when making truth judgments. Further, we found no evidence that participants overdiscount the influence of fluency on their truth judgments.

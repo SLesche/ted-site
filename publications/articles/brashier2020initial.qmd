@@ -1,0 +1,21 @@
+---
+title: "An initial accuracy focus prevents illusory truth."
+type: "article"
+author: "Brashier et al."
+year: "2020"
+publication: "Cognition"
+doi: "https://doi.org/10.1016/j.cognition.2019.104054"
+materials: "https://osf.io/b4szp/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Brashier, N. M., Eliseev, E. D., & Marsh, E. J. (2020). An initial accuracy focus prevents illusory truth. Cognition, 194, 104054.
+
+## Abstract
+
+News stories, advertising campaigns, and political propaganda often repeat misleading claims, increasing their persuasive power. Repeated statements feel easier to process, and thus truer, than new ones. Surprisingly, this illusory truth effect occurs even when claims contradict young adults’ stored knowledge (e.g., repeating The fastest land animal is the leopard makes it more believable). In four experiments, we tackled this problem by prompting people to behave like “fact checkers.” Focusing on accuracy at exposure (giving initial truth ratings) wiped out the illusion later, but only when participants held relevant knowledge. This selective benefit persisted over a delay. Our findings inform theories of how people evaluate truth and suggest practical strategies for coping in a “post-truth world.”
+

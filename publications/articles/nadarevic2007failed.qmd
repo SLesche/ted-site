@@ -1,0 +1,17 @@
+---
+title: "A failed replication of the truth effect."
+type: "article"
+author: "Nadarevic"
+year: "2007"
+publication: ""
+doi: ""
+materials: "https://osf.io/fw2qe/"
+toc: false
+categories:
+  - article
+  - unpublished
+---
+
+## Citation (APA 7)
+
+> Nadarevic, L. (2007). A failed replication of the truth effect. Unpublished raw data. doi: 10.17605/OSF.IO/FW2QE

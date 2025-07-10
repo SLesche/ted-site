@@ -1,0 +1,20 @@
+---
+title: "Prior exposure increases perceived accuracy of fake news."
+type: "article"
+author: "Pennycook et al."
+year: "2018"
+publication: "Journal of Experimental Psychology: General"
+doi: "https://doi.org/10.1037/xge0000465"
+materials: "https://osf.io/txf46/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Pennycook, G., Cannon, T. D., & Rand, D. G. (2018). Prior exposure increases perceived accuracy of fake news. Journal of Experimental Psychology: General, 147(12), 1865.
+
+## Abstract
+
+The 2016 U.S. presidential election brought considerable attention to the phenomenon of “fake news”: entirely fabricated and often partisan content that is presented as factual. Here we demonstrate one mechanism that contributes to the believability of fake news: fluency via prior exposure. Using actual fake-news headlines presented as they were seen on Facebook, we show that even a single exposure increases subsequent perceptions of accuracy, both within the same session and after a week. Moreover, this “illusory truth effect” for fake-news headlines occurs despite a low level of overall believability and even when the stories are labeled as contested by fact checkers or are inconsistent with the reader’s political ideology. These results suggest that social media platforms help to incubate belief in blatantly false news stories and that tagging such stories as disputed is not an effective solution to this problem. It is interesting, however, that we also found that prior exposure does not impact entirely implausible statements (e.g., “The earth is a perfect square”). These observations indicate that although extreme implausibility is a boundary condition of the illusory truth effect, only a small degree of potential plausibility is sufficient for repetition to increase perceived accuracy. As a consequence, the scope and impact of repetition on beliefs is greater than has been previously assumed.

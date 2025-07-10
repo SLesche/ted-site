@@ -1,0 +1,18 @@
+---
+title: "Does delay between exposure and truth judgement decrease the truth effect through a recollection impairment? A Remember/Know study"
+type: "article"
+author: "Bena et al."
+year: "2020"
+publication: ""
+doi: ""
+materials: "https://osf.io/tbf68/"
+toc: false
+categories:
+  - article
+  - unpublished
+---
+
+## Citation (APA 7)
+
+> Béna, J., Carreras, O., Terrier, P. (2020). Does delay between exposure and truth judgement decrease the truth effect through a recollection impairment? A Remember/Know study". Unpublished data
+

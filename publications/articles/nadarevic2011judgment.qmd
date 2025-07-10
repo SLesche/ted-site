@@ -1,0 +1,19 @@
+---
+title: "Judgment mode instructions do not moderate the truth effect."
+type: "article"
+author: "Nadarevic & Rinnewitz"
+year: "2011"
+publication: ""
+doi: ""
+materials: "https://osf.io/3uaj7/"
+toc: false
+categories:
+  - article
+  - unpublished
+---
+
+## Citation (APA 7)
+
+> Nadarevic, L. & Rinnewitz, L. (2011). Judgment mode instructions do not moderate the truth effect. Unpublished raw data. doi: 10.17605/OSF.IO/3UAJ7
+
+

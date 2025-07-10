@@ -1,0 +1,20 @@
+---
+title: "Repetition increases both the perceived truth and fakeness of information: An ecological account."
+type: "article"
+author: "Corneille et al."
+year: "2020"
+publication: "Cognition"
+doi: "https://doi.org/10.1016/j.cognition.2020.104470"
+materials: "https://osf.io/5hsug/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Corneille, O., Mierop, A., & Unkelbach, C. (2020). Repetition increases both the perceived truth and fakeness of information: An ecological account. Cognition, 205, 104470.
+
+## Abstract
+
+People believe repeated statements more compared to new statements – they show a truth by repetition effect. In three pre-registered experiments, we show that repetition may also increase perceptions that statements are used as fake news on social media, irrespective of the factual truth or falsehood of the statements (Experiment 1 & 2), but that repetition reduces perceptions of falsehood when the context of judgment is left unspecified (Experiment 3). On a theoretical level, the findings support an ecological account of repetition effects, as opposed to either a fluency-as-positivity or to an amplification account of these effects. On a practical level, they qualify the influence of repetition on the perception of fake news.

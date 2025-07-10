@@ -1,0 +1,20 @@
+---
+title: "Truth is in the mind, but beauty is in the eye: Fluency effects are moderated by a match between fluency source and judgment dimension."
+type: "article"
+author: "Vogel et al."
+year: "2020"
+publication: " Journal of Experimental Psychology: General."
+doi: "https://doi.org/10.1037/xge0000731"
+materials: "https://osf.io/mtpf3/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Vogel, T., Silva, R. R., Thomas, A., & Wänke, M. (2020). Truth is in the mind, but beauty is in the eye: Fluency effects are moderated by a match between fluency source and judgment dimension. Journal of Experimental Psychology: General.
+
+## Abstract
+
+The eminent role of processing fluency in judgment and decision-making is undisputed. Not only is fluency affected by sources as diverse as stimulus repetition or visual clarity, but it also has an impact on outcomes as diverse as liking for a stimulus or the subjective validity of a statement. Although several studies indicate that sources and outcomes are widely interchangeable, recent research suggests that judgments are differentially affected by conceptual and perceptual fluency, with stronger effects of conceptual (vs. perceptual) fluency on judgments of truth. Here, we propose a fluency-specificity hypothesis according to which conceptual fluency is more informative for content-related judgments, but perceptual fluency is more informative for judgments related to perception. Two experimental studies in which perceptual and conceptual fluency were manipulated orthogonally show the superiority of content repetition on judgments of truth but the superiority of visual contrast on aesthetic evaluations. The theoretical implications are discussed.

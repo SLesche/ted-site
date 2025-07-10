@@ -1,0 +1,20 @@
+---
+title: "Experiential fluency and declarative advice jointly inform judgments of truth."
+type: "article"
+author: "Unkelbach & Greifeneder"
+year: "2018"
+publication: "Journal of Experimental Social Psychology"
+doi: "https://doi.org/10.1016/j.jesp.2018.06.010"
+materials: "https://osf.io/v2gmb/files/osfstorage"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Unkelbach, C., & Greifeneder, R. (2018). Experiential fluency and declarative advice jointly inform judgments of truth. Journal of Experimental Social Psychology, 79, 78-86.
+
+## Abstract
+
+Processing fluency, the experienced ease of ongoing mental operations, influences judgments such as frequency, monetary value, or truth. Most experiments keep to-be-judged stimuli ambiguous with regards to these judgment dimensions. In real life, however, people usually have declarative information about these stimuli beyond the experiential processing information. Here, we address how experiential fluency information may inform truth judgments in the presence of declarative advice information. Four experiments show that fluency influences judged truth even when advice about the statements' truth is continuously available and labelled as highly valid; the influence follows a linear cue integration pattern for two orthogonal cues (i.e., experiential and declarative information). These data underline the importance of processing fluency as an explanatory construct in real-life judgements and support a cue integration framework to understand fluency effects in judgment and decision making.

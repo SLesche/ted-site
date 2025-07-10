@@ -1,0 +1,20 @@
+---
+title: "Repetition increases perceived truth equally for plausible and implausible statements."
+type: "article"
+author: "Fazio et al."
+year: "2019"
+publication: "Psychonomic Bulletin & Review"
+doi: "https://doi.org/10.3758/s13423-019-01651-4"
+materials: "https://osf.io/w4k2c/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Fazio, L. K., Rand, D. G., & Pennycook, G. (2019). Repetition increases perceived truth equally for plausible and implausible statements. Psychonomic Bulletin & Review, 26(5), 1705-1710.
+
+## Abstract
+
+Repetition increases the likelihood that a statement will be judged as true. This illusory truth effect is well established; however, it has been argued that repetition will not affect belief in unambiguous statements. When individuals are faced with obviously true or false statements, repetition should have no impact. We report a simulation study and a preregistered experiment that investigate this idea. Contrary to many intuitions, our results suggest that belief in all statements is increased by repetition. The observed illusory truth effect is largest for ambiguous items, but this can be explained by the psychometric properties of the task, rather than an underlying psychological mechanism that blocks the impact of repetition for implausible items. Our results indicate that the illusory truth effect is highly robust and occurs across all levels of plausibility. Therefore, even highly implausible statements will become more plausible with enough repetition.
