@@ -7,32 +7,193 @@
     "text": "Home\n    Resources\n  \n\nSomething about R package usw here"
   },
   {
-    "objectID": "publications/articles/template2025.html#abstract",
-    "href": "publications/articles/template2025.html#abstract",
-    "title": "Truth Effect Database (TED)",
-    "section": "Abstract",
-    "text": "Abstract"
-  },
-  {
-    "objectID": "publications/articles/adaryukov2024.html",
-    "href": "publications/articles/adaryukov2024.html",
-    "title": "Worth the weight: An examination of unstructured and structured data in graduate admissions",
+    "objectID": "publications/articles/vogel2020truth.html",
+    "href": "publications/articles/vogel2020truth.html",
+    "title": "Truth is in the mind, but beauty is in the eye: Fluency effects are moderated by a match between fluency source and judgment dimension.",
     "section": "",
-    "text": "Adaryukov, J., Biernat, M., Girard, J. M., Villicana, A. J., & Pleskac, T. J. (in press). Worth the weight: An examination of unstructured and structured data in graduate admissions. Decision."
+    "text": "Vogel, T., Silva, R. R., Thomas, A., & Wänke, M. (2020). Truth is in the mind, but beauty is in the eye: Fluency effects are moderated by a match between fluency source and judgment dimension. Journal of Experimental Psychology: General."
   },
   {
-    "objectID": "publications/articles/adaryukov2024.html#citation-apa-7",
-    "href": "publications/articles/adaryukov2024.html#citation-apa-7",
-    "title": "Worth the weight: An examination of unstructured and structured data in graduate admissions",
+    "objectID": "publications/articles/vogel2020truth.html#citation-apa-7",
+    "href": "publications/articles/vogel2020truth.html#citation-apa-7",
+    "title": "Truth is in the mind, but beauty is in the eye: Fluency effects are moderated by a match between fluency source and judgment dimension.",
     "section": "",
-    "text": "Adaryukov, J., Biernat, M., Girard, J. M., Villicana, A. J., & Pleskac, T. J. (in press). Worth the weight: An examination of unstructured and structured data in graduate admissions. Decision."
+    "text": "Vogel, T., Silva, R. R., Thomas, A., & Wänke, M. (2020). Truth is in the mind, but beauty is in the eye: Fluency effects are moderated by a match between fluency source and judgment dimension. Journal of Experimental Psychology: General."
   },
   {
-    "objectID": "publications/articles/adaryukov2024.html#abstract",
-    "href": "publications/articles/adaryukov2024.html#abstract",
-    "title": "Worth the weight: An examination of unstructured and structured data in graduate admissions",
+    "objectID": "publications/articles/vogel2020truth.html#abstract",
+    "href": "publications/articles/vogel2020truth.html#abstract",
+    "title": "Truth is in the mind, but beauty is in the eye: Fluency effects are moderated by a match between fluency source and judgment dimension.",
     "section": "Abstract",
-    "text": "Abstract\nIn graduate admissions, as in many multiattribute decisions, evaluators must judge candidates from a flood of information, including recommendation letters, personal statements, grades, and standardized test scores. Some of this information is structured, while some is unstructured. Yet most studies of multiattribute decisions focus on decisions made from structured information. This study evaluated how structured and unstructured information is used within graduate admissions decisions. We examined a uniquely comprehensive dataset of N = 2, 231 graduate applications to the University of Kansas, containing full application packages, demographics, and final admissions decisions for each applicant. To make sense of our documents, we applied structural topic modeling (STM), a topic model that allows topic content and prevalence to covary based on other metadata (e.g., department of study). STM allowed us to examine what information the letters and statements contain, and the relationships between variables like gender and race and the textual information. We found that most topics in the unstructured data related to specific fields of study. The STMs did not uncover strong differences among applicants regarding race and gender though the recommendation letters and personal statements for international applicants did show some different topic profiles than domestic applicants. We also found that admissions decision-makers behaved as if they prioritized structured numeric metrics, using unstructured information to check for disqualifications, if at all. However, we found that topics were less reliable than admissions documents, meaning that additional ways of using them cannot be completely ruled out. The implications of our findings on graduate admissions decisions are discussed."
+    "text": "Abstract\nThe eminent role of processing fluency in judgment and decision-making is undisputed. Not only is fluency affected by sources as diverse as stimulus repetition or visual clarity, but it also has an impact on outcomes as diverse as liking for a stimulus or the subjective validity of a statement. Although several studies indicate that sources and outcomes are widely interchangeable, recent research suggests that judgments are differentially affected by conceptual and perceptual fluency, with stronger effects of conceptual (vs. perceptual) fluency on judgments of truth. Here, we propose a fluency-specificity hypothesis according to which conceptual fluency is more informative for content-related judgments, but perceptual fluency is more informative for judgments related to perception. Two experimental studies in which perceptual and conceptual fluency were manipulated orthogonally show the superiority of content repetition on judgments of truth but the superiority of visual contrast on aesthetic evaluations. The theoretical implications are discussed."
+  },
+  {
+    "objectID": "publications/articles/pennycook2018prior.html",
+    "href": "publications/articles/pennycook2018prior.html",
+    "title": "Prior exposure increases perceived accuracy of fake news.",
+    "section": "",
+    "text": "Pennycook, G., Cannon, T. D., & Rand, D. G. (2018). Prior exposure increases perceived accuracy of fake news. Journal of Experimental Psychology: General, 147(12), 1865."
+  },
+  {
+    "objectID": "publications/articles/pennycook2018prior.html#citation-apa-7",
+    "href": "publications/articles/pennycook2018prior.html#citation-apa-7",
+    "title": "Prior exposure increases perceived accuracy of fake news.",
+    "section": "",
+    "text": "Pennycook, G., Cannon, T. D., & Rand, D. G. (2018). Prior exposure increases perceived accuracy of fake news. Journal of Experimental Psychology: General, 147(12), 1865."
+  },
+  {
+    "objectID": "publications/articles/pennycook2018prior.html#abstract",
+    "href": "publications/articles/pennycook2018prior.html#abstract",
+    "title": "Prior exposure increases perceived accuracy of fake news.",
+    "section": "Abstract",
+    "text": "Abstract\nThe 2016 U.S. presidential election brought considerable attention to the phenomenon of “fake news”: entirely fabricated and often partisan content that is presented as factual. Here we demonstrate one mechanism that contributes to the believability of fake news: fluency via prior exposure. Using actual fake-news headlines presented as they were seen on Facebook, we show that even a single exposure increases subsequent perceptions of accuracy, both within the same session and after a week. Moreover, this “illusory truth effect” for fake-news headlines occurs despite a low level of overall believability and even when the stories are labeled as contested by fact checkers or are inconsistent with the reader’s political ideology. These results suggest that social media platforms help to incubate belief in blatantly false news stories and that tagging such stories as disputed is not an effective solution to this problem. It is interesting, however, that we also found that prior exposure does not impact entirely implausible statements (e.g., “The earth is a perfect square”). These observations indicate that although extreme implausibility is a boundary condition of the illusory truth effect, only a small degree of potential plausibility is sufficient for repetition to increase perceived accuracy. As a consequence, the scope and impact of repetition on beliefs is greater than has been previously assumed."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2025relationship.html",
+    "href": "publications/articles/nadarevic2025relationship.html",
+    "title": "On the relationship between recognition judgments and truth judgments: Memory states moderate the recognition-based truth effect.",
+    "section": "",
+    "text": "Nadarevic, L., & Erdfelder, E. (2025). On the relationship between recognition judgments and truth judgments: Memory states moderate the recognition-based truth effect. Journal of Experimental Psychology: Learning, Memory, and Cognition."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2025relationship.html#citation-apa-7",
+    "href": "publications/articles/nadarevic2025relationship.html#citation-apa-7",
+    "title": "On the relationship between recognition judgments and truth judgments: Memory states moderate the recognition-based truth effect.",
+    "section": "",
+    "text": "Nadarevic, L., & Erdfelder, E. (2025). On the relationship between recognition judgments and truth judgments: Memory states moderate the recognition-based truth effect. Journal of Experimental Psychology: Learning, Memory, and Cognition."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2025relationship.html#abstract",
+    "href": "publications/articles/nadarevic2025relationship.html#abstract",
+    "title": "On the relationship between recognition judgments and truth judgments: Memory states moderate the recognition-based truth effect.",
+    "section": "Abstract",
+    "text": "Abstract\nRepeatedly seen or heard statements are typically judged to be more likely true than statements not encountered before, a phenomenon referred to as truth effect. Similarly, statements judged to be old typically receive higher truth judgments than statements judged to be new. However, it is unclear whether and how this recognition-based truth effect depends on the latent memory states underlying observed recognition judgments. In order to investigate this question, we used a model-based approach to compare truth judgments as a function of recognition judgments (“old” vs. “new”) and their underlying memory states (state of memory certainty vs. state of uncertainty). In three experiments, we observed a recognition-based truth effect and found this effect to be larger in the state of memory certainty than in the state of uncertainty. This result also replicated for subjective instead of modeled memory states. Moreover, we found effects of recognition judgments on judged truth to be stronger than effects of factual repetition in all three experiments. Taken together, our research highlights the role of episodic memory processes in the truth effect and provides a methodological tool that takes underlying memory states into account."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2017unveiling.html",
+    "href": "publications/articles/nadarevic2017unveiling.html",
+    "title": "Unveiling the truth: Warnings reduce the repetition-based truth effect.",
+    "section": "",
+    "text": "Nadarevic, L., & Aßfalg, A. (2017). Unveiling the truth: Warnings reduce the repetition-based truth effect. Psychological Research, 81, 814-826."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2017unveiling.html#citation-apa-7",
+    "href": "publications/articles/nadarevic2017unveiling.html#citation-apa-7",
+    "title": "Unveiling the truth: Warnings reduce the repetition-based truth effect.",
+    "section": "",
+    "text": "Nadarevic, L., & Aßfalg, A. (2017). Unveiling the truth: Warnings reduce the repetition-based truth effect. Psychological Research, 81, 814-826."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2017unveiling.html#abstract",
+    "href": "publications/articles/nadarevic2017unveiling.html#abstract",
+    "title": "Unveiling the truth: Warnings reduce the repetition-based truth effect.",
+    "section": "Abstract",
+    "text": "Abstract\nTypically, people are more likely to consider a previously seen or heard statement as true compared to a novel statement. This repetition-based “truth effect” is thought to rely on fluency-truth attributions as the underlying cognitive mechanism. In two experiments, we tested the nature of the fluency-attribution mechanism by means of warning instructions, which informed participants about the truth effect and asked them to prevent it. In Experiment 1, we instructed warned participants to consider whether a statement had already been presented in the experiment to avoid the truth effect. However, warnings did not significantly reduce the truth effect. In Experiment 2, we introduced control questions and reminders to ensure that participants understood the warning instruction. This time, warning reduced, but did not eliminate the truth effect. Assuming that the truth effect relies on fluency-truth attributions, this finding suggests that warned participants could control their attributions but did not disregard fluency altogether when making truth judgments. Further, we found no evidence that participants overdiscount the influence of fluency on their truth judgments."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2012investigation.html",
+    "href": "publications/articles/nadarevic2012investigation.html",
+    "title": "An investigation of the truth effect and different personality traits.",
+    "section": "",
+    "text": "Nadarevic L., Meckler D., & Schmidt, A. (2012). An investigation of the truth effect and different personality traits. Unpublished raw data. doi: 10.17605/OSF.IO/6WV4Z"
+  },
+  {
+    "objectID": "publications/articles/nadarevic2012investigation.html#citation-apa-7",
+    "href": "publications/articles/nadarevic2012investigation.html#citation-apa-7",
+    "title": "An investigation of the truth effect and different personality traits.",
+    "section": "",
+    "text": "Nadarevic L., Meckler D., & Schmidt, A. (2012). An investigation of the truth effect and different personality traits. Unpublished raw data. doi: 10.17605/OSF.IO/6WV4Z"
+  },
+  {
+    "objectID": "publications/articles/nadarevic2007failed.html",
+    "href": "publications/articles/nadarevic2007failed.html",
+    "title": "A failed replication of the truth effect.",
+    "section": "",
+    "text": "Nadarevic, L. (2007). A failed replication of the truth effect. Unpublished raw data. doi: 10.17605/OSF.IO/FW2QE"
+  },
+  {
+    "objectID": "publications/articles/nadarevic2007failed.html#citation-apa-7",
+    "href": "publications/articles/nadarevic2007failed.html#citation-apa-7",
+    "title": "A failed replication of the truth effect.",
+    "section": "",
+    "text": "Nadarevic, L. (2007). A failed replication of the truth effect. Unpublished raw data. doi: 10.17605/OSF.IO/FW2QE"
+  },
+  {
+    "objectID": "publications/articles/fazio2019reptition.html",
+    "href": "publications/articles/fazio2019reptition.html",
+    "title": "Repetition increases perceived truth equally for plausible and implausible statements.",
+    "section": "",
+    "text": "Fazio, L. K., Rand, D. G., & Pennycook, G. (2019). Repetition increases perceived truth equally for plausible and implausible statements. Psychonomic Bulletin & Review, 26(5), 1705-1710."
+  },
+  {
+    "objectID": "publications/articles/fazio2019reptition.html#citation-apa-7",
+    "href": "publications/articles/fazio2019reptition.html#citation-apa-7",
+    "title": "Repetition increases perceived truth equally for plausible and implausible statements.",
+    "section": "",
+    "text": "Fazio, L. K., Rand, D. G., & Pennycook, G. (2019). Repetition increases perceived truth equally for plausible and implausible statements. Psychonomic Bulletin & Review, 26(5), 1705-1710."
+  },
+  {
+    "objectID": "publications/articles/fazio2019reptition.html#abstract",
+    "href": "publications/articles/fazio2019reptition.html#abstract",
+    "title": "Repetition increases perceived truth equally for plausible and implausible statements.",
+    "section": "Abstract",
+    "text": "Abstract\nRepetition increases the likelihood that a statement will be judged as true. This illusory truth effect is well established; however, it has been argued that repetition will not affect belief in unambiguous statements. When individuals are faced with obviously true or false statements, repetition should have no impact. We report a simulation study and a preregistered experiment that investigate this idea. Contrary to many intuitions, our results suggest that belief in all statements is increased by repetition. The observed illusory truth effect is largest for ambiguous items, but this can be explained by the psychometric properties of the task, rather than an underlying psychological mechanism that blocks the impact of repetition for implausible items. Our results indicate that the illusory truth effect is highly robust and occurs across all levels of plausibility. Therefore, even highly implausible statements will become more plausible with enough repetition."
+  },
+  {
+    "objectID": "publications/articles/dekeersmaecker2024truth.html",
+    "href": "publications/articles/dekeersmaecker2024truth.html",
+    "title": "Truth-by-repetition across languages.",
+    "section": "",
+    "text": "De keersmaecker, J., Unkelbach, C., & Roets, A. (2024). Truth-by-repetition across languages.. Journal of Applied Research in Memory and Cognition. Advance online publication. https://dx.doi.org/10.1037/ mac0000175"
+  },
+  {
+    "objectID": "publications/articles/dekeersmaecker2024truth.html#citation-apa-7",
+    "href": "publications/articles/dekeersmaecker2024truth.html#citation-apa-7",
+    "title": "Truth-by-repetition across languages.",
+    "section": "",
+    "text": "De keersmaecker, J., Unkelbach, C., & Roets, A. (2024). Truth-by-repetition across languages.. Journal of Applied Research in Memory and Cognition. Advance online publication. https://dx.doi.org/10.1037/ mac0000175"
+  },
+  {
+    "objectID": "publications/articles/dekeersmaecker2024truth.html#abstract",
+    "href": "publications/articles/dekeersmaecker2024truth.html#abstract",
+    "title": "Truth-by-repetition across languages.",
+    "section": "Abstract",
+    "text": "Abstract\nPeople are more likely to believe information to be true if they have encountered it before. Research on this truth-by-repetition effect (TBRE) typically only considered one’s native language. In five experiments (N = 1,344), we examined the TBRE in multilingual contexts (Belgium, Spain, United States, Mexico). We found that the TBRE emerges in the nonnative language and is as strong as the TBRE in the native language. Furthermore, we found a “cross-language” TBRE: repetition increases the subjective truth even if the language changes between repetitions, and this cross-language effect is as strong as the effect within the same language, be it in a nonnative or the native language. Theoretically, these results support TBRE accounts based on a conceptual mechanism. Practically, the results highlight the pervasive potential of the TBRE in a globalized world where many people consume information in different languages."
+  },
+  {
+    "objectID": "publications/articles/brashier2020initial.html",
+    "href": "publications/articles/brashier2020initial.html",
+    "title": "An initial accuracy focus prevents illusory truth.",
+    "section": "",
+    "text": "Brashier, N. M., Eliseev, E. D., & Marsh, E. J. (2020). An initial accuracy focus prevents illusory truth. Cognition, 194, 104054."
+  },
+  {
+    "objectID": "publications/articles/brashier2020initial.html#citation-apa-7",
+    "href": "publications/articles/brashier2020initial.html#citation-apa-7",
+    "title": "An initial accuracy focus prevents illusory truth.",
+    "section": "",
+    "text": "Brashier, N. M., Eliseev, E. D., & Marsh, E. J. (2020). An initial accuracy focus prevents illusory truth. Cognition, 194, 104054."
+  },
+  {
+    "objectID": "publications/articles/brashier2020initial.html#abstract",
+    "href": "publications/articles/brashier2020initial.html#abstract",
+    "title": "An initial accuracy focus prevents illusory truth.",
+    "section": "Abstract",
+    "text": "Abstract\nNews stories, advertising campaigns, and political propaganda often repeat misleading claims, increasing their persuasive power. Repeated statements feel easier to process, and thus truer, than new ones. Surprisingly, this illusory truth effect occurs even when claims contradict young adults’ stored knowledge (e.g., repeating The fastest land animal is the leopard makes it more believable). In four experiments, we tackled this problem by prompting people to behave like “fact checkers.” Focusing on accuracy at exposure (giving initial truth ratings) wiped out the illusion later, but only when participants held relevant knowledge. This selective benefit persisted over a delay. Our findings inform theories of how people evaluate truth and suggest practical strategies for coping in a “post-truth world.”"
+  },
+  {
+    "objectID": "publications/articles/bena2019attention.html",
+    "href": "publications/articles/bena2019attention.html",
+    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
+    "section": "",
+    "text": "Béna, J., Carreras, O., Terrier, P. (2019). Attention division and the truth effect: A case of moderation by source credibility manipulation. Unpublished."
+  },
+  {
+    "objectID": "publications/articles/bena2019attention.html#citation-apa-7",
+    "href": "publications/articles/bena2019attention.html#citation-apa-7",
+    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
+    "section": "",
+    "text": "Béna, J., Carreras, O., Terrier, P. (2019). Attention division and the truth effect: A case of moderation by source credibility manipulation. Unpublished."
   },
   {
     "objectID": "people.html",
@@ -175,31 +336,185 @@
     "text": "I co-organized a full-day workshop at ACII 2024 on “Embracing Ambiguity and Subjectivity in Emotion Research” (EASE). Please visit the workshop website for more information. I also gave an invited talk, described below.\n\nGirard, J. M. (2024). Theoretical foundations of ambiguity and subjectivity. Invited talk presented at the Embracing Ambiguity and Subjectivity in Emotion Research Workshop, AAAC International Conference on Affective Computing and Intelligent Interaction (ACII), Glasgow, UK.\n\n\nSlides\n\n\n\nRecording"
   },
   {
-    "objectID": "publications/articles/bena2019attention.html",
-    "href": "publications/articles/bena2019attention.html",
-    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
+    "objectID": "publications/articles/bena2020delay.html",
+    "href": "publications/articles/bena2020delay.html",
+    "title": "Does delay between exposure and truth judgement decrease the truth effect through a recollection impairment? A Remember/Know study",
     "section": "",
-    "text": "Béna, J., Carreras, O., Terrier, P. (2019). Attention division and the truth effect: A case of moderation by source credibility manipulation. Unpublished."
+    "text": "Béna, J., Carreras, O., Terrier, P. (2020). Does delay between exposure and truth judgement decrease the truth effect through a recollection impairment? A Remember/Know study”. Unpublished data"
   },
   {
-    "objectID": "publications/articles/bena2019attention.html#citation-apa-7",
-    "href": "publications/articles/bena2019attention.html#citation-apa-7",
-    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
+    "objectID": "publications/articles/bena2020delay.html#citation-apa-7",
+    "href": "publications/articles/bena2020delay.html#citation-apa-7",
+    "title": "Does delay between exposure and truth judgement decrease the truth effect through a recollection impairment? A Remember/Know study",
     "section": "",
-    "text": "Béna, J., Carreras, O., Terrier, P. (2019). Attention division and the truth effect: A case of moderation by source credibility manipulation. Unpublished."
+    "text": "Béna, J., Carreras, O., Terrier, P. (2020). Does delay between exposure and truth judgement decrease the truth effect through a recollection impairment? A Remember/Know study”. Unpublished data"
   },
   {
-    "objectID": "publications/articles/bena2019attention.html#abstract",
-    "href": "publications/articles/bena2019attention.html#abstract",
-    "title": "Attention division and the truth effect: A case of moderation by source credibility manipulation.",
+    "objectID": "publications/articles/corneille2020repetition.html",
+    "href": "publications/articles/corneille2020repetition.html",
+    "title": "Repetition increases both the perceived truth and fakeness of information: An ecological account.",
+    "section": "",
+    "text": "Corneille, O., Mierop, A., & Unkelbach, C. (2020). Repetition increases both the perceived truth and fakeness of information: An ecological account. Cognition, 205, 104470."
+  },
+  {
+    "objectID": "publications/articles/corneille2020repetition.html#citation-apa-7",
+    "href": "publications/articles/corneille2020repetition.html#citation-apa-7",
+    "title": "Repetition increases both the perceived truth and fakeness of information: An ecological account.",
+    "section": "",
+    "text": "Corneille, O., Mierop, A., & Unkelbach, C. (2020). Repetition increases both the perceived truth and fakeness of information: An ecological account. Cognition, 205, 104470."
+  },
+  {
+    "objectID": "publications/articles/corneille2020repetition.html#abstract",
+    "href": "publications/articles/corneille2020repetition.html#abstract",
+    "title": "Repetition increases both the perceived truth and fakeness of information: An ecological account.",
     "section": "Abstract",
-    "text": "Abstract\nSome Abstract"
+    "text": "Abstract\nPeople believe repeated statements more compared to new statements – they show a truth by repetition effect. In three pre-registered experiments, we show that repetition may also increase perceptions that statements are used as fake news on social media, irrespective of the factual truth or falsehood of the statements (Experiment 1 & 2), but that repetition reduces perceptions of falsehood when the context of judgment is left unspecified (Experiment 3). On a theoretical level, the findings support an ecological account of repetition effects, as opposed to either a fluency-as-positivity or to an amplification account of these effects. On a practical level, they qualify the influence of repetition on the perception of fake news."
+  },
+  {
+    "objectID": "publications/articles/ecker2020corrections.html",
+    "href": "publications/articles/ecker2020corrections.html",
+    "title": "Can corrections spread misinformation to new audiences? Testing for the elusive familiarity backfire effect.",
+    "section": "",
+    "text": "Ecker, U., Lewandowsky, S., & Chadwick, M. (2020). Can corrections spread misinformation to new audiences? Testing for the elusive familiarity backfire effect."
+  },
+  {
+    "objectID": "publications/articles/ecker2020corrections.html#citation-apa-7",
+    "href": "publications/articles/ecker2020corrections.html#citation-apa-7",
+    "title": "Can corrections spread misinformation to new audiences? Testing for the elusive familiarity backfire effect.",
+    "section": "",
+    "text": "Ecker, U., Lewandowsky, S., & Chadwick, M. (2020). Can corrections spread misinformation to new audiences? Testing for the elusive familiarity backfire effect."
+  },
+  {
+    "objectID": "publications/articles/ecker2020corrections.html#abstract",
+    "href": "publications/articles/ecker2020corrections.html#abstract",
+    "title": "Can corrections spread misinformation to new audiences? Testing for the elusive familiarity backfire effect.",
+    "section": "Abstract",
+    "text": "Abstract\nMisinformation often continues to influence inferential reasoning after clear and credible corrections are provided; this effect is known as the continued influence effect. It has been theorized that this effect is partly driven by misinformation familiarity. Some researchers have even argued that a correction should avoid repeating the misinformation, as the correction itself could serve to inadvertently enhance misinformation familiarity and may thus backfire, ironically strengthening the very misconception it aims to correct. While previous research has found little evidence of such familiarity backfire effects, there remains one situation where they may yet arise: when correcting entirely novel misinformation, where corrections could serve to spread misinformation to new audiences. The present paper presents three experiments (total N = 1,718) investigating the possibility of familiarity backfire within the context of correcting novel misinformation claims. While there was variation across experiments, overall there was substantial evidence against familiarity backfire. Corrections that repeated novel misinformation claims did not lead to stronger misconceptions compared to a control group never exposed to the false claims or corrections. This suggests that it is safe to repeat misinformation when correcting it, even when the audience might be unfamiliar with the misinformation."
+  },
+  {
+    "objectID": "publications/articles/jalbert2020only.html",
+    "href": "publications/articles/jalbert2020only.html",
+    "title": "Only half of what i’ll tell you is true: Expecting to encounter falsehoods reduces illusory truth.",
+    "section": "",
+    "text": "Jalbert, M., Newman, E., & Schwarz, N. (2020). Only half of what i’ll tell you is true: Expecting to encounter falsehoods reduces illusory truth. Journal of Applied Research in Memory and Cognition, 9(4), 602-613."
+  },
+  {
+    "objectID": "publications/articles/jalbert2020only.html#citation-apa-7",
+    "href": "publications/articles/jalbert2020only.html#citation-apa-7",
+    "title": "Only half of what i’ll tell you is true: Expecting to encounter falsehoods reduces illusory truth.",
+    "section": "",
+    "text": "Jalbert, M., Newman, E., & Schwarz, N. (2020). Only half of what i’ll tell you is true: Expecting to encounter falsehoods reduces illusory truth. Journal of Applied Research in Memory and Cognition, 9(4), 602-613."
+  },
+  {
+    "objectID": "publications/articles/jalbert2020only.html#abstract",
+    "href": "publications/articles/jalbert2020only.html#abstract",
+    "title": "Only half of what i’ll tell you is true: Expecting to encounter falsehoods reduces illusory truth.",
+    "section": "Abstract",
+    "text": "Abstract\nInformation is judged as more true when it has been seen or heard repeatedly than when it is new. This illusory truth effect has important consequences in the real world, where we are repeatedly exposed to information of unknown veracity. While false information in natural contexts rarely comes with a warning label, false information in truth effect experiments often does. Commonly used experimental procedures alert participants to potential falsehoods at exposure through instructional warnings. Three experiments show that the size of the truth effect is over twice as large when such warnings are avoided. The influence of pre-exposure warnings on the size of the truth effect persists even after a delay of three to six days. These findings demonstrate that common experimental procedures invite a systematic underestimation of illusory truth effects. They also highlight that simple warnings can curb the impact of repetition on judgments of truth."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2011judgment.html",
+    "href": "publications/articles/nadarevic2011judgment.html",
+    "title": "Judgment mode instructions do not moderate the truth effect.",
+    "section": "",
+    "text": "Nadarevic, L. & Rinnewitz, L. (2011). Judgment mode instructions do not moderate the truth effect. Unpublished raw data. doi: 10.17605/OSF.IO/3UAJ7"
+  },
+  {
+    "objectID": "publications/articles/nadarevic2011judgment.html#citation-apa-7",
+    "href": "publications/articles/nadarevic2011judgment.html#citation-apa-7",
+    "title": "Judgment mode instructions do not moderate the truth effect.",
+    "section": "",
+    "text": "Nadarevic, L. & Rinnewitz, L. (2011). Judgment mode instructions do not moderate the truth effect. Unpublished raw data. doi: 10.17605/OSF.IO/3UAJ7"
+  },
+  {
+    "objectID": "publications/articles/nadarevic2014initial.html",
+    "href": "publications/articles/nadarevic2014initial.html",
+    "title": "Initial judgment task and delay of the final validity-rating task moderate the truth effect.",
+    "section": "",
+    "text": "Nadarevic, L., & Erdfelder, E. (2014). Initial judgment task and delay of the final validity-rating task moderate the truth effect. Consciousness and cognition, 23, 74-84."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2014initial.html#citation-apa-7",
+    "href": "publications/articles/nadarevic2014initial.html#citation-apa-7",
+    "title": "Initial judgment task and delay of the final validity-rating task moderate the truth effect.",
+    "section": "",
+    "text": "Nadarevic, L., & Erdfelder, E. (2014). Initial judgment task and delay of the final validity-rating task moderate the truth effect. Consciousness and cognition, 23, 74-84."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2014initial.html#abstract",
+    "href": "publications/articles/nadarevic2014initial.html#abstract",
+    "title": "Initial judgment task and delay of the final validity-rating task moderate the truth effect.",
+    "section": "Abstract",
+    "text": "Abstract\nRepeatedly seen or heard statements are typically judged to be more valid than statements one has never encountered before. This phenomenon has been referred to as the truth effect. We conducted two experiments to assess the plasticity of the truth effect under different contextual conditions. Surprisingly, we did not find a truth effect in the typical judgment design when using a ten minutes interval between statement repetitions. However, we replicated the truth effect when changing the judgment task at initial statement exposure or when using an interval of one week rather than ten minutes. Because none of the current truth effect theories can fully account for these context effects, we conclude that the cognitive processes underlying truth judgments are more complex than has hitherto been assumed. To close the theoretical gap, we propose a revised fluency attribution hypothesis as a possible explanation of our findings."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2018foreign.html",
+    "href": "publications/articles/nadarevic2018foreign.html",
+    "title": "Foreign language reduces the longevity of the repetition-based truth effect.",
+    "section": "",
+    "text": "Nadarevic, L., Plier, S., Thielmann, I., & Darancó, S. (2018). Foreign language reduces the longevity of the repetition-based truth effect. Acta psychologica, 191, 149-159."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2018foreign.html#citation-apa-7",
+    "href": "publications/articles/nadarevic2018foreign.html#citation-apa-7",
+    "title": "Foreign language reduces the longevity of the repetition-based truth effect.",
+    "section": "",
+    "text": "Nadarevic, L., Plier, S., Thielmann, I., & Darancó, S. (2018). Foreign language reduces the longevity of the repetition-based truth effect. Acta psychologica, 191, 149-159."
+  },
+  {
+    "objectID": "publications/articles/nadarevic2018foreign.html#abstract",
+    "href": "publications/articles/nadarevic2018foreign.html#abstract",
+    "title": "Foreign language reduces the longevity of the repetition-based truth effect.",
+    "section": "Abstract",
+    "text": "Abstract\nRecent evidence suggests that judgment biases may diminish when a problem is presented in a foreign language. This foreign-language effect has primarily been examined with emotional materials such as risky-choice problems and moral dilemmas. In two experiments, we investigated the effect of foreign-language processing on an emotionally neutral judgment bias: the repetition-based truth effect, the phenomenon that statement repetition enhances the perceived truth of statements. In Experiment 1, we found no evidence for the truth effect to be moderated by the language in which the statements were processed (native language: Hungarian; foreign language: English). In Experiment 2, in turn, we not only manipulated language (native language: German; foreign language: English), but also the retention interval between statement repetitions. Replicating the findings of Experiment 1, language did not moderate the truth effect for statements that were repeated within the same experimental session. However, after a two-week interval, the truth effect was significantly smaller in the foreign-language condition than in the native-language condition. Overall, our findings suggest a faster decay of semantic memory for foreign-language as compared to native-language statements."
+  },
+  {
+    "objectID": "publications/articles/newman2020truthiness.html",
+    "href": "publications/articles/newman2020truthiness.html",
+    "title": "Truthiness, the illusory truth effect, and the role of need for cognition.",
+    "section": "",
+    "text": "Newman, E. J., Jalbert, M. C., Schwarz, N., & Ly, D. P. (2020). Truthiness, the illusory truth effect, and the role of need for cognition. Consciousness and Cognition, 78, 102866."
+  },
+  {
+    "objectID": "publications/articles/newman2020truthiness.html#citation-apa-7",
+    "href": "publications/articles/newman2020truthiness.html#citation-apa-7",
+    "title": "Truthiness, the illusory truth effect, and the role of need for cognition.",
+    "section": "",
+    "text": "Newman, E. J., Jalbert, M. C., Schwarz, N., & Ly, D. P. (2020). Truthiness, the illusory truth effect, and the role of need for cognition. Consciousness and Cognition, 78, 102866."
+  },
+  {
+    "objectID": "publications/articles/newman2020truthiness.html#abstract",
+    "href": "publications/articles/newman2020truthiness.html#abstract",
+    "title": "Truthiness, the illusory truth effect, and the role of need for cognition.",
+    "section": "Abstract",
+    "text": "Abstract\nEase of processing—cognitive fluency—is a central input in assessments of truth, but little is known about individual differences in susceptibility to fluency-based biases in truth assessment. Focusing on two paradigms—truthiness and the illusory truth effect—we consider the role of Need for Cognition (NFC), an individual difference variable capturing one’s preference for elaborative thought. Across five experiments, we replicated basic truthiness and illusory truth effects. We found very little evidence that NFC moderates truthiness. However, we found some evidence that (without an experimental warning), people high on NFC may be more susceptible to the illusory truth effect. This may reflect that elaborative thought increases the fluency with which encoded statements are processed after a delay (thus increasing the illusory truth effect). Future research may fruitfully test whether the influence of NFC and other individual difference measures depends on whether people are making immediate or delayed truth judgments."
+  },
+  {
+    "objectID": "publications/articles/unkelbach2018experiential.html",
+    "href": "publications/articles/unkelbach2018experiential.html",
+    "title": "Experiential fluency and declarative advice jointly inform judgments of truth.",
+    "section": "",
+    "text": "Unkelbach, C., & Greifeneder, R. (2018). Experiential fluency and declarative advice jointly inform judgments of truth. Journal of Experimental Social Psychology, 79, 78-86."
+  },
+  {
+    "objectID": "publications/articles/unkelbach2018experiential.html#citation-apa-7",
+    "href": "publications/articles/unkelbach2018experiential.html#citation-apa-7",
+    "title": "Experiential fluency and declarative advice jointly inform judgments of truth.",
+    "section": "",
+    "text": "Unkelbach, C., & Greifeneder, R. (2018). Experiential fluency and declarative advice jointly inform judgments of truth. Journal of Experimental Social Psychology, 79, 78-86."
+  },
+  {
+    "objectID": "publications/articles/unkelbach2018experiential.html#abstract",
+    "href": "publications/articles/unkelbach2018experiential.html#abstract",
+    "title": "Experiential fluency and declarative advice jointly inform judgments of truth.",
+    "section": "Abstract",
+    "text": "Abstract\nProcessing fluency, the experienced ease of ongoing mental operations, influences judgments such as frequency, monetary value, or truth. Most experiments keep to-be-judged stimuli ambiguous with regards to these judgment dimensions. In real life, however, people usually have declarative information about these stimuli beyond the experiential processing information. Here, we address how experiential fluency information may inform truth judgments in the presence of declarative advice information. Four experiments show that fluency influences judged truth even when advice about the statements’ truth is continuously available and labelled as highly valid; the influence follows a linear cue integration pattern for two orthogonal cues (i.e., experiential and declarative information). These data underline the importance of processing fluency as an explanatory construct in real-life judgements and support a cue integration framework to understand fluency effects in judgment and decision making."
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n         \n          Publication\n        \n         \n          Year\n        \n     \n  \n    \n      \n      \n    \n\n\n  \n    Worth the weight: An examination of unstructured and structured data in graduate admissions\n    Adaryukov, Biernat, et al.\n    Decision\n    (2024)\n    \n      Details\n    \n    \n      DOI\n    \n    \n       Materials\n    \n  \n  \n    Attention division and the truth effect: A case of moderation by source credibility manipulation.\n    Bena et al.\n    \n    (2019)\n    \n      Details\n    \n    \n       Materials\n    \n  \n  \n    Citation (APA 7)\n    \n    \n    ()\n    \n      Details\n    \n  \n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    On the relationship between recognition judgments and truth judgments: Memory states moderate the recognition-based truth effect.\n    Nadarevic & Erdfelder\n    Journal of Experimental Psychology: Learning, Memory, and Cognition.\n    (2025)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Truth-by-repetition across languages.\n    De keersmaecker et al.\n    Journal of Applied Research in Memory and Cognition.\n    (2024)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n  \n\n  \n    An initial accuracy focus prevents illusory truth.\n    Brashier et al.\n    Cognition\n    (2020)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Can corrections spread misinformation to new audiences? Testing for the elusive familiarity backfire effect.\n    Ecker et al.\n    \n    (2020)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Does delay between exposure and truth judgement decrease the truth effect through a recollection impairment? A Remember/Know study\n    Bena et al.\n    \n    (2020)\n    \n      Details\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Only half of what i’ll tell you is true: Expecting to encounter falsehoods reduces illusory truth.\n    Jalbert et al.\n    Journal of Applied Research in Memory and Cognition\n    (2020)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Repetition increases both the perceived truth and fakeness of information: An ecological account.\n    Corneille et al.\n    Cognition\n    (2020)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Truth is in the mind, but beauty is in the eye: Fluency effects are moderated by a match between fluency source and judgment dimension.\n    Vogel et al.\n     Journal of Experimental Psychology: General.\n    (2020)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Truthiness, the illusory truth effect, and the role of need for cognition.\n    Newman et al.\n    Consciousness and Cognition\n    (2020)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Attention division and the truth effect: A case of moderation by source credibility manipulation.\n    Bena et al.\n    \n    (2019)\n    \n      Details\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Repetition increases perceived truth equally for plausible and implausible statements.\n    Fazio et al.\n    Psychonomic Bulletin & Review\n    (2019)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Experiential fluency and declarative advice jointly inform judgments of truth.\n    Unkelbach & Greifeneder\n    Journal of Experimental Social Psychology\n    (2018)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Foreign language reduces the longevity of the repetition-based truth effect.\n    Nadarevic et al.\n    Acta psychologica\n    (2018)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Prior exposure increases perceived accuracy of fake news.\n    Pennycook et al.\n    Journal of Experimental Psychology: General\n    (2018)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Unveiling the truth: Warnings reduce the repetition-based truth effect.\n    Nadarevic & Aßfalg\n    Psychological Research\n    (2017)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Initial judgment task and delay of the final validity-rating task moderate the truth effect.\n    Nadarevic & Erdfelder\n    Consciousness and cognition\n    (2014)\n    \n      Details\n    \n    \n    \n      DOI\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    An investigation of the truth effect and different personality traits.\n    Nadarevic et al.\n    \n    (2012)\n    \n      Details\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    Judgment mode instructions do not moderate the truth effect.\n    Nadarevic & Rinnewitz\n    \n    (2011)\n    \n      Details\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n  \n    A failed replication of the truth effect.\n    Nadarevic \n    \n    (2007)\n    \n      Details\n    \n    \n    \n    \n    \n       Materials\n    \n    \n  \n\n\n\nNo matching items"
   }
 ]
