@@ -6,80 +6,135 @@ toc: false
 ---
 <div class="table-responsive">
   <input type="text" id="filterInput" class="form-control mb-3" placeholder="Filter table...">
-  <table id="csvTable" class="table table-bordered table-hover">
-    <thead></thead>
+  <table id="csvTable" class="table table-hover table-striped">
+    <thead>
+      <tr class="table-primary">
+        <th data-col="COLUMN_NAME">Column</th>
+        <th data-col="DATA_TYPE">Type</th>
+        <th data-col="DESCRIPTION">Description</th>
+      </tr>
+    </thead>
     <tbody></tbody>
   </table>
 </div>
 
-<script>
-// Replace this with the RAW URL of your CSV file
-const csvUrl = 'https://raw.githubusercontent.com/slesche/ted-site/main/src/variable_overview.csv';
+<style>
+  .group-header {
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+  }
 
-function parseCSV(text) {
-  const rows = text.trim().split('\n').map(row => row.split(','));
-  const thead = document.querySelector('#csvTable thead');
+  .table-striped > tbody > tr.visible-row:nth-of-type(odd) {
+    background-color: var(--bs-table-striped-bg);
+  }
+
+  .table-striped > tbody > tr.visible-row:nth-of-type(even) {
+    background-color: var(--bs-table-bg);
+  }
+</style>
+
+<script>
+// CSV URL
+const csvUrl = 'https://raw.githubusercontent.com/SLesche/ted-site/refs/heads/main/src/ted_overview.csv';
+
+// Load CSV using PapaParse for robustness
+function loadCSV(url) {
+  return fetch(url)
+    .then(res => res.text())
+    .then(text => new Promise((resolve) => {
+      Papa.parse(text, {
+        header: true,
+        skipEmptyLines: true,
+        complete: (results) => resolve(results.data)
+      });
+    }));
+}
+
+// Render grouped table
+function renderTable(data) {
   const tbody = document.querySelector('#csvTable tbody');
-  
-  thead.innerHTML = '';
   tbody.innerHTML = '';
 
-  // Create headers
-  const headRow = document.createElement('tr');
-  rows[0].forEach(header => {
-    const th = document.createElement('th');
-    th.textContent = header;
-    th.style.cursor = 'pointer';
-    th.onclick = () => sortTable(rows[0].indexOf(header));
-    headRow.appendChild(th);
-  });
-  thead.appendChild(headRow);
+  // Normalize keys
+  const groupCol = Object.keys(data[0]).find(k => k.toLowerCase() === 'table');
+  const colCol = Object.keys(data[0]).find(k => k.toLowerCase() === 'column_name');
+  const typeCol = Object.keys(data[0]).find(k => k.toLowerCase() === 'data_type');
+  const descCol = Object.keys(data[0]).find(k => k.toLowerCase() === 'description');
 
-  // Create rows
-  rows.slice(1).forEach(row => {
-    const tr = document.createElement('tr');
-    row.forEach(cell => {
-      const td = document.createElement('td');
-      td.textContent = cell;
-      tr.appendChild(td);
+  // Group data by table
+  const groups = {};
+  data.forEach(row => {
+    const key = row[groupCol] || 'Undefined';
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(row);
+  });
+
+  // Desired order of group names
+  const groupOrder = [
+    'publication_table',
+    'study_table',
+    'measure_table',
+    'procedure_table',
+    'between_table',
+    'within_table',
+    'observation_table',
+    'statementset_table',
+    'statement_table'
+  ];
+
+  // Sort groups by the desired order
+  const sortedGroups = Object.entries(groups).sort(([a], [b]) => {
+    const indexA = groupOrder.indexOf(a.toLowerCase());
+    const indexB = groupOrder.indexOf(b.toLowerCase());
+    return (indexA === -1 ? Infinity : indexA) - (indexB === -1 ? Infinity : indexB);
+  });
+
+  // Render the sorted groups
+  sortedGroups.forEach(([tableName, rows], i) => {
+    const groupId = `group-${i}`;
+
+    // Group header
+    const headerRow = document.createElement('tr');
+    headerRow.className = 'table-info group-header';
+    headerRow.dataset.toggleId = groupId;
+    headerRow.innerHTML = `<td colspan="3">${tableName}</td>`;
+    headerRow.onclick = () => {
+      document.querySelectorAll(`.child-of-${groupId}`).forEach(row => {
+        row.classList.toggle('hidden-row');
+      });
+    };
+    tbody.appendChild(headerRow);
+
+    // Data rows (visible by default)
+    rows.forEach(row => {
+      const tr = document.createElement('tr');
+      tr.classList.add(`child-of-${groupId}`, 'visible-row');
+      tr.innerHTML = `
+        <td>${row[colCol] || ''}</td>
+        <td>${row[typeCol] || ''}</td>
+        <td>${row[descCol] || ''}</td>
+      `;
+      tbody.appendChild(tr);
     });
-    tbody.appendChild(tr);
   });
 }
 
-// Load CSV
-fetch(csvUrl)
-  .then(response => response.text())
-  .then(text => {
-    parseCSV(text);
-  })
-  .catch(err => {
-    document.querySelector('#csvTable').outerHTML = `<div class="alert alert-danger">Could not load CSV file.</div>`;
-    console.error(err);
-  });
 
-// Filter
+
+// Filtering
 document.querySelector('#filterInput').addEventListener('input', function () {
   const filter = this.value.toLowerCase();
-  const rows = document.querySelectorAll('#csvTable tbody tr');
+  const rows = document.querySelectorAll('#csvTable tbody tr:not(.group-header)');
   rows.forEach(row => {
-    const cells = row.querySelectorAll('td');
-    const match = Array.from(cells).some(td => td.textContent.toLowerCase().includes(filter));
-    row.style.display = match ? '' : 'none';
+    const text = row.textContent.toLowerCase();
+    row.style.display = text.includes(filter) ? '' : 'none';
   });
 });
 
-// Sort
-let sortDirection = 1;
-function sortTable(colIndex) {
-  const tbody = document.querySelector('#csvTable tbody');
-  const rows = Array.from(tbody.querySelectorAll('tr'));
-  rows.sort((a, b) => {
-    const aText = a.children[colIndex].textContent;
-    const bText = b.children[colIndex].textContent;
-    return aText.localeCompare(bText, undefined, {numeric: true}) * sortDirection;
-  });
-  sortDirection *= -1;
-  rows.forEach(row => tbody.appendChild(row));
-}
+// Load everything
+loadCSV(csvUrl).then(data => renderTable(data));
 </script>
+
+<!-- Add PapaParse -->
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
