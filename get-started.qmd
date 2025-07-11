@@ -15,7 +15,7 @@ A full overview of the available variables is available here:
 
 ::: {=html}
 <div class="text-center my-3">
-  <a href="#" class="btn btn-sm btn-outline-info">
+  <a href="variable-overview.qmd" class="btn btn-sm btn-outline-info">
     <i class="bi bi-table"></i> Variable Overview
   </a>
 </div>

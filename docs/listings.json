@@ -1,17 +1,5 @@
 [
   {
-    "listing": "/people.html",
-    "items": [
-      "/people/staff/lesche_sven.html"
-    ]
-  },
-  {
-    "listing": "/news.html",
-    "items": [
-      "/posts/acii2024/index.html"
-    ]
-  },
-  {
     "listing": "/publications.html",
     "items": [
       "/publications/articles/nadarevic2025relationship.html",
@@ -33,6 +21,18 @@
       "/publications/articles/nadarevic2012investigation.html",
       "/publications/articles/nadarevic2011judgment.html",
       "/publications/articles/nadarevic2007failed.html"
+    ]
+  },
+  {
+    "listing": "/news.html",
+    "items": [
+      "/posts/acii2024/index.html"
+    ]
+  },
+  {
+    "listing": "/people.html",
+    "items": [
+      "/people/staff/lesche_sven.html"
     ]
   }
 ]

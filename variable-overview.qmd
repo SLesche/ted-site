@@ -1,0 +1,85 @@
+---
+title: "Variable Overview Table"
+format: html
+page-layout: full
+toc: false
+---
+<div class="table-responsive">
+  <input type="text" id="filterInput" class="form-control mb-3" placeholder="Filter table...">
+  <table id="csvTable" class="table table-bordered table-hover">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script>
+// Replace this with the RAW URL of your CSV file
+const csvUrl = 'https://raw.githubusercontent.com/slesche/ted-site/main/src/variable_overview.csv';
+
+function parseCSV(text) {
+  const rows = text.trim().split('\n').map(row => row.split(','));
+  const thead = document.querySelector('#csvTable thead');
+  const tbody = document.querySelector('#csvTable tbody');
+  
+  thead.innerHTML = '';
+  tbody.innerHTML = '';
+
+  // Create headers
+  const headRow = document.createElement('tr');
+  rows[0].forEach(header => {
+    const th = document.createElement('th');
+    th.textContent = header;
+    th.style.cursor = 'pointer';
+    th.onclick = () => sortTable(rows[0].indexOf(header));
+    headRow.appendChild(th);
+  });
+  thead.appendChild(headRow);
+
+  // Create rows
+  rows.slice(1).forEach(row => {
+    const tr = document.createElement('tr');
+    row.forEach(cell => {
+      const td = document.createElement('td');
+      td.textContent = cell;
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+}
+
+// Load CSV
+fetch(csvUrl)
+  .then(response => response.text())
+  .then(text => {
+    parseCSV(text);
+  })
+  .catch(err => {
+    document.querySelector('#csvTable').outerHTML = `<div class="alert alert-danger">Could not load CSV file.</div>`;
+    console.error(err);
+  });
+
+// Filter
+document.querySelector('#filterInput').addEventListener('input', function () {
+  const filter = this.value.toLowerCase();
+  const rows = document.querySelectorAll('#csvTable tbody tr');
+  rows.forEach(row => {
+    const cells = row.querySelectorAll('td');
+    const match = Array.from(cells).some(td => td.textContent.toLowerCase().includes(filter));
+    row.style.display = match ? '' : 'none';
+  });
+});
+
+// Sort
+let sortDirection = 1;
+function sortTable(colIndex) {
+  const tbody = document.querySelector('#csvTable tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  rows.sort((a, b) => {
+    const aText = a.children[colIndex].textContent;
+    const bText = b.children[colIndex].textContent;
+    return aText.localeCompare(bText, undefined, {numeric: true}) * sortDirection;
+  });
+  sortDirection *= -1;
+  rows.forEach(row => tbody.appendChild(row));
+}
+</script>
