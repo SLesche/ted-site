@@ -16,7 +16,7 @@ TED currently contains:
   
 ::: {.stat-box}
 ### 📊  
-**20+ Studies**  
+**50 Studies**  
 <small>All focused on the illusory truth effect</small>
 :::
 
