@@ -8,6 +8,7 @@
       "/publications/articles/ecker2020corrections.html",
       "/publications/articles/bena2020delay.html",
       "/publications/articles/jalbert2020only.html",
+      "/publications/articles/nadarevic2020perceived.html",
       "/publications/articles/corneille2020repetition.html",
       "/publications/articles/vogel2020truth.html",
       "/publications/articles/newman2020truthiness.html",
@@ -24,15 +25,15 @@
     ]
   },
   {
-    "listing": "/news.html",
-    "items": [
-      "/posts/acii2024/index.html"
-    ]
-  },
-  {
     "listing": "/people.html",
     "items": [
       "/people/staff/lesche_sven.html"
+    ]
+  },
+  {
+    "listing": "/news.html",
+    "items": [
+      "/posts/acii2024/index.html"
     ]
   }
 ]

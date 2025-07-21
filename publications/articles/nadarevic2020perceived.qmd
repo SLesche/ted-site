@@ -1,0 +1,20 @@
+---
+title: "Perceived truth of statements and simulated social media postings: an experimental investigation of source credibility, repeated exposure, and presentation format."
+type: "article"
+author: "Nadarevic et al."
+year: "2020"
+publication: "Cognitive Research: Principles and Implications"
+doi: "https://doi.org/10.1186/s41235-020-00251-4"
+materials: "https://osf.io/bnqgs/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Nadarevic, L., Reber, R., Helmecke, A. J., & Köse, D. (2020). Perceived truth of statements and simulated social media postings: an experimental investigation of source credibility, repeated exposure, and presentation format. Cognitive Research: Principles and Implications, 5(1), 1-16.
+
+## Abstract
+
+To better understand the spread of fake news in the Internet age, it is important to uncover the variables that influence the perceived truth of information. Although previous research identified several reliable predictors of truth judgments—such as source credibility, repeated information exposure, and presentation format—little is known about their simultaneous effects. In a series of four experiments, we investigated how the abovementioned factors jointly affect the perceived truth of statements (Experiments 1 and 2) and simulated social media postings (Experiments 3 and 4). Experiment 1 explored the role of source credibility (high vs. low vs. no source information) and presentation format (with vs. without a picture). In Experiments 2 and 3, we additionally manipulated repeated exposure (yes vs. no). Finally, Experiment 4 examined the role of source credibility (high vs. low) and type of repetition (congruent vs. incongruent vs. no repetition) in further detail. In sum, we found no effect of presentation format on truth judgments, but strong, additive effects of source credibility and repetition. Truth judgments were higher for information presented by credible sources than non-credible sources and information without sources. Moreover, congruent (i.e., verbatim) repetition increased perceived truth whereas semantically incongruent repetition decreased perceived truth, irrespectively of the source. Our findings show that people do not rely on a single judgment cue when evaluating a statement’s truth but take source credibility and their meta-cognitive feelings into account.

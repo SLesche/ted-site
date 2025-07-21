@@ -30,7 +30,7 @@ We greatly appreciate your support and commitment to transparent, cumulative, an
 ---
 
 <div class="text-center">
-  <a href="https://slesche.github.io/truth-db/" class="btn btn-lg btn-primary">
+  <a href="https://slesche.github.io/truth-effect-database/" class="btn btn-lg btn-primary">
     <i class="bi bi-upload"></i>  Submit Your Data
   </a>
 </div>
