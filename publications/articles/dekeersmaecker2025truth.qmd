@@ -1,0 +1,21 @@
+---
+title: "Truth by repetition reliably differs between people over time."
+type: "article"
+author: "De keersmaecker et al."
+year: "2025"
+publication: "Preprint (OSF)"
+doi: "https://doi.org/10.31234/osf.io/aeukr_v1"
+materials: "https://osf.io/sz63w/files/osfstorage?view_only=6c9b8bd534644bc382849aaea9e153ee#"
+toc: false
+categories:
+  - article
+  - preprint
+---
+
+## Citation (APA 7)
+
+> De Keersmaecker, J., Wiernik, B. M., Roets, A., & Unkelbach, C. (2025). Truth by repetition reliably differs between people over time. https://doi.org/10.31234/osf.io/aeukr_v1
+
+## Abstract
+
+Repetition increases the believability of information. Despite the widespread (harmful) implications and strategic use of this truth-by-repetition effect (TBRE), little is known about whether the effect is uniform across individuals. Across two longitudinal experiments (N1 = 113; N2 = 430), each consisting of five sessions spanning over 33 days, we collected 108,600 truth judgments. Results showed a trait-like TBRE: We found substantial individual differences in the TBRE, which were reliable and stable over time. The effect varied from being practically absent to being large, and we found no evidence for stable reversals; repetition did not meaningfully decrease believability among some individuals. Differences in the TBRE were modestly predicted by people’s Preference for Fluency. The results challenge the idea of a universal TBRE; Repetition increases the believability of information – but not for everyone, and more so for some than others.

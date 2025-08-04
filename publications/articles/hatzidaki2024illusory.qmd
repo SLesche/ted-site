@@ -1,0 +1,20 @@
+---
+title: "Illusory truth effect across languages and scripts."
+type: "article"
+author: "Hatzidaki et al."
+year: "2025"
+publication: "Psychonomic Bulletin & Review"
+doi: "https://doi.org/10.3758/s13423-024-02596-z"
+materials: "https://osf.io/26sm3/files/osfstorage"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Hatzidaki, A., Santesteban, M., & Navarrete, E. (2025). Illusory truth effect across languages and scripts. Psychonomic Bulletin & Review, 32 (3), 1231–1239. https://doi.org/10.3758/s13423-024-02596-z
+
+## Abstract
+
+The repetition of a statement increases its credibility, a phenomenon known as the illusory truth effect. Here we tested whether the illusory truth effect persists across languages and scripts. In two experiments, Italian-English (n = 80) and Greek-English (n = 66), unbalanced bilinguals were exposed to 60 written unknown trivia statements in English. After a distractor math task, participants rated the truthfulness of the same 60 (repeated) statements and 60 new statements, which were presented either in the same language as in the exposure phase (English) or in a different language (Italian, Experiment 1, or Greek, Experiment 2). Response times were faster when information was repeated in the same language compared to a different language, suggesting increased processing fluency in the former than in the latter case. Truth ratings yielded an illusory truth effect: repeated statements were considered more truthful than new statements. Interestingly, the magnitude of the illusory truth effect remained regardless of whether the repetition was in the same or in a different language and persisted even when the different language condition also entailed a different script (Latin in exposure phase and Greek in repetition). The results suggest that the language of information presentation is not a critical factor to affect the illusory truth effect, despite the fact that repetition in the same language increases processing speed. We interpret our results in light of the referential theory (Unkelbach & Rom, Cognition 160: 110–126, 2017), attributing the illusory truth effect to conceptual fluency induced by the overlap of activated conceptual representations in bilingual memory.

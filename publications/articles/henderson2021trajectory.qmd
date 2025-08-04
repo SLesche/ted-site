@@ -1,0 +1,20 @@
+---
+title: "The Trajectory of Truth: A Longitudinal Study of the Illusory Truth Effect"
+type: "article"
+author: "Henderson et al."
+year: "2021"
+publication: " Journal of Cognition"
+doi: "https://doi.org/10.5334/joc.161"
+materials: "https://osf.io/2aenr"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Hatzidaki, A., Santesteban, M., & Navarrete, E. (2025). Illusory truth effect across languages and scripts. Psychonomic Bulletin & Review, 32 (3), 1231–1239. https://doi.org/10.3758/s13423-024-02596-z
+
+## Abstract
+
+Repeated statements are rated as subjectively truer than comparable new statements, even though repetition alone provides no new, probative information (the illusory truth effect). Contrary to some theoretical predictions, the illusory truth effect seems to be similar in magnitude for repetitions occurring after minutes or weeks. This Registered Report describes a longitudinal investigation of the illusory truth effect (n = 608, n = 567 analysed) in which we systematically manipulated intersession interval (immediately, one day, one week, and one month) in order to test whether the illusory truth effect is immune to time. Both our hypotheses were supported: We observed an illusory truth effect at all four intervals (overall effect: χ2(1) = 169.91; Mrepeated = 4.52, Mnew = 4.14; H1), with the effect diminishing as delay increased (H2). False information repeated over short timescales might have a greater effect on truth judgements than repetitions over longer timescales. Researchers should consider the implications of the choice of intersession interval when designing future illusory truth effect research.
