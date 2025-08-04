@@ -1,11 +1,11 @@
 ---
-title: "The Trajectory of Truth: A Longitudinal Study of the Illusory Truth Effect"
+title: "Does foreign-accented speech affect credibility? Evidence from the illusory-truth paradigm."
 type: "article"
-author: "Henderson et al."
-year: "2021"
-publication: " Journal of Cognition"
-doi: "https://doi.org/10.5334/joc.161"
-materials: "https://osf.io/2aenr"
+author: "Lorenzoni et al."
+year: "2024"
+publication: "Journal of Cognition"
+doi: "https://doi.org/10.5334/joc.353"
+materials: "https://osf.io/zc9n7"
 toc: false
 categories:
   - article
@@ -13,7 +13,7 @@ categories:
 
 ## Citation (APA 7)
 
-> Henderson, E. L., Simons, D. J., & Barr, D. J. (2021). The trajectory of truth: A longitudinal study of the illusory truth effect. Journal of Cognition, 4 (1), 29. https://doi.org/10.5334/joc.161
+> Lorenzoni, A., Faccio, R., & Navarrete, E. (2024). Does foreign-accented speech affect credibility? Evidence from the illusory-truth paradigm. Journal of Cognition, 7 (1), 26. https://doi.org/10.5334/joc.353
 
 ## Abstract
 

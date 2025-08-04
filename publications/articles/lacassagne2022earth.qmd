@@ -1,0 +1,20 @@
+---
+title: "Is Earth a perfect square? Repetition increases the perceived truth of highly implausible statements"
+type: "article"
+author: "Lacassagne et al."
+year: "2022"
+publication: "Cognition"
+doi: "https://doi.org/10.1016/j.cognition.2022.105052"
+materials: "https://osf.io/2pgmx"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Lacassagne, D., Béna, J., & Corneille, O. (2022). Is Earth a perfect square? Repetition increases the perceived truth of highly implausible statements. Cognition, 223, 105052. https://doi.org/10.1016/j.cognition.2022.105052
+
+## Abstract
+
+A single exposure to statements is typically enough to increase their perceived truth. This Truth-by-Repetition (TBR) effect has long been assumed to occur only with statements whose truth value is unknown to participants. Contrary to this hypothesis, recent research has found that statements contradicting participants' prior knowledge (as established from a first sample of participants) show a TBR effect following their repetition (in a second, independent sample of participants). As for now, however, attempts at finding a TBR effect for blatantly false (i.e., highly implausible) statements have failed. Here, we reasoned that highly implausible statements such as Elephants run faster than cheetahs may show repetition effects, provided a sensitive truth measure is used and statements are repeated more than just once. In a preregistered experiment, participants judged on a 100-point scale the truth of highly implausible statements that were either new to them or had been presented five times before judgment. We observed an effect of repetition: repeated statements were judged more true than new ones, although all judgments were judged below the scale midpoint. Exploratory analyses additionally show that about half the participants showed no or even a reversed effect of repetition. The results provide the first empirical evidence that repetition can increase perceived truth even for highly implausible statements, although not equally so for all participants and not to the point of making the statements look true.

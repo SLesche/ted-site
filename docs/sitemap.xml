@@ -2,134 +2,154 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://slesche.github.io/ted-site/variable-overview.html</loc>
-    <lastmod>2025-07-21T16:57:13.550Z</lastmod>
+    <lastmod>2025-07-11T12:20:57.023Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications.html</loc>
-    <lastmod>2025-07-21T16:57:11.954Z</lastmod>
+    <lastmod>2025-07-09T10:11:52.230Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/unkelbach2018experiential.html</loc>
-    <lastmod>2025-07-21T16:57:09.914Z</lastmod>
+    <lastmod>2025-07-10T18:43:51.224Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/newman2020truthiness.html</loc>
-    <lastmod>2025-07-21T16:57:08.010Z</lastmod>
+    <lastmod>2025-07-10T18:43:51.224Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/nadarevic2020perceived.html</loc>
-    <lastmod>2025-07-21T16:57:05.985Z</lastmod>
+    <lastmod>2025-07-21T16:59:53.954Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/nadarevic2017unveiling.html</loc>
-    <lastmod>2025-07-21T16:57:04.028Z</lastmod>
+    <lastmod>2025-07-10T18:43:51.224Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/nadarevic2012investigation.html</loc>
-    <lastmod>2025-07-21T16:57:02.004Z</lastmod>
+    <lastmod>2025-07-10T18:47:34.184Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/nadarevic2007failed.html</loc>
-    <lastmod>2025-07-21T16:57:00.230Z</lastmod>
+    <lastmod>2025-07-10T18:43:51.223Z</lastmod>
   </url>
   <url>
-    <loc>https://slesche.github.io/ted-site/publications/articles/fazio2019reptition.html</loc>
-    <lastmod>2025-07-21T16:56:58.323Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/publications/articles/dekeersmaecker2024truth.html</loc>
-    <lastmod>2025-07-21T16:56:56.342Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/publications/articles/brashier2020initial.html</loc>
-    <lastmod>2025-07-21T16:56:54.198Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/publications/articles/bena2019attention.html</loc>
-    <lastmod>2025-07-21T16:56:51.828Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/people.html</loc>
-    <lastmod>2025-07-21T16:56:49.660Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/news.html</loc>
-    <lastmod>2025-07-21T16:56:47.229Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/index.html</loc>
-    <lastmod>2025-07-21T16:56:44.592Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/get-started.html</loc>
-    <lastmod>2025-07-21T16:56:42.578Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/contact.html</loc>
-    <lastmod>2025-07-21T16:56:39.149Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/contribute.html</loc>
-    <lastmod>2025-07-21T16:56:40.319Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/girard/index.html</loc>
-    <lastmod>2025-07-21T16:56:43.482Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/mvac/index.html</loc>
-    <lastmod>2025-07-21T16:56:45.448Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/people/staff/lesche_sven.html</loc>
-    <lastmod>2025-07-21T16:56:48.355Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/posts/acii2024/index.html</loc>
-    <lastmod>2025-07-21T16:56:50.906Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/publications/articles/bena2020delay.html</loc>
-    <lastmod>2025-07-21T16:56:53.027Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/publications/articles/corneille2020repetition.html</loc>
-    <lastmod>2025-07-21T16:56:55.348Z</lastmod>
-  </url>
-  <url>
-    <loc>https://slesche.github.io/ted-site/publications/articles/ecker2020corrections.html</loc>
-    <lastmod>2025-07-21T16:56:57.319Z</lastmod>
+    <loc>https://slesche.github.io/ted-site/publications/articles/lorenzoni2024foreign.html</loc>
+    <lastmod>2025-08-04T14:56:39.089Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/jalbert2020only.html</loc>
-    <lastmod>2025-07-21T16:56:59.297Z</lastmod>
+    <lastmod>2025-07-10T18:43:51.222Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/hatzidaki2024illusory.html</loc>
+    <lastmod>2025-08-04T13:45:06.414Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/ecker2020corrections.html</loc>
+    <lastmod>2025-07-10T18:43:51.222Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/dekeersmaecker2024truth.html</loc>
+    <lastmod>2025-07-10T18:43:51.222Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/brashier2020initial.html</loc>
+    <lastmod>2025-07-10T18:43:51.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/bena2019attention.html</loc>
+    <lastmod>2025-07-10T18:43:51.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/people.html</loc>
+    <lastmod>2025-07-03T11:23:57.268Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/news.html</loc>
+    <lastmod>2025-07-02T08:44:15.697Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/index.html</loc>
+    <lastmod>2025-07-17T07:35:45.806Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/contribute.html</loc>
+    <lastmod>2025-07-21T16:59:53.938Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/contact.html</loc>
+    <lastmod>2025-07-09T10:07:19.824Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/get-started.html</loc>
+    <lastmod>2025-07-11T12:20:57.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/mvac/index.html</loc>
+    <lastmod>2025-07-02T08:50:26.123Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/people/staff/lesche_sven.html</loc>
+    <lastmod>2025-07-09T10:11:39.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/posts/acii2024/index.html</loc>
+    <lastmod>2025-08-04T14:59:27.878Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/bena2020delay.html</loc>
+    <lastmod>2025-07-10T18:43:51.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/corneille2020repetition.html</loc>
+    <lastmod>2025-07-10T18:43:51.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/dekeersmaecker2025truth.html</loc>
+    <lastmod>2025-08-04T13:45:06.414Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/fazio2019reptition.html</loc>
+    <lastmod>2025-07-10T18:43:51.222Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/henderson2021trajectory.html</loc>
+    <lastmod>2025-08-04T14:53:04.070Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/lacassagne2022earth.html</loc>
+    <lastmod>2025-08-04T14:56:02.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://slesche.github.io/ted-site/publications/articles/murray2020said.html</loc>
+    <lastmod>2025-08-04T14:58:19.955Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/nadarevic2011judgment.html</loc>
-    <lastmod>2025-07-21T16:57:01.107Z</lastmod>
+    <lastmod>2025-07-10T18:43:51.223Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/nadarevic2014initial.html</loc>
-    <lastmod>2025-07-21T16:57:03.005Z</lastmod>
+    <lastmod>2025-07-10T18:43:51.224Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/nadarevic2018foreign.html</loc>
-    <lastmod>2025-07-21T16:57:05.027Z</lastmod>
+    <lastmod>2025-07-10T18:43:51.224Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/nadarevic2025relationship.html</loc>
-    <lastmod>2025-07-21T16:57:07.037Z</lastmod>
+    <lastmod>2025-07-10T18:43:51.224Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/pennycook2018prior.html</loc>
-    <lastmod>2025-07-21T16:57:08.958Z</lastmod>
+    <lastmod>2025-07-10T18:43:51.224Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/publications/articles/vogel2020truth.html</loc>
-    <lastmod>2025-07-21T16:57:10.850Z</lastmod>
+    <lastmod>2025-07-10T18:47:47.902Z</lastmod>
   </url>
   <url>
     <loc>https://slesche.github.io/ted-site/resources.html</loc>
-    <lastmod>2025-07-21T16:57:12.734Z</lastmod>
+    <lastmod>2025-07-02T08:47:39.784Z</lastmod>
   </url>
 </urlset>

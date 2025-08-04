@@ -1,0 +1,21 @@
+---
+title: "'I’ve said it before and I will say it again': Repeating statements made by Donald Trump increases perceived truthfulness for individuals across the political spectrum."
+type: "article"
+author: "Murray et al."
+year: "2020"
+publication: ""
+doi: "https://doi.org/10.31234/osf.io/9evzc"
+materials: "https://osf.io/h6bu3/"
+toc: false
+categories:
+  - article
+  - preprint
+---
+
+## Citation (APA 7)
+
+> Murray, S., Stanley, M., McPhetres, J., Pennycook, G., & Seli, P. (2020). "I’ve said it before and I will say it again": Repeating statements made by Donald Trump increases perceived truthfulness for individuals across the political spectrum. https://doi.org/10.31234/osf.io/9evzc
+
+## Abstract
+
+Fact-checking organizations have reported that Donald Trump is prone to repeating patently false statements. Previous research has shown that repetition increases perceived truthfulness of even implausible statements (also known as the illusory truth effect). However, other research has shown that people may engage in motivated reasoning when interacting with someone from a different ideological group. We measured the effect of repeating statements made by Donald Trump on perceived truthfulness. Participants (N = 465) rated the truthfulness of different statements made by Donald Trump, some of which were repeated from an earlier phase of the experiment. Our results are striking. We observe an overall effect of repetition on perceived truthfulness that is equally robust regardless of political affiliation. Our results suggest that ideologically-motivated beliefs do not modulate the effect of repetition on perceived truthfulness of statements.
