@@ -1,0 +1,20 @@
+---
+title: "Judging fast and slow: The truth effect does not increase under time-pressure conditions."
+type: "article"
+author: "Nadarevic et al."
+year: "2021"
+publication: " Judgment and Decision Making"
+doi: "http://journal.sjdm.org/21/210111b/jdm210111b.pdf"
+materials: "https://osf.io/687bn/"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Nadarevic, L., Schnuerch, M., & Stegemann, M. J. (2021). Judging fast and slow: The truth effect does not increase under time-pressure conditions. Judgment and Decision Making, 16(5), 1234-1266. http://journal.sjdm.org/21/210111b/jdm210111b.pdf
+
+## Abstract
+
+Due to the information overload in today’s digital age, people maysometimes feel pressured to process and judge information especially fast. Inthree experiments, we examined whether time pressure increases therepetition-based truth effect — the tendency to judge repeatedlyencountered statements more likely as “true” than novelstatements. Based on the Heuristic-Systematic Model, a dual-process model in thefield of persuasion research, we expected that time pressure would boost thetruth effect by increasing reliance on processing fluency as a presumablyheuristic cue for truth, and by decreasing knowledge retrieval as a presumablyslow and systematic process that determines truth judgments. However, contraryto our expectation, time pressure did not moderate the truth effect.Importantly, this was the case for difficult statements, for which most peoplelack prior knowledge, as well as for easy statements, for which most people holdrelevant knowledge. Overall, the findings clearly speak against the conceptionof fast, fluency-based truth judgments versus slow, knowledge-based truthjudgments. In contrast, the results are compatible with a referential theory ofthe truth effect that does not distinguish between different types of truthjudgments. Instead, it assumes that truth judgments rely on the coherence oflocalized networks in people’s semantic memory, formed by both repetitionand prior knowledge.
