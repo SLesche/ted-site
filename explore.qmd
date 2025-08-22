@@ -1,0 +1,93 @@
+---
+pagetitle: "Explore | TED"
+toc: true
+---
+
+## A short overview of TED
+
+
+```{r, echo = TRUE}
+library(acdcquery)
+library(tidyverse)
+
+conn <- connect_to_db("ted.db")
+
+arguments <- list() %>% 
+  add_argument(
+    conn,
+    "publication_id",
+    "greater",
+    "0"
+  )
+
+publication_overview <- query_db(
+  conn,
+  arguments,
+  target_vars = "default",
+  target_table = "publication_table"
+)
+```
+
+same pictures here as in publication.
+
+
+Also print the distribution/overview of repetition time here.
+
+## Meta-Analysis
+
+This gives an overview of the effect sizes, not accounting for between/within manipulations. Use the procedure ID again, but account for thbis in the meta-analysis syntax.
+
+```{r, echo = FALSE}
+# Analysis data from 
+analysis_data <- query_db(
+  conn,
+  arguments %>% add_argument(
+    conn,
+    "phase",
+    "equal",
+    "test"
+  ),
+  target_vars = "default",
+  target_table = "publication_table"
+)
+
+has_complete_data <- analysis_data %>% 
+  count(procedure_id, subject, repeated) %>% 
+  count(procedure_id, subject) %>% 
+  mutate(
+    has_complete_data = ifelse(n == 2, 1, 0)
+  )
+
+analysis_data <- analysis_data %>% 
+  left_join(
+    ., has_complete_data
+  ) %>% 
+  filter(has_complete_data == 1) 
+
+data %>% 
+  group_by(procedure_identifier, subject, repeated) %>% 
+  summarize(
+    mean_resp = mean(response, na.rm = TRUE)
+  ) %>% 
+  group_by(procedure_identifier) %>% 
+  nest() %>% 
+  mutate(
+    effect = map(
+      data, 
+      ~effsize::cohen.d(response ~ repeated, hedges.correction = TRUE, data = .)
+    )
+  )
+```
+
+### Hierachical Bayesian Model
+
+To account for the complex variance structure, we recommend using multilevel models (paperlink) - reports link here also.
+
+Also talk about the split
+
+```{r}
+# multileverl model here using brms
+
+# Results from bayes here
+```
+
