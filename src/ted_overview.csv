@@ -32,7 +32,7 @@ procedure_table,response_deadline,BOOLEAN,Was there a response deadline?
 procedure_table,response_deadline_s,FLOAT,How long was the response deadline (in s)?
 procedure_table,percent_repeated,FLOAT,What percentage of statements was repeated?
 procedure_table,exposure_task,VARCHAR(255),What was the participants task during the exposure phase?
-procedure_table,exposure_task,BOOLEAN,Did participants rate the truth of statements in the exposure phase?
+procedure_table,exposure_task_truth,BOOLEAN,Did participants rate the truth of statements in the exposure phase?
 procedure_table,presentation_type,VARCHAR(255),How were the statements presented (visual / auditory)?
 procedure_table,phase,VARCHAR(255),Which phase does the data come from (exposure / test)?
 procedure_table,repetition_instructions,INTEGER,Were participants instructed that some of the statements may be repeated?
