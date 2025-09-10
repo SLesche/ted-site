@@ -1,0 +1,400 @@
+---
+title: "Analysis"
+---
+
+```{r, echo = FALSE}
+library(acdcquery)
+library(tidyverse)
+library(papaja)
+library(brms)
+library(rstan)
+library(sjPlot)
+library(bayesplot)
+
+
+conn <- connect_to_db("ted.db")
+
+arguments <- list() %>% 
+  add_argument(
+    conn,
+    "publication_id",
+    "greater",
+    "0"
+  )
+
+publications_overview <- query_db(
+  conn,
+  arguments,
+  "default",
+  "publication_table"
+)
+
+study_overview <- query_db(
+  conn,
+  arguments,
+  "default",
+  "study_table"
+)
+
+procedure_data <- query_db(
+  conn,
+  arguments %>% 
+    add_argument(
+      conn,
+      "phase",
+      "equal",
+      "test"
+    ),
+  "default",
+  "procedure_table"
+)
+
+
+full_data <- query_db(
+  conn,
+  arguments,
+  c("default", "study_id", "publication_id", "statement_text", "statement_accuracy", "statementset_id", "statementset_publication", "within_description", "between_description", "repetition_time", "n_statements", "phase", "truth_instructions", "repetition_instructions", "truth_instruction_timing", "repetition_instruction_timing", "truth_rating_scale", "truth_rating_steps"),
+  "observation_table"
+)
+
+
+```
+```{r setup-print-percent, echo = FALSE}
+print_percent <- function(percent){
+  apa_msg = papaja::apa_num(percent)
+  final = paste0(apa_msg, " %")
+  return(final)
+}
+
+print_freq_percent <- function(freq){
+  percent = freq*100
+  apa_msg = papaja::apa_num(percent)
+  final = paste0(apa_msg, " %")
+  return(final)
+}
+
+
+print_rel <- function(rel){
+  return(paste0("$\alpha~=~", papaja::apa_num(rel), "$"))
+}
+
+print_icc <- function(icc){
+  return(paste0("$ICC~=~", papaja::apa_num(icc), "$"))
+}
+```
+
+```{r, echo = FALSE}
+# Analysis data from 
+analysis_data <- full_data %>% 
+  filter(phase == "test") %>% 
+  filter(!is.na(repeated), !is.na(response)) %>% 
+  mutate(
+    truth_instruction_timing = ifelse(
+      truth_instruction_timing == "",
+      "none",
+      truth_instruction_timing
+    ),
+    repetition_instruction_timing = ifelse(
+      repetition_instruction_timing == "",
+      "none",
+      repetition_instruction_timing
+    ),
+    repetition_time_type = case_when(
+      repetition_time <= 5 ~ "immediate",
+      repetition_time > 5 & repetition_time <= 60 ~ "delay",
+      repetition_time >= 60*24 ~ "next_day"
+    )
+  ) %>% 
+  mutate(
+    truth_instruction_timing = fct_relevel(
+      factor(truth_instruction_timing),
+      "none",
+      "exposure", 
+      "test",
+      "both"
+    ),
+    repetition_instruction_timing = fct_relevel(
+      factor(repetition_instruction_timing),
+      "none",
+      "exposure", 
+      "test",
+      "both"
+    ),
+    repetition_time_type = fct_relevel(
+      factor(repetition_time_type),
+      "immediate",
+      "delay", 
+      "next_day"
+    ),
+    repetition_sameday = ifelse(repetition_time < 60*24, 1, 0),
+    repeated = repeated - 0.5
+  )
+
+has_complete_data <- analysis_data %>% 
+  count(procedure_id, subject, repeated) %>% 
+  count(procedure_id, subject) %>% 
+  mutate(
+    has_complete_data = ifelse(n == 2, 1, 0)
+  )
+
+analysis_data <- analysis_data %>% 
+  left_join(
+    ., has_complete_data
+  ) %>% 
+  filter(has_complete_data == 1) 
+
+dichotomous_data <- analysis_data %>% 
+  filter(truth_rating_scale == "dichotomous")
+
+scale_data <- analysis_data %>% 
+  filter(truth_rating_scale != "dichotomous")
+
+# Compute Effsizes later
+# data %>% 
+#   group_by(procedure_identifier, subject, repeated) %>% 
+#   summarize(
+#     mean_resp = mean(response, na.rm = TRUE)
+#   ) %>% 
+#   group_by(procedure_identifier) %>% 
+#   nest() %>% 
+#   mutate(
+#     effect = map(
+#       data, 
+#       ~effsize::cohen.d(response ~ repeated, hedges.correction = TRUE, data = .)
+#     )
+#   )
+```
+
+
+```{r, echo = FALSE}
+# Number of participants, age, laboratory status, scale
+long_study_data <- study_overview %>% 
+  mutate_all(as.character) %>% 
+  mutate(filler_task_type = case_when(
+    filler_task_type == "" ~ "",
+    filler_task_type == 0 ~ "non-verbal",
+    filler_task_type == 1 ~ "verbal",
+    TRUE ~ filler_task_type
+  )) %>% 
+  mutate(
+    filler_task_yesno = ifelse(filler_task_yesno == 1, "yes", "no"),
+    student_sample = ifelse(is.na(student_sample), "NA", ifelse(student_sample == 1, "yes", "no"))
+  ) %>% 
+  select(student_sample, truth_rating_scale, truth_rating_steps, filler_task_yesno, filler_task_type) %>% 
+  pivot_longer(cols = everything(), names_to = "variable", values_to = "value")
+
+plot_study_data <- long_study_data %>%
+  count(variable, value) %>% 
+  mutate(
+    value = fct_relevel(
+      factor(value),
+      "101", "range", "likert", "11", "7", "6", "5", "4", "dichotomous", "2"
+    )
+  )
+
+study_overview_plot <- ggplot(plot_study_data, aes(x = variable, y = n, fill = value)) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = paste0(value, " (", n, ")")),
+    position = position_stack(vjust = 0.5),
+    color = "black",
+    size = 2.5
+  ) +
+  labs(
+    title = "Breakdown of Study Variables",
+    x = NULL,
+    y = "Count"
+  ) +
+  scale_fill_grey(start = 0.3, end = 0.8) +  # Adjust range for lighter/darker contrast
+  theme_minimal(base_size = 11) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(hjust = 0.5)
+  )+
+  coord_flip()
+
+ggsave("img/study_overview_plot.png", study_overview_plot, width = 16, height = 9, scale = 0.4)
+
+
+# Reshape data to long format
+long_procedure_data <- procedure_data %>%
+  filter(phase == "test") %>% 
+  select(
+    repetition_instructions, repetition_instruction_timing,
+    truth_instructions, truth_instruction_timing,
+    presentation_type, repetition_type, repetition_location,
+    percent_repeated,
+    exposure_task_truth
+    ) %>%  # Add more vars if needed
+  mutate_all(as.character) %>% 
+  mutate(
+    repetition_instructions = ifelse(
+      repetition_instructions == "1", "yes", "no"
+    ),
+    exposure_task_truth = ifelse(
+      exposure_task_truth == 1, "yes", "no"
+    ),
+    repetition_instruction_timing = ifelse(
+      repetition_instruction_timing == "",
+      "none", repetition_instruction_timing
+    ),
+    truth_instructions = ifelse(
+      truth_instructions == "1", "yes", "no"
+    ),
+    truth_instruction_timing = ifelse(
+      truth_instruction_timing == "",
+      "none", truth_instruction_timing
+    ),
+    percent_repeated = case_when(
+      percent_repeated %in% c("66", "67", "66.67") ~ "66",
+      TRUE ~percent_repeated
+    ),
+    repetition_type = ifelse(repetition_type == "some exact, some semantic (incongruent)", "mixed", repetition_type)
+  ) %>% 
+  mutate(
+    truth_instruction_timing = fct_relevel(
+      factor(truth_instruction_timing),
+      "both", "exposure", "test", "none"
+    ),
+    repetition_instruction_timing = fct_relevel(
+      factor(repetition_instruction_timing),
+      "both", "exposure", "test", "none"
+    )
+  ) %>% 
+  pivot_longer(cols = everything(), names_to = "variable", values_to = "value")
+
+# Count combinations of variable and value
+plot_procedure_data <- long_procedure_data %>%
+  count(variable, value) %>% 
+  mutate(
+    value = fct_relevel(
+      factor(value),
+      "paraphrase", "exact","no", "none", "yes", "both", "exposure", "test", 
+      "100", "67", "66.67", "66", "50", "46.67", "33", "0", "mixed"
+    )
+  )
+
+# Plot
+procedure_overview_plot <- ggplot(plot_procedure_data, aes(x = variable, y = n, fill = value)) +
+  geom_bar(stat = "identity") +
+  geom_text(
+    aes(label = paste0(value, " (", n, ")")),
+    position = position_stack(vjust = 0.5),
+    color = "black",
+    size = 2.5
+  ) +
+  labs(
+    title = "Breakdown of Procedure Variables",
+    x = NULL,
+    y = "Count"
+  ) +
+  scale_fill_grey(start = 0.3, end = 0.8) +  # Adjust range for lighter/darker contrast
+  theme_minimal(base_size = 11) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(hjust = 0.5)
+  )+
+  coord_flip()
+
+ggsave("img/procedure_overview_plot.png", procedure_overview_plot, width = 16, height = 9, scale = 0.4)
+
+```
+
+
+
+```{r, echo = FALSE}
+compute_new = FALSE
+if (compute_new == TRUE){
+  
+  library(brms)
+  options(mc.cores = parallel::detectCores())
+
+  model_full_dichotomous_bayes = brms::brm(
+    response ~ repeated + (1 + repeated || subject) + (1 + repeated || statement_id) + (1 + repeated || procedure_id),
+    data = dichotomous_data,
+    family = brms::bernoulli(),
+    prior =  c(
+      prior(normal(0, 1), class = "b"),
+      prior(gamma(1, 4), class = "sd"),
+      prior(normal(0.5, 0.5), class = "Intercept")
+    ),
+    backend = "cmdstanr",
+    chains = 4,
+    cores = 4,
+    threads = threading(threads = 2),
+    control = list(adapt_delta = 0.90),
+    warmup = 1000,
+    iter = 3000,
+    file = "./src/models/bayes_model_dichotomous"
+  )
+  
+  model_full_scale_bayes = brms::brm(
+    response ~ repeated + (1 + repeated || subject) + (1 + repeated || statement_id) + (1 + repeated || procedure_id),
+    data = scale_data,
+    backend = "cmdstanr",
+    prior =  c(
+      prior(normal(0, 1), class = "b"),
+      prior(gamma(1, 4), class = "sd"),
+      prior(normal(0.5, 0.5), class = "Intercept")
+    ),
+    chains = 4,
+    cores = 4,
+    threads = threading(threads = 4),
+    control = list(adapt_delta = 0.90),
+    warmup = 1000,
+    iter = 3000,
+    file = "./src/models/bayes_model_scale"
+  )
+  
+  model_time_scale_bayes = brms::brm(
+    response ~ repeated + (1 + repeated || subject:repetition_sameday) + (1 + repeated || statement_id) + (1 + repeated || procedure_id),
+    data = scale_data,
+    backend = "cmdstanr",
+    prior =  c(
+      prior(normal(0, 1), class = "b"),
+      prior(gamma(1, 4), class = "sd"),
+      prior(normal(0.5, 0.5), class = "Intercept")
+    ),
+    chains = 4,
+    cores = 4,
+    threads = threading(threads = 4),
+    control = list(adapt_delta = 0.90),
+    warmup = 1000,
+    iter = 3000,
+    file = "./src/models/bayes_model_scale_time"
+  )
+} else {
+  model_full_dichotomous_bayes <- readRDS("./src/models/bayes_model_dichotomous.rds")
+  model_full_scale_bayes <- readRDS("./src/models/bayes_model_scale.rds")
+  model_time_scale_bayes <- readRDS("./src/models/bayes_model_scale_time.rds")
+}
+
+summary_model_full_dichotomous_bayes <- summary(model_full_dichotomous_bayes)
+summary_model_full_scale_bayes <- summary(model_full_scale_bayes)
+summary_model_time_scale_bayes <- summary(model_time_scale_bayes)
+```
+
+```{r, echo = FALSE}
+library(posterior)
+
+# Get random slopes from the fitted model
+re <- ranef(model_time_scale_bayes, summary = FALSE)$`subject:repetition_sameday`
+slopes <- re[, , "repeated"]
+intercept <- re[, , "Intercept"]
+
+# Identify grouping levels
+group_labels <- dimnames(re)[[2]]
+rep_vals <- as.integer(gsub(".*_", "", group_labels))  # extract 0 or 1 from subject:0 or subject:1
+
+# Separate by condition
+slopes_0 <- slopes[, rep_vals == 0]
+slopes_1 <- slopes[, rep_vals == 1]
+
+intercept_0 <- apply(intercept[, rep_vals == 0], 1, sd)
+intercept_1 <- apply(intercept[, rep_vals == 1], 1, sd)
+
+# Get posterior SD of slopes per condition
+sd_0 <- apply(slopes_0, 1, sd)
+sd_1 <- apply(slopes_1, 1, sd)
+sd_diff <- sd_1 - sd_0
+```

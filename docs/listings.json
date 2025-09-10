@@ -8,6 +8,7 @@
       "/publications/articles/lorenzoni2024foreign.html",
       "/publications/articles/dekeersmaecker2024truth.html",
       "/publications/articles/lacassagne2022earth.html",
+      "/publications/articles/nadarevic2021judging.html",
       "/publications/articles/henderson2021trajectory.html",
       "/publications/articles/murray2020said.html",
       "/publications/articles/brashier2020initial.html",
@@ -31,15 +32,15 @@
     ]
   },
   {
-    "listing": "/people.html",
-    "items": [
-      "/people/staff/lesche_sven.html"
-    ]
-  },
-  {
     "listing": "/news.html",
     "items": [
       "/posts/acii2024/index.html"
+    ]
+  },
+  {
+    "listing": "/people.html",
+    "items": [
+      "/people/staff/lesche_sven.html"
     ]
   }
 ]
