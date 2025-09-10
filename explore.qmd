@@ -4,10 +4,9 @@ toc: true
 ---
 
 ## An overview of TED
-
 ```{r method-source-data-prep, child = "analysis.qmd"}
 ```
-The following overview and analysis are a living version of the analysis conducted in TED's introductory paper. They will be updated as new data is included and may thus deviate from the published results.
+The following overview and analysis are a living version of the analysis conducted in TED's introductory paper. They will be updated as new data is included and may thus deviate from the published results. On this page, you can find an overview of included data, a brief meta-analysis on the truth effect within TED, and additional models estimating variability in the truth effect on subject, statement, or experiment level.
 
 In the current version of the manuscript, we included `r nrow(study_overview) %>% apa_num()` studies from `r nrow(publications_overview) %>% apa_num()` publications, spanning `r length(unique(full_data$subject)) %>% apa_num()` participants contributing `r nrow(full_data) %>% apa_num()` trials. A complete list of the included publications can be found in Table **table with refs, studies, trials here**.
 
@@ -41,12 +40,35 @@ knitr::include_graphics("img/procedure_overview_plot.png")
 
 Detailed information on the statements presented is available for `r study_overview %>% filter(statementset_id != 1) %>% nrow()` out of `r study_overview %>% nrow()` studies. Data on the accuracy of a statement is available for `r length(analysis_data$statement_accuracy[which(!is.na(analysis_data$statement_accuracy))]) %>% apa_num` (`r (length(analysis_data$statement_accuracy[which(!is.na(analysis_data$statement_accuracy))]) / nrow(analysis_data)) %>% print_freq_percent()`) of trials, the exact statement text is available for `r length(analysis_data$statement_text[which(!is.na(analysis_data$statement_text))]) %>% apa_num` (`r (length(analysis_data$statement_text[which(!is.na(analysis_data$statement_text))]) / nrow(analysis_data)) %>% print_freq_percent()`) of trials, and response times are available for `r length(analysis_data$rt[which(!is.na(analysis_data$rt))]) %>% apa_num` (`r (length(analysis_data$rt[which(!is.na(analysis_data$rt))]) / nrow(analysis_data)) %>% print_freq_percent()`) of trials.
 
+Also here, present a table with studies, number of trials, number of participants and some condition information?
+```{r, echo = FALSE, message=FALSE, warning = FALSE}
+library(knitr)
+library(kableExtra)
+table_publication_overview <- procedure_data %>% 
+  left_join(study_overview) %>% 
+  left_join(publications_overview) %>% 
+  select(publication_id, study_id, procedure_id,
+         n_participants, student_sample, truth_rating_steps,
+         repetition_time, n_statements
+         )
+
+kable(
+  table_publication_overview,
+  caption = "Overview of studies included in TED"
+) %>%
+  scroll_box(width = "100%", height = "400px") %>%
+  add_footnote(label = "A note goes here.") %>% 
+  kable_styling(fixed_thead = T)
+
+```
 
 ## Meta-Analysis
 
 This gives an overview of the effect sizes, not accounting for between/within manipulations. Use the procedure ID again, but account for thbis in the meta-analysis syntax. Also then talk about how this is not per study, but per manipulation instead
 
-### Hierachical Bayesian Model
+Something something meta-analysis
+
+## Hierachical Bayesian Model
 
 To illustrate the benefits of our large collection of trial-level data, we applied Bayesian multilevel models predicting truth judgments with repetition as a fixed effect and random intercepts and slopes at the subject, statement, and procedure levels. We chose to use the procedure level instead of the study level as meaningful study characteristics regarding the truth effect are captured in this part of the data. For example, the same study may have multiple judgment sessions, modify the percentage of repeated stimuli, or warn some participants about the truth effect. These different procedures will then also receive different procedure identifiers. The present analysis allows us to estimate the variance in the truth effect on three levels simultaneously: variance introduced through experimental manipulations (procedure_id), variance introduced through statements (statement_id), and variance due to individual differences (subject).
 

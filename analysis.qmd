@@ -2,7 +2,7 @@
 title: "Analysis"
 ---
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 library(acdcquery)
 library(tidyverse)
 library(papaja)
@@ -50,11 +50,26 @@ procedure_data <- query_db(
 )
 
 
-full_data <- query_db(
-  conn,
-  arguments,
-  c("default", "study_id", "publication_id", "statement_text", "statement_accuracy", "statementset_id", "statementset_publication", "within_description", "between_description", "repetition_time", "n_statements", "phase", "truth_instructions", "repetition_instructions", "truth_instruction_timing", "repetition_instruction_timing", "truth_rating_scale", "truth_rating_steps"),
-  "observation_table"
+full_data <- suppressMessages(
+  suppressWarnings(
+    { 
+      invisible(
+        capture.output(
+          result <- query_db(
+            conn,
+            arguments,
+            c("default", "study_id", "publication_id", "statement_text", "statement_accuracy", 
+              "statementset_id", "statementset_publication", "within_description", 
+              "between_description", "repetition_time", "n_statements", "phase", 
+              "truth_instructions", "repetition_instructions", "truth_instruction_timing", 
+              "repetition_instruction_timing", "truth_rating_scale", "truth_rating_steps"),
+            "observation_table"
+          )
+        )
+      )
+      result
+    }
+  )
 )
 
 
@@ -83,7 +98,7 @@ print_icc <- function(icc){
 }
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 # Analysis data from 
 analysis_data <- full_data %>% 
   filter(phase == "test") %>% 
@@ -166,7 +181,7 @@ scale_data <- analysis_data %>%
 ```
 
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 # Number of participants, age, laboratory status, scale
 long_study_data <- study_overview %>% 
   mutate_all(as.character) %>% 
@@ -374,7 +389,7 @@ summary_model_full_scale_bayes <- summary(model_full_scale_bayes)
 summary_model_time_scale_bayes <- summary(model_time_scale_bayes)
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(posterior)
 
 # Get random slopes from the fitted model
