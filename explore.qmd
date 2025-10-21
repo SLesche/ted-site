@@ -16,7 +16,7 @@ age_data <- study_overview %>%
   filter(!is.na(participant_age), !is.na(n_participants))
 ```
 
-Sample composition ranged from `r min(study_overview$n_participants, na.rm = TRUE)` to `r max(study_overview$n_participants, na.rm = TRUE)` participants. On average, studies included `r mean(study_overview$n_participants, na.rm = TRUE)` participants ($\mu_{age} =$ `r weighted.mean(age_data$participant_age, age_data$n_participants, na.rm = TRUE) %>% apa_num()`,$\sigma_{age} =$ `r DescTools::SD(age_data$participant_age, weights = age_data$n_participants, na.rm = TRUE) %>% apa_num()`). An overview of the rating scale usage for truth judgments and the use of a filler task over all included studies can be found in the figure below.
+Sample composition ranged from `r min(study_overview$n_participants, na.rm = TRUE)` to `r max(study_overview$n_participants, na.rm = TRUE)` participants. On average, studies included `r mean(study_overview$n_participants, na.rm = TRUE) %>% apa_num()` participants ($\mu_{age} =$ `r weighted.mean(age_data$participant_age, age_data$n_participants, na.rm = TRUE) %>% apa_num()`,$\sigma_{age} =$ `r DescTools::SD(age_data$participant_age, weights = age_data$n_participants, na.rm = TRUE) %>% apa_num()`). An overview of the rating scale usage for truth judgments and the use of a filler task over all included studies can be found in the figure below.
 
 ```{r study-overview-plot, echo = FALSE}
 #| out-width: "100%"
@@ -299,7 +299,7 @@ mlm.variance.distribution = var.comp = function(x){
 
 ### Multi-Level Meta-Analysis
 
-To account for non-independence of effect sizes within studies and publications, we fitted a three-level meta-analytic model using rma.mv():
+To account for non-independence of effect sizes within publications contributing multiple studies, we fitted a three-level meta-analytic model using rma.mv():
 
 Level 1: Sampling variance of individual effect sizes
 
@@ -330,7 +330,7 @@ i2$plot
 
 ### Forest Plot
 
-Finally, a forest plot shows the individual study effect sizes, their confidence intervals, and the overall estimate from the multi-level model.
+Finally, a forest plot can show the individual study effect sizes, their confidence intervals, and the overall estimate from the multi-level meta-analysis model.
 ```{r, echo = TRUE}
 # forest plot for multi-level model
 forest(res_mv, 

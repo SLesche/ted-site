@@ -45,11 +45,11 @@ The latest version of the database is available on GitHub:
 
 ### <i class="bi bi-terminal"></i> Option 1: Use SQL Directly
 
-Open and explore the `.sqlite` file using:
+Open and explore the `.db` file using:
 
+- R (`DBI`, `RSQLite`)
 - [DB Browser for SQLite](https://sqlitebrowser.org/)
 - Python (`sqlite3`, `pandas`)
-- R (`DBI`, `RSQLite`)
 - Any SQL client or CLI tool
 
 ---

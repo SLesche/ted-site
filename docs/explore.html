@@ -220,7 +220,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="an-overview-of-ted">An overview of TED</h2>
 <p>The following overview and analysis are a living version of the analysis conducted in TED’s introductory paper. They will be updated as new data is included and may thus deviate from the published results. On this page, you can find an overview of included data, a brief meta-analysis on the truth effect within TED, and additional models estimating variability in the truth effect on subject, statement, or experiment level.</p>
 <p>In the current version of TED, we included 56 studies from 27 publications, spanning 12002 participants contributing 778741 trials. A complete list of the included publications can be found in the Table “<em>overview of studies included in TED</em>”.</p>
-<p>Sample composition ranged from 29 to 949 participants. On average, studies included 218.0357143 participants (<span class="math inline">\(\mu_{age} =\)</span> 33.17,<span class="math inline">\(\sigma_{age} =\)</span> 7.22). An overview of the rating scale usage for truth judgments and the use of a filler task over all included studies can be found in the figure below.</p>
+<p>Sample composition ranged from 29 to 949 participants. On average, studies included 218.04 participants (<span class="math inline">\(\mu_{age} =\)</span> 33.17,<span class="math inline">\(\sigma_{age} =\)</span> 7.22). An overview of the rating scale usage for truth judgments and the use of a filler task over all included studies can be found in the figure below.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -1212,7 +1212,7 @@ window.Quarto = {
 </div>
 <section id="multi-level-meta-analysis" class="level3">
 <h3 class="anchored" data-anchor-id="multi-level-meta-analysis">Multi-Level Meta-Analysis</h3>
-<p>To account for non-independence of effect sizes within studies and publications, we fitted a three-level meta-analytic model using rma.mv():</p>
+<p>To account for non-independence of effect sizes within publications contributing multiple studies, we fitted a three-level meta-analytic model using rma.mv():</p>
 <p>Level 1: Sampling variance of individual effect sizes</p>
 <p>Level 2: Heterogeneity between studies within the same publication</p>
 <p>Level 3: Heterogeneity between publications</p>
@@ -1275,7 +1275,7 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </section>
 <section id="forest-plot" class="level3">
 <h3 class="anchored" data-anchor-id="forest-plot">Forest Plot</h3>
-<p>Finally, a forest plot shows the individual study effect sizes, their confidence intervals, and the overall estimate from the multi-level model.</p>
+<p>Finally, a forest plot can show the individual study effect sizes, their confidence intervals, and the overall estimate from the multi-level meta-analysis model.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># forest plot for multi-level model</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(res_mv, </span>
