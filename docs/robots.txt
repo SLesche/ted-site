@@ -1,1 +1,0 @@
-Sitemap: https://slesche.github.io/ted-site/sitemap.xml

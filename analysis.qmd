@@ -72,6 +72,24 @@ full_data <- suppressMessages(
   )
 )
 
+references_table <- query_db(
+  conn,
+  arguments,
+  c("publication_id", "authors", "conducted", "peer_reviewed", "study_id", "n_participants"),
+  "publication_table"
+)
+
+trial_nums <- full_data %>% 
+  count(study_id) %>% 
+  rename("n_trials" = "n")
+
+references_table <- references_table %>% 
+  left_join(., trial_nums) %>% 
+  mutate(
+    peer_reviewed = ifelse(peer_reviewed == 1, "Yes", "No")
+  )
+
+
 
 ```
 ```{r setup-print-percent, echo = FALSE}
@@ -186,7 +204,7 @@ scale_data <- analysis_data %>%
 long_study_data <- study_overview %>% 
   mutate_all(as.character) %>% 
   mutate(filler_task_type = case_when(
-    filler_task_type == "" ~ "",
+    filler_task_type == "" ~ "none",
     filler_task_type == 0 ~ "non-verbal",
     filler_task_type == 1 ~ "verbal",
     TRUE ~ filler_task_type
@@ -203,14 +221,14 @@ plot_study_data <- long_study_data %>%
   mutate(
     value = fct_relevel(
       factor(value),
-      "101", "range", "likert", "11", "7", "6", "5", "4", "dichotomous", "2"
+      "101", "range", "likert", "11", "7", "6", "5", "4", "dichotomous", "2", "none"
     )
   )
 
 study_overview_plot <- ggplot(plot_study_data, aes(x = variable, y = n, fill = value)) +
   geom_bar(stat = "identity") +
   geom_text(
-    aes(label = paste0(value, " (", n, ")")),
+    aes(label = paste0(value, "\n(", n, ")")),
     position = position_stack(vjust = 0.5),
     color = "black",
     size = 2.5
@@ -267,6 +285,16 @@ long_procedure_data <- procedure_data %>%
     repetition_type = ifelse(repetition_type == "some exact, some semantic (incongruent)", "mixed", repetition_type)
   ) %>% 
   mutate(
+    repetition_instruction_timing = ifelse(
+      repetition_instruction_timing == "test",
+      "judgment", repetition_instruction_timing
+    ),
+    truth_instruction_timing = ifelse(
+      truth_instruction_timing == "test",
+      "judgment", truth_instruction_timing
+    ),
+  ) %>% 
+  mutate(
     truth_instruction_timing = fct_relevel(
       factor(truth_instruction_timing),
       "both", "exposure", "test", "none"
@@ -276,6 +304,9 @@ long_procedure_data <- procedure_data %>%
       "both", "exposure", "test", "none"
     )
   ) %>% 
+  mutate(
+    percent_repeated = paste0(percent_repeated, " %")
+  ) %>% 
   pivot_longer(cols = everything(), names_to = "variable", values_to = "value")
 
 # Count combinations of variable and value
@@ -284,8 +315,8 @@ plot_procedure_data <- long_procedure_data %>%
   mutate(
     value = fct_relevel(
       factor(value),
-      "paraphrase", "exact","no", "none", "yes", "both", "exposure", "test", 
-      "100", "67", "66.67", "66", "50", "46.67", "33", "0", "mixed"
+      "paraphrase", "exact","no", "none", "yes", "both","judgment", "exposure", 
+      "100 %", "67 %", "66.67 %", "66 %", "50 %", "46.67 %", "33 %", "0", "mixed"
     )
   )
 
@@ -293,10 +324,10 @@ plot_procedure_data <- long_procedure_data %>%
 procedure_overview_plot <- ggplot(plot_procedure_data, aes(x = variable, y = n, fill = value)) +
   geom_bar(stat = "identity") +
   geom_text(
-    aes(label = paste0(value, " (", n, ")")),
+    aes(label = paste0(value, "\n(", n, ")")),
     position = position_stack(vjust = 0.5),
     color = "black",
-    size = 2.5
+    size = 2.2
   ) +
   labs(
     title = "Breakdown of Procedure Variables",
