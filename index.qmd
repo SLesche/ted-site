@@ -22,13 +22,13 @@ TED currently contains:
 
 ::: {.stat-box}
 ### 👥  
-**10,000 Participants**  
+**12,000 Participants**  
 <small>From multiple labs around the world</small>
 :::
 
 ::: {.stat-box}
 ### 🧪  
-**500,000 Trials**  
+**700,000 Trials**  
 <small>Standardized and reusable</small>
 :::
 

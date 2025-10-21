@@ -14,8 +14,8 @@ website:
         text: Contribute
       - href: get-started.qmd
         text: Get Started
-      # - href: news.qmd
-      #   text: News
+      - href: explore.qmd
+        text: Explore
       # - href: people.qmd
       #   text: People
       - href: publications.qmd
