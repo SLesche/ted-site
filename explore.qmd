@@ -83,6 +83,11 @@ Some small deviations from the originally reported effect sizes in the individua
 First, we access the database and retrieve trial-level data:
 
 ```{r, eval = FALSE, echo = TRUE}
+library(acdcquery)
+
+# Replace with your local path
+conn <- connect_to_db("path/to/ted.db")
+
 analysis_data <- query_db(
     conn,
     arguments,
@@ -349,7 +354,7 @@ res_mv <- rma.mv(yi = estimate,
                  method = "REML")
 summary(res_mv)
 ```
-The results reveal a large effect of repetition ($d =$ `r res_mv$beta[1, 1] %>% apa_num()`; 95 % CI = `r res_mv$ci.lb`, `r res_mv$ci.ub`). This is much larger than the effect size found in Dechene et al. (2010) of around $d = 0.49$ for the between-items criterion. Notably, this analysis is only based on publications with openly available data. Thus, these results are based on a biased smaller sample of k = `r res_mv$data$publication_id %>% unique() %>% length()` publications. 
+The results reveal a large effect of repetition ($d =$ `r res_mv$beta[1, 1] %>% apa_num()`; 95 % CI = `r res_mv$ci.lb %>% apa_num()`, `r res_mv$ci.ub %>% apa_num()`). This is much larger than the effect size found in Dechene et al. (2010) of around $d = 0.49$ for the between-items criterion. Notably, this analysis is only based on publications with openly available data. Thus, these results are based on a biased smaller sample of k = `r res_mv$data$publication_id %>% unique() %>% length()` publications. 
 
 ### Variance Decomposition
 
@@ -389,7 +394,12 @@ It is intended as a tutorial example and not a definitive meta-analysis.
 
 ## Hierachical Bayesian Model
 
-To illustrate the benefits of our large collection of trial-level data, we applied Bayesian multilevel models predicting truth judgments with repetition as a fixed effect and random intercepts and slopes at the subject, statement, and procedure levels. We chose to use the procedure level instead of the study level as meaningful study characteristics regarding the truth effect are captured in this part of the data. For example, the same study may have multiple judgment sessions, modify the percentage of repeated stimuli, or warn some participants about the truth effect. These different procedures will then also receive different procedure identifiers. The present analysis allows us to estimate the variance in the truth effect on three levels simultaneously: variance introduced through experimental manipulations (procedure_id), variance introduced through statements (statement_id), and variance due to individual differences (subject).
+To illustrate the benefits of our large collection of trial-level data, we fitted Bayesian multilevel models predicting truth judgments, with repetition as a fixed effect and random intercepts and slopes at the subject, statement, and procedure levels.
+
+We grouped data at the level of the procedure_table, as this table contains detailed information about each experimental setup (e.g., proportion of repeated items, presence of warnings, number of sessions) beyond what is available in the broader study_table. Each entry in the study_table corresponds to at least one entry in the procedure_table, but a single study may include several procedures that differ in these settings. For example, the same study may have multiple judgment sessions, modify the percentage of repeated stimuli, or warn some participants about the truth effect. These different procedures will then also receive different procedure identifiers, but the same study identifier.
+
+Thus, the procedure identifier (procedure_id) uniquely captures both the study context and its specific experimental conditions. This modeling approach allows us to estimate the variance in the truth effect at three levels simultaneously: (1) variance due to common experimental manipulations and study settings (procedure level), (2) variance due to individual statements (statement level), and (3) variance due to individual differences (subject level).
+
 
 We analyzed the dichotomous and Likert-type response formats separately due to differences in their scale characteristics. Dichotomous responses (e.g., true/false) require logistic models, whereas Likert-type responses (e.g., 1–5 ratings) allow for linear models. All responses were maximum-normalized to the range 0-1 with one representing the maximum possible response indicating a "true" judgment. The repetition status was mean-centered to aid model estimation, a new statement was coded -0.5 and a repeated statement 0.5.
 

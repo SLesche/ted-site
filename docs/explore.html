@@ -1177,29 +1177,34 @@ window.Quarto = {
 <p>Some small deviations from the originally reported effect sizes in the individual studies may exist. But we applied no additional exclusion criteria and tried to exclude (during encoding) all subjects excluded in the original studies.</p>
 <p>First, we access the database and retrieve trial-level data:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>analysis_data <span class="ot">&lt;-</span> <span class="fu">query_db</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    conn,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    arguments,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">target_vars =</span> <span class="fu">c</span>(<span class="st">"default"</span>, <span class="st">"study_id"</span>, <span class="st">"publication_id"</span>, <span class="st">"authors"</span>, <span class="st">"conducted"</span>),</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">target_table =</span> <span class="st">"observation_table"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(phase <span class="sc">==</span> <span class="st">"test"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(repeated), <span class="sc">!</span><span class="fu">is.na</span>(response)) </span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Here we only use data where the test phase has both </span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># repeated and new statements</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>has_complete_data <span class="ot">&lt;-</span> analysis_data <span class="sc">%&gt;%</span> </span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(procedure_id, subject, repeated) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(procedure_id, subject) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">has_complete_data =</span> <span class="fu">ifelse</span>(n <span class="sc">==</span> <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>analysis_data <span class="ot">&lt;-</span> analysis_data <span class="sc">%&gt;%</span> </span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    ., has_complete_data</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(has_complete_data <span class="sc">==</span> <span class="dv">1</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(acdcquery)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace with your local path</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>conn <span class="ot">&lt;-</span> <span class="fu">connect_to_db</span>(<span class="st">"path/to/ted.db"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>analysis_data <span class="ot">&lt;-</span> <span class="fu">query_db</span>(</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    conn,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    arguments,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">target_vars =</span> <span class="fu">c</span>(<span class="st">"default"</span>, <span class="st">"study_id"</span>, <span class="st">"publication_id"</span>, <span class="st">"authors"</span>, <span class="st">"conducted"</span>),</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">target_table =</span> <span class="st">"observation_table"</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(phase <span class="sc">==</span> <span class="st">"test"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(repeated), <span class="sc">!</span><span class="fu">is.na</span>(response)) </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Here we only use data where the test phase has both </span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># repeated and new statements</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>has_complete_data <span class="ot">&lt;-</span> analysis_data <span class="sc">%&gt;%</span> </span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(procedure_id, subject, repeated) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(procedure_id, subject) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">has_complete_data =</span> <span class="fu">ifelse</span>(n <span class="sc">==</span> <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>analysis_data <span class="ot">&lt;-</span> analysis_data <span class="sc">%&gt;%</span> </span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    ., has_complete_data</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(has_complete_data <span class="sc">==</span> <span class="dv">1</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Then we compute effect sizes per study using <code>cohen.d</code>.</p>
 <div class="cell">
@@ -1279,7 +1284,7 @@ estimate      se     zval    pval   ci.lb   ci.ub
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div>
-<p>The results reveal a large effect of repetition (<span class="math inline">\(d =\)</span> 0.70; 95 % CI = 0.5646594, 0.8398382). This is much larger than the effect size found in Dechene et al.&nbsp;(2010) of around <span class="math inline">\(d = 0.49\)</span> for the between-items criterion. Notably, this analysis is only based on publications with openly available data. Thus, these results are based on a biased smaller sample of k = 26 publications.</p>
+<p>The results reveal a large effect of repetition (<span class="math inline">\(d =\)</span> 0.70; 95 % CI = 0.56, 0.84). This is much larger than the effect size found in Dechene et al.&nbsp;(2010) of around <span class="math inline">\(d = 0.49\)</span> for the between-items criterion. Notably, this analysis is only based on publications with openly available data. Thus, these results are based on a biased smaller sample of k = 26 publications.</p>
 </section>
 <section id="variance-decomposition" class="level3">
 <h3 class="anchored" data-anchor-id="variance-decomposition">Variance Decomposition</h3>
@@ -1335,7 +1340,9 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </section>
 <section id="hierachical-bayesian-model" class="level2">
 <h2 class="anchored" data-anchor-id="hierachical-bayesian-model">Hierachical Bayesian Model</h2>
-<p>To illustrate the benefits of our large collection of trial-level data, we applied Bayesian multilevel models predicting truth judgments with repetition as a fixed effect and random intercepts and slopes at the subject, statement, and procedure levels. We chose to use the procedure level instead of the study level as meaningful study characteristics regarding the truth effect are captured in this part of the data. For example, the same study may have multiple judgment sessions, modify the percentage of repeated stimuli, or warn some participants about the truth effect. These different procedures will then also receive different procedure identifiers. The present analysis allows us to estimate the variance in the truth effect on three levels simultaneously: variance introduced through experimental manipulations (procedure_id), variance introduced through statements (statement_id), and variance due to individual differences (subject).</p>
+<p>To illustrate the benefits of our large collection of trial-level data, we fitted Bayesian multilevel models predicting truth judgments, with repetition as a fixed effect and random intercepts and slopes at the subject, statement, and procedure levels.</p>
+<p>We grouped data at the level of the procedure_table, as this table contains detailed information about each experimental setup (e.g., proportion of repeated items, presence of warnings, number of sessions) beyond what is available in the broader study_table. Each entry in the study_table corresponds to at least one entry in the procedure_table, but a single study may include several procedures that differ in these settings. For example, the same study may have multiple judgment sessions, modify the percentage of repeated stimuli, or warn some participants about the truth effect. These different procedures will then also receive different procedure identifiers, but the same study identifier.</p>
+<p>Thus, the procedure identifier (procedure_id) uniquely captures both the study context and its specific experimental conditions. This modeling approach allows us to estimate the variance in the truth effect at three levels simultaneously: (1) variance due to common experimental manipulations and study settings (procedure level), (2) variance due to individual statements (statement level), and (3) variance due to individual differences (subject level).</p>
 <p>We analyzed the dichotomous and Likert-type response formats separately due to differences in their scale characteristics. Dichotomous responses (e.g., true/false) require logistic models, whereas Likert-type responses (e.g., 1–5 ratings) allow for linear models. All responses were maximum-normalized to the range 0-1 with one representing the maximum possible response indicating a “true” judgment. The repetition status was mean-centered to aid model estimation, a new statement was coded -0.5 and a repeated statement 0.5.</p>
 <p>We ran all models using 4 chains with 3000 iterations per chain, 1000 of which were discarded as warmup-samples, leading to a total of 8000 posterior samples. There were no divergent transitions, no <span class="math inline">\(\hat{R} &gt; 1.05\)</span>, and visual inspection confirmed that the chains mixed well. We used weakly informative priors for the intercept, fixed effect, and standard deviations for all models.</p>
 <p><span class="math display">\[Intercept \sim Normal(0.5, 0.5)\]</span> <span class="math display">\[b \sim Normal(0, 1)\]</span> <span class="math display">\[\sigma \sim Gamma(1, 4)\]</span></p>
