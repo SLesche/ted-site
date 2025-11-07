@@ -21,6 +21,17 @@ A full overview of the available variables is available here:
 </div>
 :::
 
+The figure below shows TEDs structure:
+
+```{r ted-overview, echo = FALSE}
+#| out-width: "100%"
+#| label: procedure-overview-plot
+#| fig-cap: "Overview of TEDs Structure"
+#| 
+knitr::include_graphics("img/ted-overview.png")
+```
+
+
 Have questions? [Get in touch with us](contact.qmd) — we're happy to help.
 
 ---
