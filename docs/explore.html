@@ -1341,15 +1341,15 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 <section id="hierachical-bayesian-model" class="level2">
 <h2 class="anchored" data-anchor-id="hierachical-bayesian-model">Hierachical Bayesian Model</h2>
 <p>To illustrate the benefits of our large collection of trial-level data, we fitted Bayesian multilevel models predicting truth judgments, with repetition as a fixed effect and random intercepts and slopes at the subject, statement, and procedure levels.</p>
-<p>We grouped data at the level of the procedure_table, as this table contains detailed information about each experimental setup (e.g., proportion of repeated items, presence of warnings, number of sessions) beyond what is available in the broader study_table. Each entry in the study_table corresponds to at least one entry in the procedure_table, but a single study may include several procedures that differ in these settings. For example, the same study may have multiple judgment sessions, modify the percentage of repeated stimuli, or warn some participants about the truth effect. These different procedures will then also receive different procedure identifiers, but the same study identifier.</p>
-<p>Thus, the procedure identifier (procedure_id) uniquely captures both the study context and its specific experimental conditions. This modeling approach allows us to estimate the variance in the truth effect at three levels simultaneously: (1) variance due to common experimental manipulations and study settings (procedure level), (2) variance due to individual statements (statement level), and (3) variance due to individual differences (subject level).</p>
+<p>The experimental level is based on data at the level of the procedure_table, as this table contains detailed information about each experimental setup (e.g., proportion of repeated items, presence of warnings, number of sessions) beyond what is available in the broader study_table. Each entry in the study_table corresponds to at least one entry in the procedure_table, but a single study may include several procedures that differ in these settings. For example, the same study may have multiple judgment sessions, modify the percentage of repeated stimuli, or warn some participants about the truth effect. These different procedures will then also receive different procedure identifiers, but the same study identifier.</p>
+<p>Thus, the experiment identifier (procedure_id) uniquely captures both the study context and its specific experimental conditions. This modeling approach allows us to estimate the variance in the truth effect at three levels simultaneously: (1) variance due to diverse statements (statement level), (2) variance due to individual differences (subject level), and (3) variance due to common experimental manipulations and study settings (experiment level).</p>
 <p>We analyzed the dichotomous and Likert-type response formats separately due to differences in their scale characteristics. Dichotomous responses (e.g., true/false) require logistic models, whereas Likert-type responses (e.g., 1–5 ratings) allow for linear models. All responses were maximum-normalized to the range 0-1 with one representing the maximum possible response indicating a “true” judgment. The repetition status was mean-centered to aid model estimation, a new statement was coded -0.5 and a repeated statement 0.5.</p>
 <p>We ran all models using 4 chains with 3000 iterations per chain, 1000 of which were discarded as warmup-samples, leading to a total of 8000 posterior samples. There were no divergent transitions, no <span class="math inline">\(\hat{R} &gt; 1.05\)</span>, and visual inspection confirmed that the chains mixed well. We used weakly informative priors for the intercept, fixed effect, and standard deviations for all models.</p>
 <p><span class="math display">\[Intercept \sim Normal(0.5, 0.5)\]</span> <span class="math display">\[b \sim Normal(0, 1)\]</span> <span class="math display">\[\sigma \sim Gamma(1, 4)\]</span></p>
 <section id="dichotomous-truth-judgments" class="level3">
 <h3 class="anchored" data-anchor-id="dichotomous-truth-judgments">Dichotomous Truth Judgments</h3>
-<p>The analysis was based on 112399 trials nested within 1576 subjects, 997 statements, and 14 procedures.</p>
-<p>The table below provides a summary of parameter estimates. As expected, the model indicated a significant fixed effect of repetition (<span class="math inline">\(b =\)</span> 0.08, <span class="math inline">\(95\% \ CrI =\)</span> [0.41, 0.75], <span class="math inline">\(OR =\)</span> 1.79, <span class="math inline">\(BF_{10} &gt; 1 \times 10^{10}\)</span>). Notably, the standard deviation of the random slope of repetition was highest at the subject level (<span class="math inline">\(\sigma =\)</span> 0.72, <span class="math inline">\(95\% \ CrI =\)</span> [0.68, 0.77]), followed by the procedure level (<span class="math inline">\(\sigma =\)</span> 0.28, <span class="math inline">\(95\% \ CrI =\)</span> [0.18, 0.44]), and the statement level (<span class="math inline">\(\sigma =\)</span> 0.13, <span class="math inline">\(95\% \ CrI =\)</span> [0.03, 0.19]).</p>
+<p>The analysis was based on 112399 trials nested within 1576 subjects, 997 statements, and 14 experiments.</p>
+<p>The table below provides a summary of parameter estimates. As expected, the model indicated a significant fixed effect of repetition (<span class="math inline">\(b =\)</span> 0.08, <span class="math inline">\(95\% \ CrI =\)</span> [0.41, 0.75], <span class="math inline">\(OR =\)</span> 1.79, <span class="math inline">\(BF_{10} &gt; 1 \times 10^{10}\)</span>). Notably, the standard deviation of the random slope of repetition was highest at the subject level (<span class="math inline">\(\sigma =\)</span> 0.72, <span class="math inline">\(95\% \ CrI =\)</span> [0.68, 0.77]), followed by the experiment level (<span class="math inline">\(\sigma =\)</span> 0.28, <span class="math inline">\(95\% \ CrI =\)</span> [0.18, 0.44]), and the statement level (<span class="math inline">\(\sigma =\)</span> 0.13, <span class="math inline">\(95\% \ CrI =\)</span> [0.03, 0.19]).</p>
 <div class="cell" data-tbl-cap="Variance in the truth effect at different levels">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -1383,7 +1383,7 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </tr>
 <tr class="odd">
 <td style="text-align: left;">random</td>
-<td style="text-align: left;">procedure</td>
+<td style="text-align: left;">experiment</td>
 <td style="text-align: left;">Intercept (sd)</td>
 <td style="text-align: left;">0.20</td>
 <td style="text-align: left;">0.11</td>
@@ -1391,7 +1391,7 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </tr>
 <tr class="even">
 <td style="text-align: left;">random</td>
-<td style="text-align: left;">procedure</td>
+<td style="text-align: left;">experiment</td>
 <td style="text-align: left;">repeated (sd)</td>
 <td style="text-align: left;">0.28</td>
 <td style="text-align: left;">0.18</td>
@@ -1432,7 +1432,7 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </tbody>
 </table>
 <div data-custom-style="table-note">
-<p><em>Note.</em> N = 112399; N Procedure = 14; N Subjects = 1576; N Statements = 997; l_95_CrI refers to the lower boundary of the 95% credible interval, u_95_CrI refers to the upper boundary</p>
+<p><em>Note.</em> N = 112399; N Experiments = 14; N Subjects = 1576; N Statements = 997; l_95_CrI refers to the lower boundary of the 95% credible interval, u_95_CrI refers to the upper boundary</p>
 </div>
 <p>&nbsp;</p>
 </div>
@@ -1440,8 +1440,8 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </section>
 <section id="scale-truth-judgments" class="level3">
 <h3 class="anchored" data-anchor-id="scale-truth-judgments">Scale Truth Judgments</h3>
-<p>The analysis was based on 572775 trials nested within 8309 subjects, 2872 statements, and 65 procedures.</p>
-<p>The table below provides a summary of parameter estimates. As expected, the model indicated a significant fixed effect of repetition (<span class="math inline">\(b =\)</span> 0.08, <span class="math inline">\(95\% \ CrI =\)</span> [0.07, 0.10], <span class="math inline">\(BF_{10} &gt; 1 \times 10^{10}\)</span>). Again, the standard deviation of the random slope of repetition was highest at the subject level (<span class="math inline">\(\sigma =\)</span> 0.10, <span class="math inline">\(95\% \ CrI =\)</span> [0.10, 0.10]), followed by the procedure level (<span class="math inline">\(\sigma =\)</span> 0.07, <span class="math inline">\(95\% \ CrI =\)</span> [0.05, 0.08]), and the statement level (<span class="math inline">\(\sigma =\)</span> 0.03, <span class="math inline">\(95\% \ CrI =\)</span> [0.02, 0.03]).</p>
+<p>The analysis was based on 572775 trials nested within 8309 subjects, 2872 statements, and 65 experiments.</p>
+<p>The table below provides a summary of parameter estimates. As expected, the model indicated a significant fixed effect of repetition (<span class="math inline">\(b =\)</span> 0.08, <span class="math inline">\(95\% \ CrI =\)</span> [0.07, 0.10], <span class="math inline">\(BF_{10} &gt; 1 \times 10^{10}\)</span>). Again, the standard deviation of the random slope of repetition was highest at the subject level (<span class="math inline">\(\sigma =\)</span> 0.10, <span class="math inline">\(95\% \ CrI =\)</span> [0.10, 0.10]), followed by the experiment level (<span class="math inline">\(\sigma =\)</span> 0.07, <span class="math inline">\(95\% \ CrI =\)</span> [0.05, 0.08]), and the statement level (<span class="math inline">\(\sigma =\)</span> 0.03, <span class="math inline">\(95\% \ CrI =\)</span> [0.02, 0.03]).</p>
 <div class="cell" data-tbl-cap="Variance in the truth effect at different levels">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
@@ -1475,7 +1475,7 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </tr>
 <tr class="odd">
 <td style="text-align: left;">random</td>
-<td style="text-align: left;">procedure</td>
+<td style="text-align: left;">experiment</td>
 <td style="text-align: left;">Intercept (sd)</td>
 <td style="text-align: left;">0.07</td>
 <td style="text-align: left;">0.06</td>
@@ -1483,7 +1483,7 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </tr>
 <tr class="even">
 <td style="text-align: left;">random</td>
-<td style="text-align: left;">procedure</td>
+<td style="text-align: left;">experiment</td>
 <td style="text-align: left;">repeated (sd)</td>
 <td style="text-align: left;">0.07</td>
 <td style="text-align: left;">0.05</td>
@@ -1524,7 +1524,7 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </tbody>
 </table>
 <div data-custom-style="table-note">
-<p><em>Note.</em> N = 587999; N Procedure = 66; N Subjects = 8397; N Statements = 2872; l_95_CrI refers to the lower boundary of the 95% credible interval, u_95_CrI refers to the upper boundary</p>
+<p><em>Note.</em> N = 587999; N Experiments = 66; N Subjects = 8397; N Statements = 2872; l_95_CrI refers to the lower boundary of the 95% credible interval, u_95_CrI refers to the upper boundary</p>
 </div>
 <p>&nbsp;</p>
 </div>
@@ -1564,7 +1564,7 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </tr>
 <tr class="odd">
 <td style="text-align: left;">random</td>
-<td style="text-align: left;">procedure</td>
+<td style="text-align: left;">experiment</td>
 <td style="text-align: left;">Intercept (sd)</td>
 <td style="text-align: left;">0.07</td>
 <td style="text-align: left;">0.06</td>
@@ -1572,7 +1572,7 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </tr>
 <tr class="even">
 <td style="text-align: left;">random</td>
-<td style="text-align: left;">procedure</td>
+<td style="text-align: left;">experiment</td>
 <td style="text-align: left;">repeated (sd)</td>
 <td style="text-align: left;">0.07</td>
 <td style="text-align: left;">0.06</td>
@@ -1629,19 +1629,17 @@ Warning in is.na(x): is.na() applied to non-(list or vector) of type 'language'<
 </tbody>
 </table>
 <div data-custom-style="table-note">
-<p><em>Note.</em> N = 587999; N Procedure = 66; N Subjects = 9592; N Statements = 2872; l_95_CrI refers to the lower boundary of the 95% credible interval, u_95_CrI refers to the upper boundary</p>
+<p><em>Note.</em> N = 587999; N Experiments = 66; N Subjects = 9592; N Statements = 2872; l_95_CrI refers to the lower boundary of the 95% credible interval, u_95_CrI refers to the upper boundary</p>
 </div>
 <p>&nbsp;</p>
 </div>
 </div>
 <div class="cell">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="explore_files/figure-html/time-model-plot-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>Variance in the truth effect at different levels</figcaption>
-</figure>
-</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Scale for x is already present.
+Adding another scale for x, which will replace the existing scale.
+Scale for y is already present.
+Adding another scale for y, which will replace the existing scale.</code></pre>
 </div>
 </div>
 
