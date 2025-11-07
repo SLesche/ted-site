@@ -21,7 +21,7 @@ A full overview of the available variables is available here:
 </div>
 :::
 
-The figure below shows TEDs structure:
+The design of our database is illustrated in the Figure below. Broadly, we make use of a table for each part of data related to truth effect experiments. Meta-data concerning the publications themselves as the highest order are stored in a publication_table and raw data at the lowest level in the observation_table. In addition, we included information on the study, the conditions, the procedure, the statements used, their origin, and additional variables collected in the experiment in respective tables.
 
 ```{r ted-overview, echo = FALSE}
 #| out-width: "100%"
@@ -31,6 +31,7 @@ The figure below shows TEDs structure:
 knitr::include_graphics("img/ted-overview.png")
 ```
 
+This relational approach provides a clear and modular organization of data sources, linking tables through unique identifier variables. We argue that while the use of a relational database adds some complexity, it also introduces an intuitive naming system and structure for variables of interest. Importantly, our goal is that variable names and their table location are the only knowledge that users need to have in order to interact with the database. To this end, we have developed tools that require little to no understanding of the database structure or SQL in order to submit and extract data from the database.
 
 Have questions? [Get in touch with us](contact.qmd) — we're happy to help.
 
@@ -122,3 +123,8 @@ More documentation and examples:
 * ✅ [Contact us](contact.qmd) with questions or feedback
 
 We’re excited to see what you discover!
+
+## Want to submit data?
+
+[<i class="bi bi-upload"></i> Contribute](contribute.qmd){.btn .btn-lg .btn-outline-success}
+

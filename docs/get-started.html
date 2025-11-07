@@ -169,6 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#option-2-use-our-r-package-acdcquery" id="toc-option-2-use-our-r-package-acdcquery" class="nav-link" data-scroll-target="#option-2-use-our-r-package-acdcquery"><i class="bi bi-r-circle"></i> Option 2: Use Our R Package <code>acdcquery</code></a></li>
   </ul></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#want-to-submit-data" id="toc-want-to-submit-data" class="nav-link" data-scroll-target="#want-to-submit-data">Want to submit data?</a></li>
   </ul>
 </nav>
     </div>
@@ -190,7 +191,7 @@ We place no restrictions on usage — feel free to explore, analyze, and publish
 <p><a href="./variable-overview.html" class="btn btn-sm btn-outline-info"> <i class="bi bi-table"></i> Variable Overview </a></p>
 </div>
 </div>
-<p>The figure below shows TEDs structure:</p>
+<p>The design of our database is illustrated in the Figure below. Broadly, we make use of a table for each part of data related to truth effect experiments. Meta-data concerning the publications themselves as the highest order are stored in a publication_table and raw data at the lowest level in the observation_table. In addition, we included information on the study, the conditions, the procedure, the statements used, their origin, and additional variables collected in the experiment in respective tables.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -201,6 +202,7 @@ We place no restrictions on usage — feel free to explore, analyze, and publish
 </div>
 </div>
 </div>
+<p>This relational approach provides a clear and modular organization of data sources, linking tables through unique identifier variables. We argue that while the use of a relational database adds some complexity, it also introduces an intuitive naming system and structure for variables of interest. Importantly, our goal is that variable names and their table location are the only knowledge that users need to have in order to interact with the database. To this end, we have developed tools that require little to no understanding of the database structure or SQL in order to submit and extract data from the database.</p>
 <p>Have questions? <a href="./contact.html">Get in touch with us</a> — we’re happy to help.</p>
 <hr>
 </section>
@@ -275,6 +277,10 @@ We place no restrictions on usage — feel free to explore, analyze, and publish
 <li>✅ <a href="./contact.html">Contact us</a> with questions or feedback</li>
 </ul>
 <p>We’re excited to see what you discover!</p>
+</section>
+<section id="want-to-submit-data" class="level2">
+<h2 class="anchored" data-anchor-id="want-to-submit-data">Want to submit data?</h2>
+<p><a href="./contribute.html" class="btn btn-lg btn-outline-success"><i class="bi bi-upload"></i> Contribute</a></p>
 
 
 </section>

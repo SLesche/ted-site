@@ -326,14 +326,14 @@
     "href": "get-started.html",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "The Truth Effect Database (TED) is an open resource built for researchers investigating the illusory truth effect.\nWe place no restrictions on usage — feel free to explore, analyze, and publish with it.\nPlease remember:\n🔔 All studies used in your final dataset must be cited individually.\nA full overview of the available variables is available here:\n\n\n  Variable Overview \n\n\nThe figure below shows TEDs structure:\n\n\n\n\n\nOverview of TEDs Structure\n\n\n\n\nHave questions? Get in touch with us — we’re happy to help."
+    "text": "The Truth Effect Database (TED) is an open resource built for researchers investigating the illusory truth effect.\nWe place no restrictions on usage — feel free to explore, analyze, and publish with it.\nPlease remember:\n🔔 All studies used in your final dataset must be cited individually.\nA full overview of the available variables is available here:\n\n\n  Variable Overview \n\n\nThe design of our database is illustrated in the Figure below. Broadly, we make use of a table for each part of data related to truth effect experiments. Meta-data concerning the publications themselves as the highest order are stored in a publication_table and raw data at the lowest level in the observation_table. In addition, we included information on the study, the conditions, the procedure, the statements used, their origin, and additional variables collected in the experiment in respective tables.\n\n\n\n\n\nOverview of TEDs Structure\n\n\n\n\nThis relational approach provides a clear and modular organization of data sources, linking tables through unique identifier variables. We argue that while the use of a relational database adds some complexity, it also introduces an intuitive naming system and structure for variables of interest. Importantly, our goal is that variable names and their table location are the only knowledge that users need to have in order to interact with the database. To this end, we have developed tools that require little to no understanding of the database structure or SQL in order to submit and extract data from the database.\nHave questions? Get in touch with us — we’re happy to help."
   },
   {
     "objectID": "get-started.html#using-ted-for-your-own-research",
     "href": "get-started.html#using-ted-for-your-own-research",
     "title": "Truth Effect Database (TED)",
     "section": "",
-    "text": "The Truth Effect Database (TED) is an open resource built for researchers investigating the illusory truth effect.\nWe place no restrictions on usage — feel free to explore, analyze, and publish with it.\nPlease remember:\n🔔 All studies used in your final dataset must be cited individually.\nA full overview of the available variables is available here:\n\n\n  Variable Overview \n\n\nThe figure below shows TEDs structure:\n\n\n\n\n\nOverview of TEDs Structure\n\n\n\n\nHave questions? Get in touch with us — we’re happy to help."
+    "text": "The Truth Effect Database (TED) is an open resource built for researchers investigating the illusory truth effect.\nWe place no restrictions on usage — feel free to explore, analyze, and publish with it.\nPlease remember:\n🔔 All studies used in your final dataset must be cited individually.\nA full overview of the available variables is available here:\n\n\n  Variable Overview \n\n\nThe design of our database is illustrated in the Figure below. Broadly, we make use of a table for each part of data related to truth effect experiments. Meta-data concerning the publications themselves as the highest order are stored in a publication_table and raw data at the lowest level in the observation_table. In addition, we included information on the study, the conditions, the procedure, the statements used, their origin, and additional variables collected in the experiment in respective tables.\n\n\n\n\n\nOverview of TEDs Structure\n\n\n\n\nThis relational approach provides a clear and modular organization of data sources, linking tables through unique identifier variables. We argue that while the use of a relational database adds some complexity, it also introduces an intuitive naming system and structure for variables of interest. Importantly, our goal is that variable names and their table location are the only knowledge that users need to have in order to interact with the database. To this end, we have developed tools that require little to no understanding of the database structure or SQL in order to submit and extract data from the database.\nHave questions? Get in touch with us — we’re happy to help."
   },
   {
     "objectID": "get-started.html#how-to-extract-data",
@@ -348,6 +348,13 @@
     "title": "Truth Effect Database (TED)",
     "section": "Summary",
     "text": "Summary\n\n✅ Use TED data freely — no permission required\n✅ Query using SQL or the acdcquery R package\n✅ Always cite all studies used\n✅ Contact us with questions or feedback\n\nWe’re excited to see what you discover!"
+  },
+  {
+    "objectID": "get-started.html#want-to-submit-data",
+    "href": "get-started.html#want-to-submit-data",
+    "title": "Truth Effect Database (TED)",
+    "section": "Want to submit data?",
+    "text": "Want to submit data?\n Contribute"
   },
   {
     "objectID": "contribute.html",
