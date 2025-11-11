@@ -16,19 +16,19 @@ TED currently contains:
   
 ::: {.stat-box}
 ### 📊  
-**50 Studies**  
+**56 Studies**  
 <small>All focused on the illusory truth effect</small>
 :::
 
 ::: {.stat-box}
 ### 👥  
-**12,000 Participants**  
+**12,000+ Participants**  
 <small>From multiple labs around the world</small>
 :::
 
 ::: {.stat-box}
 ### 🧪  
-**700,000 Trials**  
+**700,000+ Trials**  
 <small>Standardized and reusable</small>
 :::
 
