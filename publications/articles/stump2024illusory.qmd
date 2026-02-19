@@ -1,0 +1,20 @@
+---
+title: "The illusory certainty: Information repetition and impressions of truth enhance subjective confidence in validity judgments independently of the factual truth."
+type: "article"
+author: "Stump et al."
+year: "2024"
+publication: "Psychological Research"
+doi: "https://doi.org/10.1007/s00426-024-01956-7"
+materials: "https://heidata.uni-heidelberg.de/dataset.xhtml?persistentId=doi:10.11588/data/WDQJWW"
+toc: false
+categories:
+  - article
+---
+
+## Citation (APA 7)
+
+> Stump, A., Voss, A., & Rummel, J. (2024). The illusory certainty: Information repetition and impressions of truth enhance subjective confidence in validity judgments independently of the factual truth. Psychological Research, 88(4), 1288-1297.
+
+## Abstract
+
+People are more likely to judge repeatedly perceived statements as true. A decisive explanation for this so-called truth effect is that the repeated information can be processed more fluently than new information and that this fluency experience renders the information more familiar and trustworthy. Little is known, however, regarding whether and how affective states and dispositional cognitive preferences influence the truth effect. To this end, we conducted two experiments in which we manipulated (a) processing fluency via repetition, (b) the time interval (10 min vs. 1 week) between repetitions, and (c) short-term affective states using the presentation of emotional faces (Experiment 1) or the presence of an irrelevant source for changes in affective states (Experiment 2). Additionally, we assessed the dispositional variables need for cognitive closure (NCC), preference for deliberation (PD) and preference for intuition (PI). Results of Experiment 1 showed that the truth effect was significantly reduced for statements that were followed by a negative prime, although this was the case only for the longer repetition lag. Furthermore, higher NCC and lower PD scores were associated with an increased truth effect. Results of Experiment 2 replicated the moderating role of NCC and further showed that participants, who were provided with an alternative source for changes in their affective states, showed a reduced truth effect. Together, the findings suggest that (a) fluency-related changes in affective states may be (co-)responsible for the truth effect, (b) the truth effect is decreased when the repetition interval is long rather than short, and (c) the truth effect is increased for individuals with a higher need for cognitive closure. Theoretical implications of these findings are discussed.
