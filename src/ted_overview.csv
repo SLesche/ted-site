@@ -50,7 +50,7 @@ publication_table,publication_code,VARCHAR(255),Custom generated code of the pub
 statement_table,statement_id,INTEGER,Identifier for statements
 statement_table,statementset_id,INTEGER,Identifier for sets of statements
 statement_table,statement_text,VARCHAR(2047),Statement text
-statement_table,statement_accuracy,INTEGER,Accuracy of the statement
+statement_table,statement_accuracy,INTEGER,Accuracy of the statement at time of data collection! Subject to change over time
 statement_table,statement_category,VARCHAR(255),Category of the statement
 statement_table,proportion_true,FLOAT,"Proportion of participants who rated this statement as ""true"""
 statementset_table,statementset_id,INTEGER,Identifier for sets of statements
