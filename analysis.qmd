@@ -11,8 +11,18 @@ library(rstan)
 library(sjPlot)
 library(bayesplot)
 
+path_to_db <- "ted.db"
+if (!file.exists(path_to_db)){
+  download_ted(dirname(path_to_db))
+} else {
+  update_ted(path_to_db, update = TRUE)
+}
 
-conn <- connect_to_db("ted.db")
+if (!check_ted(path_to_db)){
+  stop("TED is not up-to-date")
+}
+  
+conn <- connect_to_db(path_to_db)
 
 arguments <- list() %>% 
   add_argument(

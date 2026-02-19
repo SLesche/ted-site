@@ -165,6 +165,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#how-to-extract-data" id="toc-how-to-extract-data" class="nav-link" data-scroll-target="#how-to-extract-data">How to Extract Data</a>
   <ul class="collapse">
   <li><a href="#download-the-database" id="toc-download-the-database" class="nav-link" data-scroll-target="#download-the-database"><i class="bi bi-download"></i> Download the Database</a></li>
+  </ul></li>
+  <li><a href="#how-to-work-with-ted" id="toc-how-to-work-with-ted" class="nav-link" data-scroll-target="#how-to-work-with-ted">How to work with TED</a>
+  <ul class="collapse">
   <li><a href="#option-1-use-sql-directly" id="toc-option-1-use-sql-directly" class="nav-link" data-scroll-target="#option-1-use-sql-directly"><i class="bi bi-terminal"></i> Option 1: Use SQL Directly</a></li>
   <li><a href="#option-2-use-our-r-package-acdcquery" id="toc-option-2-use-our-r-package-acdcquery" class="nav-link" data-scroll-target="#option-2-use-our-r-package-acdcquery"><i class="bi bi-r-circle"></i> Option 2: Use Our R Package <code>acdcquery</code></a></li>
   </ul></li>
@@ -217,8 +220,23 @@ We place no restrictions on usage — feel free to explore, analyze, and publish
 <p><a href="https://github.com/SLesche/truth-db" class="btn btn-sm btn-outline-info"> <i class="bi bi-github"></i> TED Database Repository </a></p>
 </div>
 </div>
+<p>Or using the package <code>acdcquery</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(acdcquery)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>ted_dir <span class="ot">&lt;-</span> <span class="st">"path/to/data"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the latest version:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">download_ted</span>(ted_dir)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># OR update an existing version to the newest version</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>ted_filepath <span class="ot">&lt;-</span> <span class="st">"path/to/data/ted.db"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">update_ted</span>(ted_filepath)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <hr>
 </section>
+</section>
+<section id="how-to-work-with-ted" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-work-with-ted">How to work with TED</h2>
 <section id="option-1-use-sql-directly" class="level3">
 <h3 class="anchored" data-anchor-id="option-1-use-sql-directly"><i class="bi bi-terminal"></i> Option 1: Use SQL Directly</h3>
 <p>Open and explore the <code>ted.db</code> file using:</p>
@@ -235,29 +253,29 @@ We place no restrictions on usage — feel free to explore, analyze, and publish
 <p>Use our R package <a href="https://github.com/SLesche/acdc-query"><code>acdcquery</code></a> to simplify filtering and querying.</p>
 <section id="installation" class="level4">
 <h4 class="anchored" data-anchor-id="installation">🔧 Installation</h4>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"acdcquery"</span>)  <span class="co"># from CRAN</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"acdcquery"</span>)  <span class="co"># from CRAN</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="connect-to-the-database" class="level4">
 <h4 class="anchored" data-anchor-id="connect-to-the-database">📂 Connect to the Database</h4>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(acdcquery)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace with your local path</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>conn <span class="ot">&lt;-</span> <span class="fu">connect_to_db</span>(<span class="st">"path/to/ted.db"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(acdcquery)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace with your local path</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>conn <span class="ot">&lt;-</span> <span class="fu">connect_to_db</span>(<span class="st">"path/to/ted.db"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="filter-and-query" class="level4">
 <h4 class="anchored" data-anchor-id="filter-and-query">🔍 Filter and Query</h4>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Query all entries with a publication ID greater than 0</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>args <span class="ot">&lt;-</span> <span class="fu">list</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_argument</span>(conn, <span class="st">"publication_id"</span>, <span class="st">"greater"</span>, <span class="st">"0"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>full_data <span class="ot">&lt;-</span> <span class="fu">query_db</span>(</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  conn,</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  args,</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"default"</span>, <span class="st">"study_id"</span>, <span class="st">"publication_id"</span>),</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"observation_table"</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Query all entries with a publication ID greater than 0</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>args <span class="ot">&lt;-</span> <span class="fu">list</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_argument</span>(conn, <span class="st">"publication_id"</span>, <span class="st">"greater"</span>, <span class="st">"0"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>full_data <span class="ot">&lt;-</span> <span class="fu">query_db</span>(</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  conn,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  args,</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"default"</span>, <span class="st">"study_id"</span>, <span class="st">"publication_id"</span>),</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"observation_table"</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>More documentation and examples:</p>
 <div class="{=html}">
 <div class="text-center my-3">

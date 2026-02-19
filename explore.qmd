@@ -85,6 +85,9 @@ First, we access the database and retrieve trial-level data:
 ```{r, eval = FALSE, echo = TRUE}
 library(acdcquery)
 
+# Optionally Download current version of TED
+# download_ted("path/to/")
+
 # Replace with your local path
 conn <- connect_to_db("path/to/ted.db")
 
@@ -573,13 +576,7 @@ sd_posterior_plot <- mcmc_areas(
       "sd_procedure" = "Procedure",
       "sd_statement" = "Statement"
     )
-  )+
-  theme_minimal(base_family = "Times New Roman", base_size = 25) +
-  theme(
-    text = element_text(family = "Times New Roman", colour = "black"),
-    axis.text = element_text(family = "Times New Roman", size = 25, color = "black"),
-    axis.title = element_text(family = "Times New Roman", size = 25, color = "black"),
-    legend.text = element_text(family = "Times New Roman"),
-    legend.title = element_text(family = "Times New Roman")
   )
+
+sd_posterior_plot
 ```

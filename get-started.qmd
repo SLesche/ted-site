@@ -53,7 +53,24 @@ The latest version of the database is available on GitHub:
 </div>
 :::
 
+Or using the package `acdcquery`
+
+```{r, eval = FALSE}
+library(acdcquery)
+
+ted_dir <- "path/to/data"
+# Download the latest version:
+download_ted(ted_dir)
+
+# OR update an existing version to the newest version
+ted_filepath <- "path/to/data/ted.db"
+update_ted(ted_filepath)
+```
+
+
 ---
+
+## How to work with TED
 
 ### <i class="bi bi-terminal"></i> Option 1: Use SQL Directly
 
