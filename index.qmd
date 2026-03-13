@@ -39,6 +39,8 @@ TED's mission is to make truth effect data **FAIR** —
 
 The database features consistent variable naming, streamlined data submission, and simple data extraction.
 
+Find the preprint on OSF [here](https://doi.org/10.31234/osf.io/3knvh_v1).
+
 :::
 
 ---
